@@ -7,6 +7,9 @@
 #include "XDL_SpriteBatch.h"
 #include "XDL_Camera.h"
 #include "XDL_Storage.h"
+#include <map>
+using namespace std;
+
 class XDL_Scene
 {
 public:
@@ -22,6 +25,11 @@ protected:
 	XDL_Camera* _camera;
 	XDL_Storage* _persistantStorage;
 	SDL_Renderer* _renderer;
+	map<string,XDL_GameObject*> _gameObjectsInScene;
+	virtual bool AddGameObjectToScene(XDL_GameObject* _gameobject, string _id);
+	virtual bool RemoveGameObjectFromScene(string _id);
+	virtual XDL_GameObject* GetGameObjectFromSceneUsingID(string _id);
+
 };
 
 #endif

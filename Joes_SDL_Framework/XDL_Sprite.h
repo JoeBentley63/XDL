@@ -49,7 +49,6 @@ public:
 	bool IsTouchingTop();
 
 #pragma endregion IsTouching Functions
-	int _z ;
 	bool CollidedWith(XDL_Sprite* _otherSprite);
 protected:
 	void Init(char* _asset,float _x,float _y,int _height, int _width,SDL_Renderer* _renderer);

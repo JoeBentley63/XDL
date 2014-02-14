@@ -11,7 +11,7 @@ public:
 	~XDL_GameObject(void);
 	void virtual Update() = 0;
 	void virtual Draw() = 0;
-
+	int _z;//set priority when Draws are being called
 };
 
 #endif

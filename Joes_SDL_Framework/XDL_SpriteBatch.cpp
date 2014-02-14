@@ -49,15 +49,15 @@ void XDL_SpriteBatch::Begin()//begin clears the screen and creates a new texture
 	_thingsToBeDrawn.clear();//remove all items that need to be drawn so we start with a blank slate
 }
 
-void XDL_SpriteBatch::Draw(XDL_Sprite* _me)// draw inserts the sprite into the list of things to be drawn
+void XDL_SpriteBatch::Draw(XDL_GameObject* _me)// draw inserts the sprite into the list of things to be drawn
 {
 	_thingsToBeDrawn.insert(_thingsToBeDrawn.end(),_me);
 }
 
 int compareZ(const void* a, const void* b)   // comparison function to sort items based on Z index
 {
-	int arg1 = ((XDL_Sprite*)a)->_z;
-    int arg2 = ((XDL_Sprite*)b)->_z;
+	int arg1 = ((XDL_GameObject*)a)->_z;
+    int arg2 = ((XDL_GameObject*)b)->_z;
     if(arg1 < arg2) return -1;
     if(arg1 > arg2) return 1;
     return 0;
