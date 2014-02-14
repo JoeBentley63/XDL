@@ -1,0 +1,32 @@
+﻿Build started 2/10/2014 2:16:35 PM.
+     1>Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\PathFinding-Joseph_Bentley\Joes_SDL_Framework\Joes_SDL_Framework.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Level1.cpp
+         Level1.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\PathFinding-Joseph_Bentley\Debug\Joes_SDL_Framework.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\PathFinding-Joseph_Bentley\Debug\Joes_SDL_Framework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\PathFinding-Joseph_Bentley\Debug\Joes_SDL_Framework.lib" /MACHINE:X86 Debug\XDL_SpriteBatch.obj
+         Debug\XDL_Camera.obj
+         Debug\XDL_ContentManager.obj
+         Debug\XDL_Game.obj
+         Debug\IsoLayer.obj
+         Debug\IsometricTileEngine.obj
+         Debug\XDL_Keyboard.obj
+         Debug\XDL_Layer.obj
+         Debug\Level1.obj
+         Debug\XDL_Main.obj
+         Debug\XDL_PathFinder.obj
+         Debug\XDL_Storage.obj
+         Debug\Player.obj
+         Debug\XDL_Scene.obj
+         Debug\XDL_SceneManager.obj
+         Debug\XDL_Sprite.obj
+         Debug\XDL_Tile.obj
+         Debug\XDL_TileEngine.obj
+         Debug\tinyxml2.obj
+         Debug\XDL_GameObject.obj
+         Joes_SDL_Framework.vcxproj -> C:\Users\Joe\Documents\Visual Studio 2012\Projects\PathFinding-Joseph_Bentley\Debug\Joes_SDL_Framework.exe
+     1>Done Building Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\PathFinding-Joseph_Bentley\Joes_SDL_Framework\Joes_SDL_Framework.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.68

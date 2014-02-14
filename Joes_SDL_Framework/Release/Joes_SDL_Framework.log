@@ -1,0 +1,138 @@
+﻿Build started 11/27/2013 9:47:38 AM.
+     1>Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\TMX_Assignment_Joseph_Bentley - With Pathfinding\Joes_SDL_Framework\Joes_SDL_Framework.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BasicMazeAStar.cpp BatchDrawer.cpp Camera.cpp ContentManager.cpp Desert.cpp Game.cpp IsoLayer.cpp IsometricTileEngine.cpp Keyboard.cpp Layer.cpp MyMain.cpp PathFinder.cpp Player.cpp PokemonTown.cpp Scene.cpp SceneManager.cpp Sprite.cpp Swamp.cpp Tile.cpp TileEngine.cpp tinyxml2.cpp VariableTerrain.cpp
+         BasicMazeAStar.cpp
+     1>BasicMazeAStar.cpp(20): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+     1>BasicMazeAStar.cpp(42): warning C4018: '<' : signed/unsigned mismatch
+     1>BasicMazeAStar.cpp(48): warning C4018: '<' : signed/unsigned mismatch
+     1>BasicMazeAStar.cpp(75): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>BasicMazeAStar.cpp(79): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>BasicMazeAStar.cpp(96): warning C4018: '<' : signed/unsigned mismatch
+         BatchDrawer.cpp
+     1>BatchDrawer.cpp(69): warning C4018: '<' : signed/unsigned mismatch
+     1>BatchDrawer.cpp(78): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>BatchDrawer.cpp(79): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         Camera.cpp
+         ContentManager.cpp
+         Desert.cpp
+     1>Desert.cpp(19): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Desert.cpp(52): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>Desert.cpp(56): warning C4305: '+=' : truncation from 'double' to 'float'
+         Game.cpp
+         IsoLayer.cpp
+     1>IsoLayer.cpp(41): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>IsoLayer.cpp(42): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>IsoLayer.cpp(48): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>IsoLayer.cpp(67): warning C4018: '<' : signed/unsigned mismatch
+     1>IsoLayer.cpp(75): warning C4018: '<' : signed/unsigned mismatch
+         IsometricTileEngine.cpp
+     1>IsometricTileEngine.cpp(77): warning C4018: '<' : signed/unsigned mismatch
+     1>IsometricTileEngine.cpp(85): warning C4018: '<' : signed/unsigned mismatch
+         Keyboard.cpp
+     1>Keyboard.cpp(31): warning C4800: 'const Uint8' : forcing value to bool 'true' or 'false' (performance warning)
+         Layer.cpp
+     1>Layer.cpp(72): warning C4018: '<' : signed/unsigned mismatch
+     1>Layer.cpp(80): warning C4018: '<' : signed/unsigned mismatch
+         MyMain.cpp
+         PathFinder.cpp
+     1>PathFinder.cpp(140): warning C4018: '>=' : signed/unsigned mismatch
+     1>PathFinder.cpp(167): warning C4018: '<' : signed/unsigned mismatch
+     1>PathFinder.cpp(171): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>PathFinder.cpp(233): warning C4101: 'oor' : unreferenced local variable
+     1>PathFinder.cpp(242): warning C4244: 'return' : conversion from 'double' to 'int', possible loss of data
+     1>PathFinder.cpp(246): warning C4018: '<' : signed/unsigned mismatch
+     1>PathFinder.cpp(266): warning C4244: 'return' : conversion from 'const int' to 'float', possible loss of data
+         Player.cpp
+     1>Player.cpp(5): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Player.cpp(68): warning C4018: '>=' : signed/unsigned mismatch
+     1>Player.cpp(77): warning C4244: 'return' : conversion from 'double' to 'int', possible loss of data
+     1>Player.cpp(87): warning C4018: '<' : signed/unsigned mismatch
+     1>Player.cpp(89): warning C4018: '<' : signed/unsigned mismatch
+         PokemonTown.cpp
+     1>PokemonTown.cpp(17): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>PokemonTown.cpp(52): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>PokemonTown.cpp(56): warning C4305: '+=' : truncation from 'double' to 'float'
+         Scene.cpp
+         SceneManager.cpp
+         Sprite.cpp
+     1>Sprite.cpp(50): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Sprite.cpp(51): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Sprite.cpp(53): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Sprite.cpp(54): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Sprite.cpp(56): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(57): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(58): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(59): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(61): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(62): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(63): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(64): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(66): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(67): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(68): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(69): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(71): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(72): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(73): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(74): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(108): warning C4244: 'return' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(235): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(236): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(237): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(238): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(239): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(240): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(241): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(242): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Sprite.cpp(247): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+     1>Sprite.cpp(248): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+         Swamp.cpp
+     1>Swamp.cpp(16): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Swamp.cpp(53): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>Swamp.cpp(57): warning C4305: '+=' : truncation from 'double' to 'float'
+         Tile.cpp
+     1>Tile.cpp(5): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         TileEngine.cpp
+     1>TileEngine.cpp(181): warning C4018: '<' : signed/unsigned mismatch
+     1>TileEngine.cpp(189): warning C4018: '<' : signed/unsigned mismatch
+         Compiling...
+         tinyxml2.cpp
+         VariableTerrain.cpp
+     1>VariableTerrain.cpp(23): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+     1>VariableTerrain.cpp(47): warning C4018: '<' : signed/unsigned mismatch
+     1>VariableTerrain.cpp(53): warning C4018: '<' : signed/unsigned mismatch
+     1>VariableTerrain.cpp(80): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>VariableTerrain.cpp(84): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>VariableTerrain.cpp(101): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\TMX_Assignment_Joseph_Bentley - With Pathfinding\Release\Joes_SDL_Framework.exe" /INCREMENTAL:NO /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\TMX_Assignment_Joseph_Bentley - With Pathfinding\Release\Joes_SDL_Framework.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\TMX_Assignment_Joseph_Bentley - With Pathfinding\Release\Joes_SDL_Framework.lib" /MACHINE:X86 /SAFESEH Release\BasicMazeAStar.obj
+         Release\BatchDrawer.obj
+         Release\Camera.obj
+         Release\ContentManager.obj
+         Release\Desert.obj
+         Release\Game.obj
+         Release\IsoLayer.obj
+         Release\IsometricTileEngine.obj
+         Release\Keyboard.obj
+         Release\Layer.obj
+         Release\MyMain.obj
+         Release\PathFinder.obj
+         Release\Player.obj
+         Release\PokemonTown.obj
+         Release\Scene.obj
+         Release\SceneManager.obj
+         Release\Sprite.obj
+         Release\Swamp.obj
+         Release\Tile.obj
+         Release\TileEngine.obj
+         Release\tinyxml2.obj
+         Release\VariableTerrain.obj
+         Generating code
+         Finished generating code
+         Joes_SDL_Framework.vcxproj -> C:\Users\Joe\Documents\Visual Studio 2012\Projects\TMX_Assignment_Joseph_Bentley - With Pathfinding\Release\Joes_SDL_Framework.exe
+     1>Done Building Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\TMX_Assignment_Joseph_Bentley - With Pathfinding\Joes_SDL_Framework\Joes_SDL_Framework.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:31.02
