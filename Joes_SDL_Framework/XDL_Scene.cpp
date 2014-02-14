@@ -35,7 +35,7 @@ void XDL_Scene:: Draw()
 	for(map<string, XDL_GameObject*>::const_iterator i = _gameObjectsInScene.begin(); i != _gameObjectsInScene.end(); ++i)
 	{
 		_temp = i->second;
-		_temp->Draw();
+		_spriteBatch->Draw(_temp);
 	}
 	
 }

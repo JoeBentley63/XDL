@@ -5,13 +5,16 @@
 
 class XDL_Keyboard
 {
+	private:
+	static XDL_Keyboard* _me;
+	const Uint8* keystate;
+
 public:
 	XDL_Keyboard(void);
 	~XDL_Keyboard(void);
 	static XDL_Keyboard* GetInstance();
 	bool IsKeyDown(int _key);
 	bool IsKeyUp(int _key);
-	
 	typedef enum
 	{
 		UNKNOWN = 0,
@@ -257,10 +260,6 @@ public:
 		APP2 = 284,
 		SDL_NUM_SCANCODES = 512 
 	} XDL_Keys;
-
-private:
-	static XDL_Keyboard* _me;
-	const Uint8* keystate;
 };
 
 #endif

@@ -38,7 +38,6 @@ bool XDL_Game :: Init()
 	_windowsBounds->w = SCREEN_WIDTH;
 	_windowsBounds->x = 0;
 	_windowsBounds->y = 0;
-	DEBUG_MSG("Start");
 	_sceneManager = XDL_SceneManager::GetInstance();
 	_sceneManager->ChangeScene(new Level1(_renderer),"level1");
 	

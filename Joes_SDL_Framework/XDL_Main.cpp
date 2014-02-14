@@ -19,7 +19,6 @@ int main( int argc, char* args[])
 	
 	while(_running)
 	{
-		DEBUG_MSG("running");
 		_game->Update();
 		_game->Render();
 

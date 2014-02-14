@@ -3,9 +3,9 @@
 XDL_Sprite* _sprite;
 Level1::Level1(SDL_Renderer* _renderer)
 {
-	AddGameObjectToScene(_sprite = new XDL_Sprite("Face.bmp",0,0,128,128,_renderer),"player");
-
 	XDL_Scene::Init(_renderer);
+
+	AddGameObjectToScene(new XDL_Sprite("Face.bmp",0,0,128,128,_renderer),"player");
 }
 
 Level1::~Level1(void)
@@ -14,6 +14,10 @@ Level1::~Level1(void)
 
 void Level1::Update()
 {
+	if(_keyboard->IsKeyDown(_keyboard->UP))
+	{
+
+	}
 	XDL_Scene::Update();
 }
 

@@ -2,6 +2,7 @@
 #include "XDL_Keyboard.h"
 
 XDL_Keyboard* XDL_Keyboard::_me;
+
 XDL_Keyboard::XDL_Keyboard(void)
 {
 	
@@ -14,6 +15,7 @@ XDL_Keyboard::~XDL_Keyboard(void)
 
 XDL_Keyboard* XDL_Keyboard::GetInstance()
 {
+
 	if(_me == NULL)
 	{
 		_me = new XDL_Keyboard();
