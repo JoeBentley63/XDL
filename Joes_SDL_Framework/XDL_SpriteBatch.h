@@ -11,6 +11,13 @@ using namespace std;
 class XDL_SpriteBatch
 {
 public:
+	typedef enum
+	{
+		FRONTTOBACK,//Larger Z means drawn at the back.
+		BACKTOFRONT,//Smaller Z's drawn in the back, bigger Z drawn in front
+		UNSORTED//no sorting, drawn in same order as they are added
+	}DRAWMODES;
+
 	XDL_SpriteBatch(void);
 	~XDL_SpriteBatch(void);
 	static XDL_SpriteBatch* GetInstance();
@@ -19,7 +26,8 @@ public:
 	void Draw(XDL_GameObject* _me);
 	void End();
 	static SDL_Texture* _drawTexture;
-
+	void SetDrawMode(DRAWMODES _drawmode);
+	int GetDrawMode();
 private:
 	SDL_Rect* _drawTextureBounds;
 	SDL_Texture* _clearTexture;
@@ -27,6 +35,7 @@ private:
 	vector<XDL_GameObject*> _thingsToBeDrawn;
 	static XDL_SpriteBatch* _me;
 	XDL_Camera* _camera;
+	DRAWMODES _currentDrawMode;
 };
 
 #endif

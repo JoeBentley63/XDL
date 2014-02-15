@@ -32,7 +32,7 @@ void XDL_SpriteBatch::Init(SDL_Renderer* _renderer)//an init function, that is o
 	_drawTextureBounds->y = 0;
 	_drawTextureBounds->w = XDL_Game::SCREEN_WIDTH*4;//make the world big enough
 	_drawTextureBounds->h = XDL_Game::SCREEN_HEIGHT*4;
-
+	_currentDrawMode = BACKTOFRONT;
 }
 XDL_SpriteBatch::~XDL_SpriteBatch(void)
 {
@@ -65,10 +65,29 @@ int compareZ(const void* a, const void* b)   // comparison function to sort item
 }
 void XDL_SpriteBatch::End()//End Draws all sprites that need to be drawn. TODO : Sort sprites by Z value.
 {
-	//std::qsort(&_thingsToBeDrawn[0],_thingsToBeDrawn.size,sizeof(XDL_Sprite),&compareZ);
-	for(int i = 0; i < _thingsToBeDrawn.size(); i ++) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+	if(_currentDrawMode == BACKTOFRONT)
 	{
-		_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+		std::qsort(&_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
+		for(int i = 0; i < _thingsToBeDrawn.size(); i ++) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+		{
+			_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+		}
+	}
+	else if(_currentDrawMode == FRONTTOBACK)
+	{
+		std::qsort(&_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
+		for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+		{
+			_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+		}
+	}
+	else if(_currentDrawMode == UNSORTED)
+	{
+		//dont sort, just draw.
+		for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+		{
+			_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+		}
 	}
 	SDL_SetRenderTarget(_renderer, NULL);//then draw the texture to the screen. this texture can then be scaled, rotated etc.
 
@@ -81,3 +100,12 @@ void XDL_SpriteBatch::End()//End Draws all sprites that need to be drawn. TODO :
 	SDL_RenderPresent(_renderer);
 }
 
+void XDL_SpriteBatch::SetDrawMode(DRAWMODES _drawmode)
+{
+	this->_currentDrawMode = _drawmode;
+}
+
+int XDL_SpriteBatch::GetDrawMode()
+{
+	return _currentDrawMode;
+}
