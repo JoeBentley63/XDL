@@ -1,3 +1,9 @@
+//!XDL_Main	
+/*!
+Runs game loop and enforces FPS
+*/
+
+
 #include <stdlib.h>
 #include "XDL_Game.h"
 #include "XDL_Debug.h"

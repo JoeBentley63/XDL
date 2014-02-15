@@ -1,9 +1,40 @@
-﻿Build started 2/14/2014 7:10:24 PM.
+﻿Build started 2/15/2014 2:33:31 PM.
      1>Project "C:\Users\Joe\Documents\GitHub\XDL\Joes_SDL_Framework\Joes_SDL_Framework.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt XDL_Keyboard.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Level1.cpp Player.cpp XDL_Game.cpp XDL_Keyboard.cpp XDL_Layer.cpp XDL_PathFinder.cpp XDL_Scene.cpp XDL_SceneManager.cpp XDL_TileEngine.cpp
+         Level1.cpp
+         Generating Code...
+         Compiling...
+         XDL_SceneManager.cpp
+         XDL_Scene.cpp
          XDL_Keyboard.cpp
-     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_keyboard.cpp(32): warning C4800: 'const Uint8' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_keyboard.cpp(33): warning C4800: 'const Uint8' : forcing value to bool 'true' or 'false' (performance warning)
+         XDL_Game.cpp
+         Generating Code...
+         Compiling...
+         Player.cpp
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\player.cpp(7): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\player.cpp(84): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\player.cpp(93): warning C4244: 'return' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\player.cpp(103): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\player.cpp(105): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Compiling...
+         XDL_TileEngine.cpp
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_tileengine.cpp(181): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_tileengine.cpp(189): warning C4018: '<' : signed/unsigned mismatch
+         XDL_PathFinder.cpp
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_pathfinder.cpp(140): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_pathfinder.cpp(167): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_pathfinder.cpp(171): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_pathfinder.cpp(232): warning C4101: 'oor' : unreferenced local variable
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_pathfinder.cpp(240): warning C4244: 'return' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_pathfinder.cpp(244): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_pathfinder.cpp(264): warning C4244: 'return' : conversion from 'const int' to 'float', possible loss of data
+         XDL_Layer.cpp
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_layer.cpp(72): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\xdl_layer.cpp(80): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.lib" /MACHINE:X86 Debug\XDL_SpriteBatch.obj
          Debug\XDL_Camera.obj
@@ -30,4 +61,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:24.97

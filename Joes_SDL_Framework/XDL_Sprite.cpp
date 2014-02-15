@@ -3,13 +3,13 @@
 #include "XDL_SpriteBatch.h"
 
 //TODO, Make overloads for PNG
-//constructor for a bmp file, where we are going to draw the entire image
+/**constructor for a bmp file, where we are going to draw the entire image*/
 XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,SDL_Renderer* _renderer)
 {
 	Init(_asset,_x,_y,_height,_width,_renderer);
 }
 
-//constructor for use with tilesheets.
+/**constructor for use with tilesheets.*/
 XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,SDL_Renderer* _renderer,SDL_Rect _sourceRect)
 {
 	Init(_asset,_x,_y,_height,_width,_renderer);
@@ -19,7 +19,7 @@ XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,SD
 	_currentFrame = 0;
 	
 }
-//constructor for use with animation.
+/**constructor for use with animation.*/
 XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,SDL_Renderer* _renderer,SDL_Rect _sourceRect,int _numFrames)
 {
 	Init(_asset,_x,_y,_height,_width,_renderer);

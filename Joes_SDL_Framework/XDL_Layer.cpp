@@ -1,6 +1,4 @@
-/***************************************************************
-Joseph Bentley P10011026 : TMX Reader Assignment
-****************************************************************/
+
 
 //XDL_Layer class. A layer could be described as a stupider tile engine, or a mini-tile engine, as it doesnt have all the logic a normal on has.
 //not that I'm going to question the intelligence of a layer...

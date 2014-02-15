@@ -1,3 +1,8 @@
+//! XDL_Pathfinder
+/*!
+Finds path between 2 points in an XDL_TileEngine
+\sa XDL_TileEngine
+*/
 #ifndef _PATH_FINDER_H
 #define _PATH_FINDER_H
 #include "XDL_Tile.h"
@@ -20,17 +25,18 @@ public:
 	float GetWeight(int _gid);
 	void TryGetPath(int _startX,int _startY,int _endX,int _endY,XDL_Sprite* _sprite);
 	XDL_Sprite* _sprite;
-	int _startX;
-	int _startY;
-	int _endX;
-	int _endY;
-	static const int _WALKABLE = 1;
-	static const int _NOT_WALKABLE = 99;
+	
+	static const int _WALKABLE = 1;/*!<Const for walkable tile */
+	static const int _NOT_WALKABLE = 99;/*!<Const for non-walkable tile */
 private:
 	bool _free;
 	static XDL_PathFinder* _me;
 	SDL_Point _startPoint;
 	SDL_Point _endPoint;
+	int _startX;/*!<StartPointX*/
+	int _startY;/*!<StartPointY*/
+	int _endX;/*!<endPointX*/
+	int _endY;/*!<endPointY*/
 	vector<SDL_Point*>* _finalPath;
 	vector<XDL_Tile*>* _openList;
 	vector<XDL_Tile*>* _closedList;
