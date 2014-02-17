@@ -1,0 +1,116 @@
+\hypertarget{class_x_d_l___camera}{\section{X\-D\-L\-\_\-\-Camera Class Reference}
+\label{class_x_d_l___camera}\index{X\-D\-L\-\_\-\-Camera@{X\-D\-L\-\_\-\-Camera}}
+}
+
+
+X\-D\-L\-\_\-\-Camaera. \mbox{[}Singleton\mbox{]}.  
+
+
+
+
+{\ttfamily \#include $<$X\-D\-L\-\_\-\-Camera.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_x_d_l___camera_aeca108c3495c9fca85f150932ee77eae}{$\sim$\-X\-D\-L\-\_\-\-Camera} (void)
+\item 
+void \hyperlink{class_x_d_l___camera_a4a973ddf2f7ab261f8bbaec4a911ba5e}{Set\-Zoom} (float \-\_\-zoom)
+\item 
+float \hyperlink{class_x_d_l___camera_afb54ec9b1efa5cf23faea192a63d8d44}{Get\-Current\-Zoom} ()
+\item 
+void \hyperlink{class_x_d_l___camera_a95e3e2c8dbbcaba8d9a6f572f1c0919d}{Set\-Position} (int \-\_\-x, int \-\_\-y)
+\item 
+S\-D\-L\-\_\-\-Point $\ast$ \hyperlink{class_x_d_l___camera_aaf2329b5bed3bdd0f679f3ce39d7aa89}{Get\-Position} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_x_d_l___camera}{X\-D\-L\-\_\-\-Camera} $\ast$ \hyperlink{class_x_d_l___camera_af972e4ad4d82db12161f0b3c0234f279}{Get\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+X\-D\-L\-\_\-\-Camaera. \mbox{[}Singleton\mbox{]}. 
+
+Not technically a camera, but a structure to control the scale and position of our drawing surface. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_x_d_l___camera_aeca108c3495c9fca85f150932ee77eae}{\index{X\-D\-L\-\_\-\-Camera@{X\-D\-L\-\_\-\-Camera}!$\sim$\-X\-D\-L\-\_\-\-Camera@{$\sim$\-X\-D\-L\-\_\-\-Camera}}
+\index{$\sim$\-X\-D\-L\-\_\-\-Camera@{$\sim$\-X\-D\-L\-\_\-\-Camera}!XDL_Camera@{X\-D\-L\-\_\-\-Camera}}
+\subsubsection[{$\sim$\-X\-D\-L\-\_\-\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Camera\-::$\sim$\-X\-D\-L\-\_\-\-Camera (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___camera_aeca108c3495c9fca85f150932ee77eae}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_x_d_l___camera_afb54ec9b1efa5cf23faea192a63d8d44}{\index{X\-D\-L\-\_\-\-Camera@{X\-D\-L\-\_\-\-Camera}!Get\-Current\-Zoom@{Get\-Current\-Zoom}}
+\index{Get\-Current\-Zoom@{Get\-Current\-Zoom}!XDL_Camera@{X\-D\-L\-\_\-\-Camera}}
+\subsubsection[{Get\-Current\-Zoom}]{\setlength{\rightskip}{0pt plus 5cm}float X\-D\-L\-\_\-\-Camera\-::\-Get\-Current\-Zoom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___camera_afb54ec9b1efa5cf23faea192a63d8d44}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-zoom} & Zoom level, set it to 1 as default.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+current Zoom level as a float.\-Getter for Zoom 
+\end{DoxyReturn}
+\hypertarget{class_x_d_l___camera_af972e4ad4d82db12161f0b3c0234f279}{\index{X\-D\-L\-\_\-\-Camera@{X\-D\-L\-\_\-\-Camera}!Get\-Instance@{Get\-Instance}}
+\index{Get\-Instance@{Get\-Instance}!XDL_Camera@{X\-D\-L\-\_\-\-Camera}}
+\subsubsection[{Get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Camera} $\ast$ X\-D\-L\-\_\-\-Camera\-::\-Get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_x_d_l___camera_af972e4ad4d82db12161f0b3c0234f279}
+\begin{DoxyReturn}{Returns}
+pointer to the camera instance.\-Creates one if none exists\mbox{[}Lazy\-Loading\mbox{]}Get Instance, which will return a pointer to our camera 
+\end{DoxyReturn}
+\hypertarget{class_x_d_l___camera_aaf2329b5bed3bdd0f679f3ce39d7aa89}{\index{X\-D\-L\-\_\-\-Camera@{X\-D\-L\-\_\-\-Camera}!Get\-Position@{Get\-Position}}
+\index{Get\-Position@{Get\-Position}!XDL_Camera@{X\-D\-L\-\_\-\-Camera}}
+\subsubsection[{Get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Point $\ast$ X\-D\-L\-\_\-\-Camera\-::\-Get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___camera_aaf2329b5bed3bdd0f679f3ce39d7aa89}
+\begin{DoxyReturn}{Returns}
+pointer to an S\-D\-L\-\_\-\-Point, which contains the X and Y position of the world.\-Getter for position 
+\end{DoxyReturn}
+\hypertarget{class_x_d_l___camera_a95e3e2c8dbbcaba8d9a6f572f1c0919d}{\index{X\-D\-L\-\_\-\-Camera@{X\-D\-L\-\_\-\-Camera}!Set\-Position@{Set\-Position}}
+\index{Set\-Position@{Set\-Position}!XDL_Camera@{X\-D\-L\-\_\-\-Camera}}
+\subsubsection[{Set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Camera\-::\-Set\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-x, }
+\item[{int}]{\-\_\-y}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___camera_a95e3e2c8dbbcaba8d9a6f572f1c0919d}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-x} & X position of the world. \\
+\hline
+{\em \-\_\-y} & Y position of the world.\-Set the worlds position relative to the window. By default its (0,0), which means anything left/above of the screen will never be drawn. Because of this, it might not be a bad idea to move it \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_d_l___camera_a4a973ddf2f7ab261f8bbaec4a911ba5e}{\index{X\-D\-L\-\_\-\-Camera@{X\-D\-L\-\_\-\-Camera}!Set\-Zoom@{Set\-Zoom}}
+\index{Set\-Zoom@{Set\-Zoom}!XDL_Camera@{X\-D\-L\-\_\-\-Camera}}
+\subsubsection[{Set\-Zoom}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Camera\-::\-Set\-Zoom (
+\begin{DoxyParamCaption}
+\item[{float}]{\-\_\-zoom}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___camera_a4a973ddf2f7ab261f8bbaec4a911ba5e}
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-zoom} & Zoom level, set it to 1 as default.\-Sets the zoom of our world, in reality, it sets the scale of our drawing surface, after all drawing has occurred \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___camera_8h}{X\-D\-L\-\_\-\-Camera.\-h}\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___camera_8cpp}{X\-D\-L\-\_\-\-Camera.\-cpp}\end{DoxyCompactItemize}

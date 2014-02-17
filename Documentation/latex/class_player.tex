@@ -1,0 +1,132 @@
+\hypertarget{class_player}{\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+}
+
+
+{\ttfamily \#include $<$Player.\-h$>$}
+
+Inheritance diagram for Player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_a6441995ccc3600a6d8351abbbb5968e2}{Player} (S\-D\-L\-\_\-\-Renderer $\ast$\hyperlink{class_x_d_l___sprite_aedcf07ef73df095eb6cd9843870cd002}{\-\_\-renderer}, char $\ast$\-\_\-asset, S\-D\-L\-\_\-\-Rect \-\_\-rect, int \hyperlink{class_x_d_l___sprite_ac7671bf39741642f55368690a562fff8}{\-\_\-pos\-X}, int \hyperlink{class_x_d_l___sprite_a2e69aab364da9c9e16ae398838679065}{\-\_\-pos\-Y}, \hyperlink{class_x_d_l___path_finder}{X\-D\-L\-\_\-\-Path\-Finder} $\ast$\-\_\-path\-Finder, \hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$\-\_\-target, int \-\_\-r, int \-\_\-g, int \-\_\-b, int \-\_\-a)
+\item 
+virtual \hyperlink{class_player_a949762ad57300f070d83ec877ec6e907}{$\sim$\-Player} (void)
+\item 
+void \hyperlink{class_player_a456327628e5ee73666add176752b36fe}{Stop\-Following\-Path} ()
+\item 
+void \hyperlink{class_player_a7a8ac5183d635f6f49cc1bdf285953c2}{Follow\-Path} (vector$<$ S\-D\-L\-\_\-\-Point $\ast$ $>$ $\ast$\-\_\-path)
+\item 
+int \hyperlink{class_player_ac7e6dc6806a9f5ddae4f5a015f8cac27}{Distance\-From} (int \-\_\-start\-X, int \-\_\-start\-Y, int \-\_\-end\-X, int \-\_\-end\-Y)
+\item 
+void \hyperlink{class_player_a05b60cac1922c5be5c1be16baffa4497}{Update} ()
+\item 
+void \hyperlink{class_player_a00ae3ebe88af8f9cfabd819176516a73}{Draw} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_player_a8e8d189f49c664445fba0976115bb030}{\-\_\-follow\-Path}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_player_a39c12b1c083f02ba270fd7c2c4d48e42}{\-\_\-locked}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_a6441995ccc3600a6d8351abbbb5968e2}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Renderer $\ast$}]{\-\_\-renderer, }
+\item[{char $\ast$}]{\-\_\-asset, }
+\item[{S\-D\-L\-\_\-\-Rect}]{\-\_\-rect, }
+\item[{int}]{\-\_\-pos\-X, }
+\item[{int}]{\-\_\-pos\-Y, }
+\item[{{\bf X\-D\-L\-\_\-\-Path\-Finder} $\ast$}]{\-\_\-path\-Finder, }
+\item[{{\bf X\-D\-L\-\_\-\-Sprite} $\ast$}]{\-\_\-target, }
+\item[{int}]{\-\_\-r, }
+\item[{int}]{\-\_\-g, }
+\item[{int}]{\-\_\-b, }
+\item[{int}]{\-\_\-a}
+\end{DoxyParamCaption}
+)}}\label{class_player_a6441995ccc3600a6d8351abbbb5968e2}
+\hypertarget{class_player_a949762ad57300f070d83ec877ec6e907}{\index{Player@{Player}!$\sim$\-Player@{$\sim$\-Player}}
+\index{$\sim$\-Player@{$\sim$\-Player}!Player@{Player}}
+\subsubsection[{$\sim$\-Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::$\sim$\-Player (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a949762ad57300f070d83ec877ec6e907}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_ac7e6dc6806a9f5ddae4f5a015f8cac27}{\index{Player@{Player}!Distance\-From@{Distance\-From}}
+\index{Distance\-From@{Distance\-From}!Player@{Player}}
+\subsubsection[{Distance\-From}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::\-Distance\-From (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-start\-X, }
+\item[{int}]{\-\_\-start\-Y, }
+\item[{int}]{\-\_\-end\-X, }
+\item[{int}]{\-\_\-end\-Y}
+\end{DoxyParamCaption}
+)}}\label{class_player_ac7e6dc6806a9f5ddae4f5a015f8cac27}
+\hypertarget{class_player_a00ae3ebe88af8f9cfabd819176516a73}{\index{Player@{Player}!Draw@{Draw}}
+\index{Draw@{Draw}!Player@{Player}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::\-Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a00ae3ebe88af8f9cfabd819176516a73}
+virtual function so every object that is added to the scene will get auto-\/updated 
+
+Reimplemented from \hyperlink{class_x_d_l___sprite_a5b1c9b886c59f06cfbb2c428b3f58e86}{X\-D\-L\-\_\-\-Sprite}.
+
+\hypertarget{class_player_a7a8ac5183d635f6f49cc1bdf285953c2}{\index{Player@{Player}!Follow\-Path@{Follow\-Path}}
+\index{Follow\-Path@{Follow\-Path}!Player@{Player}}
+\subsubsection[{Follow\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::\-Follow\-Path (
+\begin{DoxyParamCaption}
+\item[{vector$<$ S\-D\-L\-\_\-\-Point $\ast$ $>$ $\ast$}]{\-\_\-path}
+\end{DoxyParamCaption}
+)}}\label{class_player_a7a8ac5183d635f6f49cc1bdf285953c2}
+\hypertarget{class_player_a456327628e5ee73666add176752b36fe}{\index{Player@{Player}!Stop\-Following\-Path@{Stop\-Following\-Path}}
+\index{Stop\-Following\-Path@{Stop\-Following\-Path}!Player@{Player}}
+\subsubsection[{Stop\-Following\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::\-Stop\-Following\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_a456327628e5ee73666add176752b36fe}
+\hypertarget{class_player_a05b60cac1922c5be5c1be16baffa4497}{\index{Player@{Player}!Update@{Update}}
+\index{Update@{Update}!Player@{Player}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a05b60cac1922c5be5c1be16baffa4497}
+
+
+Reimplemented from \hyperlink{class_x_d_l___sprite_a1ecd6d713ce320cd1d49dceea854e0d2}{X\-D\-L\-\_\-\-Sprite}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_player_a8e8d189f49c664445fba0976115bb030}{\index{Player@{Player}!\-\_\-follow\-Path@{\-\_\-follow\-Path}}
+\index{\-\_\-follow\-Path@{\-\_\-follow\-Path}!Player@{Player}}
+\subsubsection[{\-\_\-follow\-Path}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::\-\_\-follow\-Path}}\label{class_player_a8e8d189f49c664445fba0976115bb030}
+\hypertarget{class_player_a39c12b1c083f02ba270fd7c2c4d48e42}{\index{Player@{Player}!\-\_\-locked@{\-\_\-locked}}
+\index{\-\_\-locked@{\-\_\-locked}!Player@{Player}}
+\subsubsection[{\-\_\-locked}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::\-\_\-locked\hspace{0.3cm}{\ttfamily [static]}}}\label{class_player_a39c12b1c083f02ba270fd7c2c4d48e42}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_player_8h}{Player.\-h}\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_player_8cpp}{Player.\-cpp}\end{DoxyCompactItemize}

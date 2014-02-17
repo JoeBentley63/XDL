@@ -1,0 +1,27 @@
+var annotated =
+[
+    [ "tinyxml2", "namespacetinyxml2.html", "namespacetinyxml2" ],
+    [ "BasicMazeAStar", "class_basic_maze_a_star.html", "class_basic_maze_a_star" ],
+    [ "Desert", "class_desert.html", "class_desert" ],
+    [ "IsoLayer", "class_iso_layer.html", "class_iso_layer" ],
+    [ "IsometricTileEngine", "class_isometric_tile_engine.html", "class_isometric_tile_engine" ],
+    [ "Level1", "class_level1.html", "class_level1" ],
+    [ "Player", "class_player.html", "class_player" ],
+    [ "PokemonTown", "class_pokemon_town.html", "class_pokemon_town" ],
+    [ "Swamp", "class_swamp.html", "class_swamp" ],
+    [ "VariableTerrain", "class_variable_terrain.html", "class_variable_terrain" ],
+    [ "XDL_Camera", "class_x_d_l___camera.html", "class_x_d_l___camera" ],
+    [ "XDL_ContentManager", "class_x_d_l___content_manager.html", "class_x_d_l___content_manager" ],
+    [ "XDL_Game", "class_x_d_l___game.html", "class_x_d_l___game" ],
+    [ "XDL_GameObject", "class_x_d_l___game_object.html", "class_x_d_l___game_object" ],
+    [ "XDL_Keyboard", "class_x_d_l___keyboard.html", "class_x_d_l___keyboard" ],
+    [ "XDL_Layer", "class_x_d_l___layer.html", "class_x_d_l___layer" ],
+    [ "XDL_PathFinder", "class_x_d_l___path_finder.html", "class_x_d_l___path_finder" ],
+    [ "XDL_Scene", "class_x_d_l___scene.html", "class_x_d_l___scene" ],
+    [ "XDL_SceneManager", "class_x_d_l___scene_manager.html", "class_x_d_l___scene_manager" ],
+    [ "XDL_Sprite", "class_x_d_l___sprite.html", "class_x_d_l___sprite" ],
+    [ "XDL_SpriteBatch", "class_x_d_l___sprite_batch.html", "class_x_d_l___sprite_batch" ],
+    [ "XDL_Storage", "class_x_d_l___storage.html", "class_x_d_l___storage" ],
+    [ "XDL_Tile", "class_x_d_l___tile.html", "class_x_d_l___tile" ],
+    [ "XDL_TileEngine", "class_x_d_l___tile_engine.html", "class_x_d_l___tile_engine" ]
+];
