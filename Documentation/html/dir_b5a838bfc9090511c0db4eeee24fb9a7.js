@@ -51,6 +51,10 @@ var dir_b5a838bfc9090511c0db4eeee24fb9a7 =
     [ "XDL_GameObject.h", "_x_d_l___game_object_8h.html", [
       [ "XDL_GameObject", "class_x_d_l___game_object.html", "class_x_d_l___game_object" ]
     ] ],
+    [ "XDL_Input.cpp", "_x_d_l___input_8cpp.html", null ],
+    [ "XDL_Input.h", "_x_d_l___input_8h.html", [
+      [ "XDL_Input", "class_x_d_l___input.html", "class_x_d_l___input" ]
+    ] ],
     [ "XDL_Keyboard.cpp", "_x_d_l___keyboard_8cpp.html", null ],
     [ "XDL_Keyboard.h", "_x_d_l___keyboard_8h.html", [
       [ "XDL_Keyboard", "class_x_d_l___keyboard.html", "class_x_d_l___keyboard" ]

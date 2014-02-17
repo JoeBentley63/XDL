@@ -1,5 +1,17 @@
 var NAVTREEINDEX2 =
 {
+"classtinyxml2_1_1_x_m_l_handle.html#a31a0d5d060292bec5df2b2efe2eca228":[1,0,0,15,11],
+"classtinyxml2_1_1_x_m_l_handle.html#a4073e768ebc434b2605343b709a9a554":[1,0,0,15,6],
+"classtinyxml2_1_1_x_m_l_handle.html#a428374e756f4db4cbc287fec64eae02c":[1,0,0,15,10],
+"classtinyxml2_1_1_x_m_l_handle.html#a447c9b284cfcd5518f9e320ba14b9c46":[1,0,0,15,8],
+"classtinyxml2_1_1_x_m_l_handle.html#a536447dc7f54c0cd11e031dad94795ae":[1,0,0,15,3],
+"classtinyxml2_1_1_x_m_l_handle.html#a5e73ed8f3f6f9619d5a8bb1862c47d99":[1,0,0,15,13],
+"classtinyxml2_1_1_x_m_l_handle.html#a6ab9e8cbfb41417246e5657e3842c62a":[1,0,0,15,15],
+"classtinyxml2_1_1_x_m_l_handle.html#a75b908322bb4b83be3281b6845252b20":[1,0,0,15,9],
+"classtinyxml2_1_1_x_m_l_handle.html#a99edff695a3cd3feff8a329189140a33":[1,0,0,15,4],
+"classtinyxml2_1_1_x_m_l_handle.html#a9c240a35c18f053509b4b97ddccd9793":[1,0,0,15,0],
+"classtinyxml2_1_1_x_m_l_handle.html#a9d09f04435f0f2f7d0816b0198d0517b":[1,0,0,15,5],
+"classtinyxml2_1_1_x_m_l_handle.html#aa2edbc1c0d3e3e8259bd98de7f1cf500":[1,0,0,15,1],
 "classtinyxml2_1_1_x_m_l_handle.html#aa387368a1ad8d843a9f12df863d298de":[1,0,0,15,16],
 "classtinyxml2_1_1_x_m_l_handle.html#aad2eccc7c7c7b18145877c978c3850b5":[1,0,0,15,7],
 "classtinyxml2_1_1_x_m_l_handle.html#afd8e01e6018c07347b8e6d80272466aa":[1,0,0,15,2],
@@ -198,8 +210,8 @@ var NAVTREEINDEX2 =
 "namespacemembers_enum.html":[0,1,1],
 "namespacemembers_eval.html":[0,1,2],
 "namespaces.html":[0,0],
-"namespacetinyxml2.html":[1,0,0],
 "namespacetinyxml2.html":[0,0,0],
+"namespacetinyxml2.html":[1,0,0],
 "pages.html":[],
 "structtinyxml2_1_1_entity.html":[1,0,0,0],
 "structtinyxml2_1_1_entity.html#a25e2b57cb59cb4fa68f283d7cb570f21":[1,0,0,0,0],
@@ -237,6 +249,5 @@ var NAVTREEINDEX2 =
 "tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5a9a4a309029a6f5e636e20ef5e0b65136":[2,0,0,14,21,1],
 "tinyxml2_8h.html#a8953517b8490d756ad0bfef40fe5811f":[2,0,0,14,17],
 "tinyxml2_8h.html#a96f54d7c855ad92e705510904a040393":[2,0,0,14,19],
-"tinyxml2_8h.html#afc6433f9b56e4f18833089b1df629e0a":[2,0,0,14,18],
-"tinyxml2_8h_source.html":[2,0,0,14]
+"tinyxml2_8h.html#afc6433f9b56e4f18833089b1df629e0a":[2,0,0,14,18]
 };

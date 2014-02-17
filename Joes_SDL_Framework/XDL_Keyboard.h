@@ -11,8 +11,10 @@ Wrapper class of SDL's keyboard functions.
 class XDL_Keyboard
 {
 	private:
-	static XDL_Keyboard* _me;/*!Pointer to our Instance*/
-	const Uint8* keystate;/*!The current state of our keyboard keys*/
+	/*!Pointer to our Instance*/
+	static XDL_Keyboard* _me;
+	/*!The current state of our keyboard keys*/
+	const Uint8* keystate;
 
 public:
 	XDL_Keyboard(void);

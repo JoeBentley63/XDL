@@ -14,6 +14,7 @@ var annotated =
     [ "XDL_ContentManager", "class_x_d_l___content_manager.html", "class_x_d_l___content_manager" ],
     [ "XDL_Game", "class_x_d_l___game.html", "class_x_d_l___game" ],
     [ "XDL_GameObject", "class_x_d_l___game_object.html", "class_x_d_l___game_object" ],
+    [ "XDL_Input", "class_x_d_l___input.html", "class_x_d_l___input" ],
     [ "XDL_Keyboard", "class_x_d_l___keyboard.html", "class_x_d_l___keyboard" ],
     [ "XDL_Layer", "class_x_d_l___layer.html", "class_x_d_l___layer" ],
     [ "XDL_PathFinder", "class_x_d_l___path_finder.html", "class_x_d_l___path_finder" ],

@@ -24,7 +24,7 @@ var searchData=
   ['_5fistouchingleft',['_isTouchingLeft',['../class_x_d_l___sprite.html#a1cf89515bc7cfba9f65c1f650efaf464',1,'XDL_Sprite']]],
   ['_5fistouchingright',['_isTouchingRight',['../class_x_d_l___sprite.html#a4f077e406b3a0d2ab2f2c12ee73d7be8',1,'XDL_Sprite']]],
   ['_5fistouchingtop',['_isTouchingTop',['../class_x_d_l___sprite.html#ad7f8b1f515a3a42ad88ebe6aa29aeedd',1,'XDL_Sprite']]],
-  ['_5fkeyboard',['_keyboard',['../class_x_d_l___scene.html#abc53fadb79149e2f41de807070093509',1,'XDL_Scene']]],
+  ['_5fkeyboard',['_keyboard',['../class_x_d_l___scene.html#abc53fadb79149e2f41de807070093509',1,'XDL_Scene::_keyboard()'],['../class_x_d_l___input.html#a13a14229d77189cd4aa76566ff0f38a6',1,'XDL_Input::_keyBoard()']]],
   ['_5flastchild',['_lastChild',['../classtinyxml2_1_1_x_m_l_node.html#a099b6560ae44ab9edb8453aaf1a3747b',1,'tinyxml2::XMLNode']]],
   ['_5fleft',['_left',['../class_x_d_l___sprite.html#ab8fda5bca5ea2e7245ee0f6ef6184f07',1,'XDL_Sprite']]],
   ['_5flocked',['_locked',['../class_player.html#a39c12b1c083f02ba270fd7c2c4d48e42',1,'Player']]],

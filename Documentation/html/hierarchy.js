@@ -31,6 +31,7 @@ var hierarchy =
         [ "XDL_Tile", "class_x_d_l___tile.html", null ]
       ] ]
     ] ],
+    [ "XDL_Input", "class_x_d_l___input.html", null ],
     [ "XDL_Keyboard", "class_x_d_l___keyboard.html", null ],
     [ "XDL_Layer", "class_x_d_l___layer.html", null ],
     [ "XDL_PathFinder", "class_x_d_l___path_finder.html", null ],

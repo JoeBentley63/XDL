@@ -15,6 +15,7 @@ var searchData=
   ['getgameobjectfromsceneusingid',['GetGameObjectFromSceneUsingID',['../class_x_d_l___scene.html#a542233e544b861b4e41b7ab86a91e122',1,'XDL_Scene']]],
   ['getinstance',['GetInstance',['../class_x_d_l___camera.html#af972e4ad4d82db12161f0b3c0234f279',1,'XDL_Camera::GetInstance()'],['../class_x_d_l___content_manager.html#ab1ce9134a3c5a21f8372b0224559cb81',1,'XDL_ContentManager::GetInstance()'],['../class_x_d_l___keyboard.html#a16a920318c7e216d9896cd38ca137751',1,'XDL_Keyboard::GetInstance()'],['../class_x_d_l___path_finder.html#a4a258141f72bd99535dd5ab64272a66f',1,'XDL_PathFinder::GetInstance()'],['../class_x_d_l___scene_manager.html#aee31018d3348547c1c331d05bbb0b039',1,'XDL_SceneManager::GetInstance()'],['../class_x_d_l___sprite_batch.html#a1a5318ca5a0a82603f96453793afa6d0',1,'XDL_SpriteBatch::GetInstance()'],['../class_x_d_l___storage.html#aacfe0fd0ae64589f641f4139996a0778',1,'XDL_Storage::GetInstance()']]],
   ['getlayer',['GetLayer',['../class_x_d_l___tile_engine.html#aab7ccf749e184493f526bbdab9a22f96',1,'XDL_TileEngine']]],
+  ['getmousepos',['GetMousePos',['../class_x_d_l___input.html#a927bc4eb2fcd249584add5d9c9005627',1,'XDL_Input']]],
   ['getnumtileshigh',['GetNumTilesHigh',['../class_x_d_l___layer.html#a65bab3b436d6abdf8758f5ab9f2fc6b2',1,'XDL_Layer']]],
   ['getnumtileswide',['GetNumTilesWide',['../class_x_d_l___layer.html#a05d453ae2900d1cdfab2f7357d78d769',1,'XDL_Layer']]],
   ['getparent',['GetParent',['../class_x_d_l___tile.html#a7000f395eee7999beffead93d979a83e',1,'XDL_Tile']]],

@@ -17,6 +17,7 @@ var searchData=
   ['_7exdl_5fcontentmanager',['~XDL_ContentManager',['../class_x_d_l___content_manager.html#a2d7112bce7c871270e070e4c69179e3b',1,'XDL_ContentManager']]],
   ['_7exdl_5fgame',['~XDL_Game',['../class_x_d_l___game.html#ae74cceb6cbe74cdaefcc0c69ad0e88f2',1,'XDL_Game']]],
   ['_7exdl_5fgameobject',['~XDL_GameObject',['../class_x_d_l___game_object.html#a27fd4e872e6e1bb063f5d1c8acf3119c',1,'XDL_GameObject']]],
+  ['_7exdl_5finput',['~XDL_Input',['../class_x_d_l___input.html#ab67b598971e3d649f21e1005252e8d79',1,'XDL_Input']]],
   ['_7exdl_5fkeyboard',['~XDL_Keyboard',['../class_x_d_l___keyboard.html#a3fb30ebca39b9b7fa72c06cb5c226d6c',1,'XDL_Keyboard']]],
   ['_7exdl_5flayer',['~XDL_Layer',['../class_x_d_l___layer.html#adf631a3db5e4724b4223ddc9b5c0d661',1,'XDL_Layer']]],
   ['_7exdl_5fpathfinder',['~XDL_PathFinder',['../class_x_d_l___path_finder.html#a6d718c1198ba8c90e635c28aa5b7e3a1',1,'XDL_PathFinder']]],

@@ -9,6 +9,8 @@ var searchData=
   ['xdl_5fgame_2eh',['XDL_Game.h',['../_x_d_l___game_8h.html',1,'']]],
   ['xdl_5fgameobject_2ecpp',['XDL_GameObject.cpp',['../_x_d_l___game_object_8cpp.html',1,'']]],
   ['xdl_5fgameobject_2eh',['XDL_GameObject.h',['../_x_d_l___game_object_8h.html',1,'']]],
+  ['xdl_5finput_2ecpp',['XDL_Input.cpp',['../_x_d_l___input_8cpp.html',1,'']]],
+  ['xdl_5finput_2eh',['XDL_Input.h',['../_x_d_l___input_8h.html',1,'']]],
   ['xdl_5fkeyboard_2ecpp',['XDL_Keyboard.cpp',['../_x_d_l___keyboard_8cpp.html',1,'']]],
   ['xdl_5fkeyboard_2eh',['XDL_Keyboard.h',['../_x_d_l___keyboard_8h.html',1,'']]],
   ['xdl_5flayer_2ecpp',['XDL_Layer.cpp',['../_x_d_l___layer_8cpp.html',1,'']]],
