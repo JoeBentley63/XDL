@@ -11,6 +11,9 @@ XDL_SceneManager::XDL_SceneManager(void)
 
 XDL_SceneManager::~XDL_SceneManager(void)
 {
+	delete(_me);
+	delete(_currentScene);
+	delete(_scene);
 }
 
 XDL_SceneManager* XDL_SceneManager::GetInstance()//singleton

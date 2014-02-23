@@ -36,7 +36,11 @@ void XDL_SpriteBatch::Init(SDL_Renderer* _renderer)//an init function, that is o
 }
 XDL_SpriteBatch::~XDL_SpriteBatch(void)
 {
-
+	delete(_drawTextureBounds);
+	delete(_clearTexture);
+	delete(_renderer);
+	delete(_me);
+	delete(_camera);
 }
 void XDL_SpriteBatch::Begin()//begin clears the screen and creates a new texture for us to draw to.
 {
@@ -65,39 +69,40 @@ int compareZ(const void* a, const void* b)   // comparison function to sort item
 }
 void XDL_SpriteBatch::End()//End Draws all sprites that need to be drawn. TODO : Sort sprites by Z value.
 {
-	if(_currentDrawMode == BACKTOFRONT)
+	if(_thingsToBeDrawn.size() >0)
 	{
-		std::qsort(&_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
-		for(int i = 0; i < _thingsToBeDrawn.size(); i ++) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+		if(_currentDrawMode == BACKTOFRONT)
 		{
-			_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+		//	std::qsort(_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
+			for(int i = 0; i < _thingsToBeDrawn.size(); i ++) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+			{
+				_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+			}
 		}
-	}
-	else if(_currentDrawMode == FRONTTOBACK)
-	{
-		std::qsort(&_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
-		for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+		else if(_currentDrawMode == FRONTTOBACK)
 		{
-			_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+			//std::qsort(_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
+			for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+			{
+				_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+			}
 		}
-	}
-	else if(_currentDrawMode == UNSORTED)
-	{
-		//dont sort, just draw.
-		for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+		else if(_currentDrawMode == UNSORTED)
 		{
-			_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+			//dont sort, just draw.
+			for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+			{
+				_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
+			}
 		}
+		SDL_SetRenderTarget(_renderer, NULL);//then draw the texture to the screen. this texture can then be scaled, rotated etc
+		_drawRect.x = _drawTextureBounds->x + _camera->GetPosition()->x;// apply the camera transforms to the drawTexture
+		_drawRect.y = _drawTextureBounds->y + _camera->GetPosition()->y;//doing it this way ensure the actual DrawTexture is not effected, just draw differently
+		_drawRect.h = _drawTextureBounds->h * _camera->GetCurrentZoom();
+		_drawRect.w = _drawTextureBounds->w * _camera->GetCurrentZoom();
+		SDL_RenderCopy(_renderer,_drawTexture, NULL,&_drawRect);//then draw it.
+		SDL_RenderPresent(_renderer);
 	}
-	SDL_SetRenderTarget(_renderer, NULL);//then draw the texture to the screen. this texture can then be scaled, rotated etc.
-
-	SDL_Rect _drawRect;
-	_drawRect.x = _drawTextureBounds->x + _camera->GetPosition()->x;// apply the camera transforms to the drawTexture
-	_drawRect.y = _drawTextureBounds->y + _camera->GetPosition()->y;//doing it this way ensure the actual DrawTexture is not effected, just draw differently
-	_drawRect.h = _drawTextureBounds->h * _camera->GetCurrentZoom();
-	_drawRect.w = _drawTextureBounds->w * _camera->GetCurrentZoom();
-	SDL_RenderCopy(_renderer,_drawTexture, NULL,&_drawRect);//then draw it.
-	SDL_RenderPresent(_renderer);
 }
 
 void XDL_SpriteBatch::SetDrawMode(DRAWMODES _drawmode)

@@ -18,6 +18,7 @@ XDL_TileEngine::XDL_TileEngine(SDL_Renderer* _renderer,int _tilesWidth,int _tile
 
 XDL_TileEngine::~XDL_TileEngine(void)
 {
+	delete(_renderer);
 }
 
 bool XDL_TileEngine::LoadFromXML(char* _pathToTMX)

@@ -10,6 +10,8 @@ XDL_Tile::XDL_Tile(char* _asset,int _x,int _y,int _height, int _width,SDL_Render
 
 XDL_Tile::~XDL_Tile(void)
 {
+	delete(_parent);
+	delete(_child);
 }
 
 void XDL_Tile::SetParent(XDL_Tile* _parent)

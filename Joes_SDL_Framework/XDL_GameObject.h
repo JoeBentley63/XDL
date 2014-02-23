@@ -18,6 +18,7 @@ public:
 	void virtual Update() = 0;/*!virtual function so every object that is added to the scene will get auto-updated*/
 	void virtual Draw() = 0; /*!virtual function so every object that is added to the scene will get auto-drawn*/
 	int _z;/*!set priority when Draws are being called*/
+	SDL_Rect _bounds;
 private:
 	
 };

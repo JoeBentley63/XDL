@@ -227,7 +227,10 @@ bool XDL_Sprite::Overlaps(SDL_Rect _sprite,SDL_Rect _otherSprite)//collision wor
 
 XDL_Sprite::~XDL_Sprite(void)
 {
-
+	delete(_renderer);
+	delete(_texture);
+	delete(_assetName);
+	delete(_content);
 }
 //update logic to be overridden by inheriting classes.
 void XDL_Sprite::Update()
@@ -272,11 +275,11 @@ void XDL_Sprite::Draw()
 	if(DEBUG == 1)
 	{
 		SDL_SetRenderDrawColor(_renderer,255,0,0,255);
-		//SDL_RenderDrawRect(_renderer,&_top);
-		//SDL_RenderDrawRect(_renderer,&_bottom);
-		//SDL_RenderDrawRect(_renderer,&_left);
-	//	SDL_RenderDrawRect(_renderer,&_right);
-		//SDL_RenderDrawRect(_renderer,&_bounds);
+		SDL_RenderDrawRect(_renderer,&_top);
+		SDL_RenderDrawRect(_renderer,&_bottom);
+		SDL_RenderDrawRect(_renderer,&_left);
+		SDL_RenderDrawRect(_renderer,&_right);
+		SDL_RenderDrawRect(_renderer,&_bounds);
 		
 	}
 	//SDL_RenderPresent(_renderer);

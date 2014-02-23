@@ -11,6 +11,12 @@ XDL_PathFinder::XDL_PathFinder(void)
 
 XDL_PathFinder::~XDL_PathFinder(void)
 {
+	delete(_sprite);
+	delete(_me);
+	delete(_finalPath);
+	delete(_openList);
+	delete(_closedList);
+	delete(_layer);
 }
 
 XDL_PathFinder* XDL_PathFinder::GetInstance()

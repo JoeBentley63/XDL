@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="XDL_Input.cpp" />
+    <ClCompile Include="XDL_QuadTree.cpp" />
     <ClCompile Include="XDL_SpriteBatch.cpp" />
     <ClCompile Include="XDL_Camera.cpp" />
     <ClCompile Include="XDL_ContentManager.cpp" />
@@ -36,6 +37,7 @@
   <ItemGroup>
     <ClInclude Include="BasicMazeAStar.h" />
     <ClInclude Include="XDL_Input.h" />
+    <ClInclude Include="XDL_QuadTree.h" />
     <ClInclude Include="XDL_SpriteBatch.h" />
     <ClInclude Include="XDL_Camera.h" />
     <ClInclude Include="XDL_ContentManager.h" />

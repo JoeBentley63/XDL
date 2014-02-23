@@ -4,10 +4,19 @@
 XDL_GameObject* _temp;
 XDL_Scene::XDL_Scene(void)
 {
+
+	
 }
 
 XDL_Scene::~XDL_Scene(void)
 {
+	delete(_sprite);
+	delete(_keyboard);
+	delete(_spriteBatch);
+	delete(_camera);
+	delete(_persistantStorage);
+	delete(_renderer);
+
 }
 
 void XDL_Scene::Init(SDL_Renderer* _renderer)
@@ -19,10 +28,18 @@ void XDL_Scene::Init(SDL_Renderer* _renderer)
 	_camera = XDL_Camera::GetInstance();
 	_persistantStorage = XDL_Storage::GetInstance();
 	_gameObjectsInScene.clear();
+	SDL_Rect* _bounds = new SDL_Rect();
+	_bounds->x = 0;
+	_bounds->y = 0;
+	_bounds->w = 640;
+	_bounds->h = 480;
+	_quadTree = new XDL_QuadTree(1,_bounds,_renderer);
+	AddGameObjectToScene(_quadTree,"QuadTree");
 }
 
 void XDL_Scene:: Update()
 {
+	RepopulateQuadTree();
 	for(map<string, XDL_GameObject*>::const_iterator i = _gameObjectsInScene.begin(); i != _gameObjectsInScene.end(); ++i)
 	{
 		_temp = i->second;
@@ -37,7 +54,20 @@ void XDL_Scene:: Draw()
 		_temp = i->second;
 		_spriteBatch->Draw(_temp);
 	}
-	
+}
+
+void XDL_Scene::RepopulateQuadTree()
+{
+	_quadTree->Clear();
+	int _num= 0;
+	for(map<string, XDL_GameObject*>::const_iterator i = _gameObjectsInScene.begin(); i != _gameObjectsInScene.end(); ++i)
+	{
+		_temp = i->second;
+		//DEBUG_MSG("\n\n-------------------------------\n\n");
+		_quadTree->Insert(_temp);
+		_num++;
+	}
+	//cout<<"Blah";
 }
 
 bool XDL_Scene::AddGameObjectToScene(XDL_GameObject* _gameobject, string _id)

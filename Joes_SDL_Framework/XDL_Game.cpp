@@ -46,6 +46,9 @@ bool XDL_Game :: Init()
 
 XDL_Game::~XDL_Game(void)
 {
+	delete(_window);
+	delete(_windowsBounds);
+	delete(_renderer);
 }
 
 void XDL_Game::Update()

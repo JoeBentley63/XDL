@@ -28,8 +28,10 @@ public:
 	static SDL_Texture* _drawTexture;
 	void SetDrawMode(DRAWMODES _drawmode);
 	int GetDrawMode();
-private:
+	SDL_Rect _drawRect;
 	SDL_Rect* _drawTextureBounds;
+private:
+	
 	SDL_Texture* _clearTexture;
 	SDL_Renderer* _renderer;
 	vector<XDL_GameObject*> _thingsToBeDrawn;

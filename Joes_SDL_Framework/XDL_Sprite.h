@@ -72,7 +72,7 @@ protected:
 	int _currentFrame;
 	SDL_Rect _sourceRect;
 	SDL_Rect _drawRect;
-	SDL_Rect _bounds;
+	
 	SDL_Texture* _texture;
 	
 	const char* _assetName;

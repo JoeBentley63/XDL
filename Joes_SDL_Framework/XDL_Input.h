@@ -8,8 +8,8 @@ public:
 	XDL_Input(void);
 	~XDL_Input(void);
 	SDL_Point* GetMousePos();
-	bool IsMouseButtonDown(int _button);
-	bool IsMouseButtonUp(int _button);
+	//bool IsMouseButtonDown(int _button);
+	//bool IsMouseButtonUp(int _button);
 	bool IsKeyDown(int _key);
 	bool IsKeyUp(int _key);
 	//possible gamepad functions?

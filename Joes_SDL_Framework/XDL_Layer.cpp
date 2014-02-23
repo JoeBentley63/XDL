@@ -52,6 +52,7 @@ XDL_Layer::XDL_Layer(XMLElement* _layer,int _tilesNumWidth,int _tilesNumHeight,i
 
 XDL_Layer::~XDL_Layer(void)
 {
+	delete(_renderer);
 }
 
 int XDL_Layer::GetNumTilesWide()

@@ -7,6 +7,7 @@
 #include "XDL_SpriteBatch.h"
 #include "XDL_Camera.h"
 #include "XDL_Storage.h"
+#include "XDL_QuadTree.h"
 #include <map>
 using namespace std;
 
@@ -26,10 +27,11 @@ protected:
 	XDL_Storage* _persistantStorage;
 	SDL_Renderer* _renderer;
 	map<string,XDL_GameObject*> _gameObjectsInScene;
+	XDL_QuadTree* _quadTree;
 	virtual bool AddGameObjectToScene(XDL_GameObject* _gameobject, string _id);
 	virtual bool RemoveGameObjectFromScene(string _id);
 	virtual XDL_GameObject* GetGameObjectFromSceneUsingID(string _id);
-
+	void RepopulateQuadTree();
 };
 
 #endif

@@ -37,20 +37,21 @@ private:
 	int _startY;/*!<StartPointY*/
 	int _endX;/*!<endPointX*/
 	int _endY;/*!<endPointY*/
-	vector<SDL_Point*>* _finalPath;
-	vector<XDL_Tile*>* _openList;
-	vector<XDL_Tile*>* _closedList;
+	thread* _thread;
 	XDL_Layer* _layer;
 	int _tileWidth;
 	int _tileHeight;
 	int _numTilesWide;
+
 	XDL_PathFinder(void);
+	vector<SDL_Point*>* _finalPath;
+	vector<XDL_Tile*>* _openList;
+	vector<XDL_Tile*>* _closedList;
 	void ProcessNode(XDL_Tile* _tile);
 	void ReversePath(XDL_Tile* _tile);
 	void NoPathFound();
 	XDL_Tile* calcNextBestTile();
 	void FindPathLoop();
-	thread* _thread;
 	XDL_Tile* findTile(int _x,int _y);
 	bool Contains(vector<XDL_Tile*> _vector,XDL_Tile* _tileToSearchFor);
 	int DistanceFrom(int _startX,int _startY,int _endX,int _endY);
