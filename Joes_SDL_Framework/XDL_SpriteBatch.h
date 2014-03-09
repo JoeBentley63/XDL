@@ -28,6 +28,9 @@ public:
 	static SDL_Texture* _drawTexture;
 	void SetDrawMode(DRAWMODES _drawmode);
 	int GetDrawMode();
+	void SetCamera(XDL_Camera* _camera);
+	XDL_Camera* GetCamera();
+
 	SDL_Rect _drawRect;
 	SDL_Rect* _drawTextureBounds;
 private:

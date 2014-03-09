@@ -3,7 +3,7 @@
 #define _SCENE_H
 
 #include "XDL_Sprite.h"
-#include "XDL_Keyboard.h"
+#include "XDL_Input.h"
 #include "XDL_SpriteBatch.h"
 #include "XDL_Camera.h"
 #include "XDL_Storage.h"
@@ -21,7 +21,7 @@ public:
 	virtual void Update();
 	XDL_Sprite* _sprite;// just something for every scene to have for me to test. Will be removed 
 protected:
-	XDL_Keyboard* _keyboard;//keyboard, camera and spritebatch will remain, but tile engine will be optional, since this assignment is about tile engines its here.
+	XDL_Input* _input;//keyboard, camera and spritebatch will remain, but tile engine will be optional, since this assignment is about tile engines its here.
 	XDL_SpriteBatch* _spriteBatch;
 	XDL_Camera* _camera;
 	XDL_Storage* _persistantStorage;

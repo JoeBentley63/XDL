@@ -114,3 +114,13 @@ int XDL_SpriteBatch::GetDrawMode()
 {
 	return _currentDrawMode;
 }
+
+void XDL_SpriteBatch::SetCamera(XDL_Camera* _camera)
+{
+	this->_camera = _camera;
+}
+
+XDL_Camera* XDL_SpriteBatch::GetCamera()
+{
+	return _camera;
+}

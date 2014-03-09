@@ -1,6 +1,9 @@
 #include "Level1.h"
 
+
+
 XDL_Sprite* _player;
+
 Level1::Level1(SDL_Renderer* _renderer)
 {
 	XDL_Scene::Init(_renderer);
@@ -18,22 +21,13 @@ Level1::~Level1(void)
 
 void Level1::Update()
 {
-	if(_keyboard->IsKeyDown(_keyboard->UP))
+	if(_input->IsMouseButtonDown(_input->LEFTMOUSEBUTTON) || _input->IsKeyDown(_input->SPACE))
 	{
-		_player->_posY+=10;
+		_player->_posX = _input->GetMousePositionWorld(_spriteBatch->GetCamera()).x;
+		_player->_posY = _input->GetMousePositionWorld(_spriteBatch->GetCamera()).y;
 	}
-	else if(_keyboard->IsKeyDown(_keyboard->DOWN))
-	{
-		_player->_posY-=10;
-	}
-	if(_keyboard->IsKeyDown(_keyboard->LEFT))
-	{
-		_player->_posX-=10;
-	}
-	if(_keyboard->IsKeyDown(_keyboard->RIGHT))
-	{
-		_player->_posX+=10;
-	}
+
+
 	XDL_Scene::Update();
 }
 

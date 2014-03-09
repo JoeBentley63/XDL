@@ -11,7 +11,7 @@ XDL_Scene::XDL_Scene(void)
 XDL_Scene::~XDL_Scene(void)
 {
 	delete(_sprite);
-	delete(_keyboard);
+	delete(_input);
 	delete(_spriteBatch);
 	delete(_camera);
 	delete(_persistantStorage);
@@ -24,7 +24,7 @@ void XDL_Scene::Init(SDL_Renderer* _renderer)
 	this->_renderer = _renderer;
 	_spriteBatch = XDL_SpriteBatch::GetInstance();//grab instances
 	_spriteBatch->Init(_renderer);
-	_keyboard = XDL_Keyboard::GetInstance();
+	_input = XDL_Input::GetInstance();
 	_camera = XDL_Camera::GetInstance();
 	_persistantStorage = XDL_Storage::GetInstance();
 	_gameObjectsInScene.clear();
