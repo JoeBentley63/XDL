@@ -45,7 +45,7 @@ IsoLayer::IsoLayer(XMLElement* _layer,int _tilesNumWidth,int _tilesNumHeight,int
 				_tileSheetWidth += ((_margin*2) + (_numTilesInTilemapRow - 1) * _spacing);//return the width to the actual width (width + margins+ spacing)
 				
 				SDL_Rect _source =  {xPos,yPos,_tilesWidth,_tilesHeight};//create a new tile, then repeat
-				_tiles.insert(_tiles.begin(),new XDL_Sprite(_nameOfSpriteSheet,isoX,isoY,_tilesHeight,_tilesWidth,_renderer,_source));
+				_tiles.insert(_tiles.begin(),new XDL_Sprite(_nameOfSpriteSheet,isoX,isoY,_tilesHeight,_tilesWidth,1,_renderer,_source));
 			}
 			_mapTiles = _mapTiles->NextSiblingElement();
 			if(_mapTiles!=NULL)

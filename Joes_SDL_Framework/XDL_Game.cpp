@@ -1,8 +1,11 @@
 #include "XDL_Game.h"
 #include "XDL_Debug.h"
 #include "XDL_SceneManager.h"
+#include "SortingModeDemoScene.h"
+#include "CollisionDetectionDemo.h"
+#include "IsometricTileEngineScene.h"
+#include "MouseDemo.h"
 #include "Level1.h"
-
 int XDL_Game::_r;
 int XDL_Game::_g;
 int XDL_Game::_b;
@@ -29,6 +32,7 @@ bool XDL_Game :: Init()
 
 	_window = SDL_CreateWindow("Title",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,SCREEN_WIDTH,SCREEN_HEIGHT,0);
 	_renderer = SDL_CreateRenderer(_window,-1,0);
+	SDL_SetRenderDrawBlendMode(_renderer,SDL_BlendMode::SDL_BLENDMODE_BLEND);
 	SDL_SetRenderDrawColor(_renderer,_r,_g,_b,255);
 	SDL_RenderClear(_renderer);
 	SDL_RenderPresent(_renderer);

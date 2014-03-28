@@ -11,6 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CollisionDetectionDemo.cpp" />
+    <ClCompile Include="DemoMoverSprite.cpp" />
+    <ClCompile Include="IsometricTileEngineScene.cpp" />
+    <ClCompile Include="MouseDemo.cpp" />
+    <ClCompile Include="MoverSprite.cpp" />
+    <ClCompile Include="SortingModeDemoScene.cpp" />
+    <ClCompile Include="XDL_Collision.cpp" />
+    <ClCompile Include="XDL_CollisionManager.cpp" />
     <ClCompile Include="XDL_Input.cpp" />
     <ClCompile Include="XDL_Mouse.cpp" />
     <ClCompile Include="XDL_QuadTree.cpp" />
@@ -37,6 +45,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicMazeAStar.h" />
+    <ClInclude Include="CollisionDetectionDemo.h" />
+    <ClInclude Include="DemoMoverSprite.h" />
+    <ClInclude Include="IsometricTileEngineScene.h" />
+    <ClInclude Include="MouseDemo.h" />
+    <ClInclude Include="MoverSprite.h" />
+    <ClInclude Include="SortingModeDemoScene.h" />
+    <ClInclude Include="XDL_Collision.h" />
+    <ClInclude Include="XDL_CollisionManager.h" />
     <ClInclude Include="XDL_Input.h" />
     <ClInclude Include="XDL_Mouse.h" />
     <ClInclude Include="XDL_QuadTree.h" />

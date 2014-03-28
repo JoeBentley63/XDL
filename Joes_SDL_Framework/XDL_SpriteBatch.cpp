@@ -19,10 +19,10 @@ XDL_SpriteBatch* XDL_SpriteBatch::GetInstance()
 	return _me;
 }
 
-void XDL_SpriteBatch::Init(SDL_Renderer* _renderer)//an init function, that is only called when the scene starts, it sets the renderer, so i dont have to pass it in through the GetInstance
+void XDL_SpriteBatch::Init(SDL_Renderer* _renderer, int _worldWide,int _worldHeight)//an init function, that is only called when the scene starts, it sets the renderer, so i dont have to pass it in through the GetInstance
 {
 	this->_renderer = _renderer;
-	_drawTexture = SDL_CreateTexture(_renderer,SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET,XDL_Game::SCREEN_WIDTH*4,XDL_Game::SCREEN_HEIGHT*4);
+	_drawTexture = SDL_CreateTexture(_renderer,SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET,_worldWide,_worldHeight);
 	//draw texture is the texture we draw everything to, which in turn is drawn to the screen
 	_clearTexture = SDL_CreateTexture(_renderer,SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET,XDL_Game::SCREEN_WIDTH*4,XDL_Game::SCREEN_HEIGHT*4);
 	//clear texture is a blank texture used to clear drawtexture. this is the most optized way to clear an SDL_texture ive found.
@@ -30,8 +30,9 @@ void XDL_SpriteBatch::Init(SDL_Renderer* _renderer)//an init function, that is o
 	_drawTextureBounds = new SDL_Rect();//set the bounds of our "World"
 	_drawTextureBounds->x = 0;
 	_drawTextureBounds->y = 0;
-	_drawTextureBounds->w = XDL_Game::SCREEN_WIDTH*4;//make the world big enough
-	_drawTextureBounds->h = XDL_Game::SCREEN_HEIGHT*4;
+	_drawTextureBounds->w = _worldWide;//make the world big enough
+	_drawTextureBounds->h =	_worldHeight;
+
 	_currentDrawMode = BACKTOFRONT;
 }
 XDL_SpriteBatch::~XDL_SpriteBatch(void)
@@ -58,14 +59,10 @@ void XDL_SpriteBatch::Draw(XDL_GameObject* _me)// draw inserts the sprite into t
 	_thingsToBeDrawn.insert(_thingsToBeDrawn.end(),_me);
 }
 
-int compareZ(const void* a, const void* b)   // comparison function to sort items based on Z index
-{
-	int arg1 = ((XDL_GameObject*)a)->_z;
-    int arg2 = ((XDL_GameObject*)b)->_z;
-    if(arg1 < arg2) return -1;
-    if(arg1 > arg2) return 1;
-    return 0;
 
+bool compById(XDL_GameObject* a, XDL_GameObject* b)
+{
+    return (a->_z < b->_z);
 }
 void XDL_SpriteBatch::End()//End Draws all sprites that need to be drawn. TODO : Sort sprites by Z value.
 {
@@ -73,16 +70,16 @@ void XDL_SpriteBatch::End()//End Draws all sprites that need to be drawn. TODO :
 	{
 		if(_currentDrawMode == BACKTOFRONT)
 		{
-		//	std::qsort(_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
-			for(int i = 0; i < _thingsToBeDrawn.size(); i ++) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+			std::sort(_thingsToBeDrawn.begin(), _thingsToBeDrawn.end(), compById);
+			for(int i = 0; i < _thingsToBeDrawn.size(); i ++)
 			{
 				_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
 			}
 		}
 		else if(_currentDrawMode == FRONTTOBACK)
 		{
-			//std::qsort(_thingsToBeDrawn[0],_thingsToBeDrawn.size(),sizeof(XDL_GameObject),&compareZ);
-			for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+			std::sort(_thingsToBeDrawn.begin(), _thingsToBeDrawn.end(), compById);
+			for(int i = _thingsToBeDrawn.size()-1; i>=0; i --) 
 			{
 				_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
 			}
@@ -90,7 +87,7 @@ void XDL_SpriteBatch::End()//End Draws all sprites that need to be drawn. TODO :
 		else if(_currentDrawMode == UNSORTED)
 		{
 			//dont sort, just draw.
-			for(int i = _thingsToBeDrawn.size()-1; i<=0; i --) //NB TODO: CULL TILES THAT ARE OFFSCREEN : LOOK INTO QUADTREES
+			for(int i = 0; i < _thingsToBeDrawn.size(); i ++) 
 			{
 				_thingsToBeDrawn[i]->Draw();//call each sprites draw, so we draw em to the texture
 			}

@@ -16,6 +16,9 @@
     <Filter Include="Source Files\XDL">
       <UniqueIdentifier>{78a155f7-394a-417f-be84-941a1dc535e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\XDL\Demos">
+      <UniqueIdentifier>{36b2102e-221b-417d-8391-e21e23a8ffb5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IsoLayer.cpp">
@@ -29,9 +32,6 @@
     </ClCompile>
     <ClCompile Include="tinyxml2.cpp">
       <Filter>Source Files\XDL</Filter>
-    </ClCompile>
-    <ClCompile Include="Level1.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="XDL_Sprite.cpp">
       <Filter>Source Files\XDL</Filter>
@@ -72,19 +72,46 @@
     <ClCompile Include="XDL_Main.cpp">
       <Filter>Source Files\XDL</Filter>
     </ClCompile>
-    <ClCompile Include="XDL_Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="XDL_GameObject.cpp">
       <Filter>Source Files\XDL</Filter>
     </ClCompile>
-    <ClCompile Include="XDL_Input.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SortingModeDemoScene.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
     </ClCompile>
-    <ClCompile Include="XDL_QuadTree.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="IsometricTileEngineScene.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseDemo.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetectionDemo.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="XDL_Game.cpp">
+      <Filter>Source Files\XDL</Filter>
+    </ClCompile>
+    <ClCompile Include="XDL_Input.cpp">
+      <Filter>Source Files\XDL</Filter>
     </ClCompile>
     <ClCompile Include="XDL_Mouse.cpp">
+      <Filter>Source Files\XDL</Filter>
+    </ClCompile>
+    <ClCompile Include="XDL_QuadTree.cpp">
+      <Filter>Source Files\XDL</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="MoverSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XDL_Collision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XDL_CollisionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoMoverSprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -174,6 +201,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="XDL_Mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingModeDemoScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IsometricTileEngineScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetectionDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MoverSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XDL_Collision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XDL_CollisionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoMoverSprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

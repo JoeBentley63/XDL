@@ -5,10 +5,11 @@
 #include "XDL_Sprite.h"
 #include "tinyxml2.h"
 #include "IsoLayer.h"
+
 using namespace std;
 using namespace tinyxml2;
 
-class IsometricTileEngine
+class IsometricTileEngine 
 {
 public:
 	IsometricTileEngine(SDL_Renderer* _renderer,int _tilesWidth,int _tilesHeight);

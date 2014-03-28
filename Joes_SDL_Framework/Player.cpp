@@ -3,7 +3,7 @@
 
 using namespace std;
 bool Player::_locked;
-Player::Player(SDL_Renderer* _renderer,char* _asset,SDL_Rect _rect,int _posX,int _posY,XDL_PathFinder* _pathFinder,XDL_Sprite* _target,int _r,int _g,int _b,int _a) : XDL_Sprite(_asset,XDL_Game::SCREEN_WIDTH/2,XDL_Game::SCREEN_HEIGHT/2,32,32,_renderer,_rect,3)
+Player::Player(SDL_Renderer* _renderer,char* _asset,SDL_Rect _rect,int _posX,int _posY,XDL_PathFinder* _pathFinder,XDL_Sprite* _target,int _r,int _g,int _b,int _a) : XDL_Sprite(_asset,XDL_Game::SCREEN_WIDTH/2,XDL_Game::SCREEN_HEIGHT/2,32,32,1,_renderer,_rect,3)
 {
 	this->_pathFinder = _pathFinder;
 	this->_target = _target;

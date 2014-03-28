@@ -10,6 +10,7 @@ public:
 	~Level1(void);
 	void Draw();
 	void Update();
+	float _zoom;
 };
 
 #endif

@@ -1,10 +1,21 @@
-﻿Build started 3/9/2014 3:10:51 PM.
+﻿Build started 3/28/2014 7:24:59 PM.
      1>Project "C:\Users\Joe\Documents\GitHub\XDL\Joes_SDL_Framework\Joes_SDL_Framework.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Level1.cpp
          Level1.cpp
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\level1.cpp(22): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\level1.cpp(26): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\joe\documents\github\xdl\joes_sdl_framework\level1.cpp(32): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.lib" /MACHINE:X86 Debug\XDL_Input.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Documents\GitHub\XDL\Debug\Joes_SDL_Framework.lib" /MACHINE:X86 Debug\CollisionDetectionDemo.obj
+         Debug\DemoMoverSprite.obj
+         Debug\IsometricTileEngineScene.obj
+         Debug\MouseDemo.obj
+         Debug\MoverSprite.obj
+         Debug\SortingModeDemoScene.obj
+         Debug\XDL_Collision.obj
+         Debug\XDL_CollisionManager.obj
+         Debug\XDL_Input.obj
          Debug\XDL_Mouse.obj
          Debug\XDL_QuadTree.obj
          Debug\XDL_SpriteBatch.obj
@@ -32,4 +43,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.54
+Time Elapsed 00:00:02.92

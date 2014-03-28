@@ -12,7 +12,7 @@ class XDL_Tile :
 	public XDL_Sprite
 {
 public:
-	XDL_Tile(char* _asset,int _x,int _y,int _height, int _width,SDL_Renderer* _renderer,SDL_Rect _sourceRect,int _gid);
+	XDL_Tile(char* _asset,int _x,int _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect,int _gid);
 	virtual ~XDL_Tile(void);
 	int _gid;
 	void SetParent(XDL_Tile* _parent); 

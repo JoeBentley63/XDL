@@ -6,6 +6,7 @@
 #include "XDL_Camera.h"
 #include "XDL_Game.h"
 #include <vector>
+#include <algorithm> 
 
 using namespace std;
 class XDL_SpriteBatch
@@ -21,7 +22,7 @@ public:
 	XDL_SpriteBatch(void);
 	~XDL_SpriteBatch(void);
 	static XDL_SpriteBatch* GetInstance();
-	void Init(SDL_Renderer* _renderer);
+	void Init(SDL_Renderer* _renderer,int _worldSizeX,int _worldSizeY);
 	void Begin();
 	void Draw(XDL_GameObject* _me);
 	void End();
@@ -41,6 +42,8 @@ private:
 	static XDL_SpriteBatch* _me;
 	XDL_Camera* _camera;
 	DRAWMODES _currentDrawMode;
+	int _worldX;
+	int _worldY;
 };
 
 #endif

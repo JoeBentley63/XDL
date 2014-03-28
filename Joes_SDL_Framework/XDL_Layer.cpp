@@ -35,7 +35,7 @@ XDL_Layer::XDL_Layer(XMLElement* _layer,int _tilesNumWidth,int _tilesNumHeight,i
 				_tileSheetWidth += ((_margin*2) + (_numTilesInTilemapRow - 1) * _spacing);
 				
 				SDL_Rect _source =  {xPos,yPos,_tilesWidth,_tilesHeight};
-				XDL_Tile* _tempTile = new XDL_Tile(_nameOfSpriteSheet,j * _tilesWidth,i * _tilesHeight,_tilesHeight,_tilesWidth,_renderer,_source,_att);
+				XDL_Tile* _tempTile = new XDL_Tile(_nameOfSpriteSheet,j * _tilesWidth,i * _tilesHeight,_tilesHeight,_tilesWidth,1,_renderer,_source,_att);
 				_tempTile->_immovable = true;
 				_tiles.insert(_tiles.begin(),_tempTile);
 			}

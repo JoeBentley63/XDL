@@ -4,6 +4,7 @@ int XDL_QuadTree::_capacity;
 
 XDL_QuadTree::XDL_QuadTree(int _capacity,SDL_Rect* _worldBounds,SDL_Renderer* _renderer)
 {
+	this->_gameObjects.clear();
 	this->_capacity = _capacity;
 	this->_parent = _parent;
 	this->_renderer = _renderer;
@@ -20,6 +21,7 @@ XDL_QuadTree::XDL_QuadTree(int _capacity,SDL_Rect* _worldBounds,SDL_Renderer* _r
 
 XDL_QuadTree::XDL_QuadTree(XDL_QuadTree* _parent, int _num,SDL_Renderer* _renderer)
 {
+	this->_gameObjects.clear();
 	this->_parent = _parent;
 	this->_renderer = _renderer;
 	_level = _parent->_level+1;
@@ -50,8 +52,12 @@ XDL_QuadTree::XDL_QuadTree(XDL_QuadTree* _parent, int _num,SDL_Renderer* _render
 			_bounds->w = _parent->_bounds->w/2;
 			_bounds->h = _parent->_bounds->h/2;
 			break;
-	default:
-		break;
+		default : 
+			_bounds->x = _parent->_bounds->x;
+			_bounds->y = _parent->_bounds->y;
+			_bounds->w = _parent->_bounds->w/2;
+			_bounds->h = _parent->_bounds->h/2;
+			break;
 	}
 
 	_northWest = NULL;
@@ -77,8 +83,15 @@ void XDL_QuadTree::Draw()
 {
 	if(DEBUG == 1)
 	{
-		SDL_SetRenderTarget(_renderer, XDL_SpriteBatch::_drawTexture);//draw to our big texture first.
-		SDL_SetRenderDrawColor(_renderer,0,255,0,255);
+		SDL_SetRenderTarget(_renderer, XDL_SpriteBatch::_drawTexture);
+		SDL_SetRenderDrawColor(_renderer,0,255,0,100);
+		
+		if(_gameObjects.size() > 0)
+		{
+			SDL_SetRenderDrawColor(_renderer,255,0,0,100);
+			SDL_RenderFillRect(_renderer,_bounds);
+		}
+		
 		SDL_RenderDrawRect(_renderer,_bounds);
 		if(_northEast!=NULL)
 		{
@@ -140,7 +153,7 @@ bool XDL_QuadTree::Insert(XDL_GameObject* _gameObject)
 		//DEBUG_MSG("\nDoesnt belong here ");
 		return false;//doesnt belong here, return false;
 	}
-	if(_numInserted < _capacity)//if there is space
+	if(_numInserted < _capacity  || _level >= 6)//if there is space
 	{
 		_gameObjects.insert(_gameObjects.begin(),_gameObject);//insert it here
 		//DEBUG_MSG("\nInserted at level : " << _level);
@@ -153,15 +166,16 @@ bool XDL_QuadTree::Insert(XDL_GameObject* _gameObject)
 		
 		//DEBUG_MSG("\nTry NW");
 		_northWest->Insert(_gameObject);
-		//DEBUG_MSG("\nTry SW");
-
+	
 		_southWest->Insert(_gameObject);
-		//DEBUG_MSG("\nTry NE");
+		
 		_southEast->Insert(_gameObject);
-		//DEBUG_MSG("\nTry NE");
+		
 		_northEast->Insert(_gameObject);
 		
-		return false;
+		
+		
+		return true;
 	}
 }
 void XDL_QuadTree::Clear()
@@ -181,7 +195,7 @@ void XDL_QuadTree::Clear()
 
 	_numInserted = 0;
 }
-void XDL_QuadTree::SubDivide()
+bool XDL_QuadTree::SubDivide()
 {
 	if(_northEast == NULL)
 	{
@@ -194,5 +208,39 @@ void XDL_QuadTree::SubDivide()
 		_southEast ->_level = _level + 1;
 		_northEast = new XDL_QuadTree(this,3,_renderer);
 		_northEast ->_level = _level + 1;
+
+		for(int i = 0; i < _gameObjects.size(); i ++)
+		{
+			_northWest->Insert(_gameObjects[i]);
+			_southWest->Insert(_gameObjects[0]);
+			_southEast->Insert(_gameObjects[0]);
+			_northEast->Insert(_gameObjects[0]);
+			
+			_gameObjects.clear();
+			
+		}
+
 	}
+	return true;
+}
+
+vector<XDL_GameObject*> XDL_QuadTree::ReturnObjects(SDL_Rect _bounds,vector<XDL_GameObject*> _return)
+{
+	if(RectOverlaps(this->_bounds,&_bounds))
+	{
+		for(int i = 0; i < _gameObjects.size(); i ++)
+		{
+			_return.insert(_return.begin(),_gameObjects[i]);
+		}
+		if(_northEast != NULL)
+		{
+			_return = _northWest->ReturnObjects(_bounds,_return);
+			_return = _southWest->ReturnObjects(_bounds,_return);
+			_return = _southEast->ReturnObjects(_bounds,_return);
+			_return = _northEast->ReturnObjects(_bounds,_return);
+		}
+		
+	}
+	return _return;
+
 }

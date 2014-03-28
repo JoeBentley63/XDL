@@ -19,10 +19,11 @@ public:
 	XDL_QuadTree* _northWest;
 	int _level;
 	bool Insert(XDL_GameObject* _gameObject);
-	void SubDivide();
+	bool SubDivide();
 	void Clear();
 	void virtual Update();
 	void virtual Draw();
+	vector<XDL_GameObject*> ReturnObjects(SDL_Rect _bounds,vector<XDL_GameObject*> _return);
 private:
 	bool RectOverlaps(SDL_Rect* _sprite,SDL_Rect* _otherSprite);
 	int _numInserted;
