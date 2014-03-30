@@ -53,11 +53,11 @@ SDL_Point XDL_Mouse::GetPositionScreen()//return actual position
 	return _mousePosition;
 }
 
-SDL_Point XDL_Mouse::GetPositionWorld(XDL_Camera* _camera)//counteract camera position
+SDL_Point XDL_Mouse::GetPositionWorld(XDL_Camera* XDL_CAMERA)//counteract camera position
 {
 	GetPositionScreen();
-	_actualPosition.x =  (_mousePosition.x - _camera->GetPosition()->x)/ _camera->GetCurrentZoom();
-	_actualPosition.y =  (_mousePosition.y - _camera->GetPosition()->y) / _camera->GetCurrentZoom() ;
+	_actualPosition.x =  (_mousePosition.x - XDL_CAMERA->GetPosition()->x)/ XDL_CAMERA->GetCurrentZoom();
+	_actualPosition.y =  (_mousePosition.y - XDL_CAMERA->GetPosition()->y) / XDL_CAMERA->GetCurrentZoom() ;
 
 	return _actualPosition;
 }

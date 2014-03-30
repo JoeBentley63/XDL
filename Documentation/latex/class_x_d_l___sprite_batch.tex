@@ -1,14 +1,10 @@
 \hypertarget{class_x_d_l___sprite_batch}{\section{X\-D\-L\-\_\-\-Sprite\-Batch Class Reference}
 \label{class_x_d_l___sprite_batch}\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
 }
-
-
-{\ttfamily \#include $<$X\-D\-L\-\_\-\-Sprite\-Batch.\-h$>$}
-
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6}{D\-R\-A\-W\-M\-O\-D\-E\-S} \{ \hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b}{F\-R\-O\-N\-T\-T\-O\-B\-A\-C\-K}, 
+enum \hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6}{D\-R\-A\-W\-M\-O\-D\-E\-S} \{ {\bfseries F\-R\-O\-N\-T\-T\-O\-B\-A\-C\-K}, 
 \hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1}{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T}, 
 \hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6a4dea32cd64020138077648d29c34f58a}{U\-N\-S\-O\-R\-T\-E\-D}
  \}
@@ -16,31 +12,50 @@ enum \hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6}{D\
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_x_d_l___sprite_batch_a509e7c91d956bd35ce5a9b12d037a807}{X\-D\-L\-\_\-\-Sprite\-Batch} (void)
+\hypertarget{class_x_d_l___sprite_batch_a0ee6240197106c7ad2061226da69ba47}{void {\bfseries Init} (S\-D\-L\-\_\-\-Renderer $\ast$\-\_\-renderer, int \-\_\-world\-Size\-X, int \-\_\-world\-Size\-Y)}\label{class_x_d_l___sprite_batch_a0ee6240197106c7ad2061226da69ba47}
+
 \item 
-\hyperlink{class_x_d_l___sprite_batch_a33219d922bae40ae5952f39b8e1b3065}{$\sim$\-X\-D\-L\-\_\-\-Sprite\-Batch} (void)
+\hypertarget{class_x_d_l___sprite_batch_af6db9acdec8c4b1f31275b24d99d50d4}{void {\bfseries Begin} ()}\label{class_x_d_l___sprite_batch_af6db9acdec8c4b1f31275b24d99d50d4}
+
 \item 
-void \hyperlink{class_x_d_l___sprite_batch_a39d0ad77cd98c6eed1d7188c0867f954}{Init} (S\-D\-L\-\_\-\-Renderer $\ast$\-\_\-renderer)
+\hypertarget{class_x_d_l___sprite_batch_a63a34e3458a687841c8a9c3d1de876b6}{void {\bfseries Draw} (\hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$\-\_\-me)}\label{class_x_d_l___sprite_batch_a63a34e3458a687841c8a9c3d1de876b6}
+
 \item 
-void \hyperlink{class_x_d_l___sprite_batch_af6db9acdec8c4b1f31275b24d99d50d4}{Begin} ()
+\hypertarget{class_x_d_l___sprite_batch_a60d1f227cf1ef2270f58711b6d37a20f}{void {\bfseries End} ()}\label{class_x_d_l___sprite_batch_a60d1f227cf1ef2270f58711b6d37a20f}
+
 \item 
-void \hyperlink{class_x_d_l___sprite_batch_a63a34e3458a687841c8a9c3d1de876b6}{Draw} (\hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$\-\_\-me)
+\hypertarget{class_x_d_l___sprite_batch_a696b70cf462c9bad88f255f3f8a79506}{void {\bfseries Set\-Draw\-Mode} (\hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6}{D\-R\-A\-W\-M\-O\-D\-E\-S} \-\_\-drawmode)}\label{class_x_d_l___sprite_batch_a696b70cf462c9bad88f255f3f8a79506}
+
 \item 
-void \hyperlink{class_x_d_l___sprite_batch_a60d1f227cf1ef2270f58711b6d37a20f}{End} ()
+\hypertarget{class_x_d_l___sprite_batch_a48fa9280c8a1dc5c93a3732adacca526}{int {\bfseries Get\-Draw\-Mode} ()}\label{class_x_d_l___sprite_batch_a48fa9280c8a1dc5c93a3732adacca526}
+
 \item 
-void \hyperlink{class_x_d_l___sprite_batch_a696b70cf462c9bad88f255f3f8a79506}{Set\-Draw\-Mode} (\hyperlink{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6}{D\-R\-A\-W\-M\-O\-D\-E\-S} \-\_\-drawmode)
+\hypertarget{class_x_d_l___sprite_batch_aff9895e54f671c94c83613731c11fc2e}{void {\bfseries Set\-Camera} (\hyperlink{class_x_d_l___camera}{X\-D\-L\-\_\-\-Camera} $\ast$X\-D\-L\-\_\-\-C\-A\-M\-E\-R\-A)}\label{class_x_d_l___sprite_batch_aff9895e54f671c94c83613731c11fc2e}
+
 \item 
-int \hyperlink{class_x_d_l___sprite_batch_a48fa9280c8a1dc5c93a3732adacca526}{Get\-Draw\-Mode} ()
+\hypertarget{class_x_d_l___sprite_batch_a32ddb6e2d599029bc2e6de79c8437210}{\hyperlink{class_x_d_l___camera}{X\-D\-L\-\_\-\-Camera} $\ast$ {\bfseries Get\-Camera} ()}\label{class_x_d_l___sprite_batch_a32ddb6e2d599029bc2e6de79c8437210}
+
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{class_x_d_l___sprite_batch}{X\-D\-L\-\_\-\-Sprite\-Batch} $\ast$ \hyperlink{class_x_d_l___sprite_batch_a1a5318ca5a0a82603f96453793afa6d0}{Get\-Instance} ()
+\hypertarget{class_x_d_l___sprite_batch_a1a5318ca5a0a82603f96453793afa6d0}{static \hyperlink{class_x_d_l___sprite_batch}{X\-D\-L\-\_\-\-Sprite\-Batch} $\ast$ {\bfseries Get\-Instance} ()}\label{class_x_d_l___sprite_batch_a1a5318ca5a0a82603f96453793afa6d0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_x_d_l___sprite_batch_afcee76b702fbc3794783ab86c73cf8d0}{S\-D\-L\-\_\-\-Rect {\bfseries \-\_\-draw\-Rect}}\label{class_x_d_l___sprite_batch_afcee76b702fbc3794783ab86c73cf8d0}
+
+\item 
+\hypertarget{class_x_d_l___sprite_batch_a8ce0db8774bbedf72939f071ac02f100}{S\-D\-L\-\_\-\-Rect $\ast$ {\bfseries \-\_\-draw\-Texture\-Bounds}}\label{class_x_d_l___sprite_batch_a8ce0db8774bbedf72939f071ac02f100}
+
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static S\-D\-L\-\_\-\-Texture $\ast$ \hyperlink{class_x_d_l___sprite_batch_a37476782380898a316c9bb7a09aeee0d}{\-\_\-draw\-Texture}
+\hypertarget{class_x_d_l___sprite_batch_a37476782380898a316c9bb7a09aeee0d}{static S\-D\-L\-\_\-\-Texture $\ast$ {\bfseries \-\_\-draw\-Texture}}\label{class_x_d_l___sprite_batch_a37476782380898a316c9bb7a09aeee0d}
+
 \end{DoxyCompactItemize}
 
 
@@ -51,92 +66,17 @@ static S\-D\-L\-\_\-\-Texture $\ast$ \hyperlink{class_x_d_l___sprite_batch_a3747
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{F\-R\-O\-N\-T\-T\-O\-B\-A\-C\-K@{F\-R\-O\-N\-T\-T\-O\-B\-A\-C\-K}!X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}}\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!F\-R\-O\-N\-T\-T\-O\-B\-A\-C\-K@{F\-R\-O\-N\-T\-T\-O\-B\-A\-C\-K}}\item[{\em 
-\hypertarget{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b}{F\-R\-O\-N\-T\-T\-O\-B\-A\-C\-K}\label{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b}
-}]\index{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T@{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T}!X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}}\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T@{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T}}\item[{\em 
+\index{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T@{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T}!X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}}\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T@{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T}}\item[{\em 
 \hypertarget{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1}{B\-A\-C\-K\-T\-O\-F\-R\-O\-N\-T}\label{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1}
-}]\index{U\-N\-S\-O\-R\-T\-E\-D@{U\-N\-S\-O\-R\-T\-E\-D}!X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}}\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!U\-N\-S\-O\-R\-T\-E\-D@{U\-N\-S\-O\-R\-T\-E\-D}}\item[{\em 
+}]Larger Z means drawn at the back. \index{U\-N\-S\-O\-R\-T\-E\-D@{U\-N\-S\-O\-R\-T\-E\-D}!X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}}\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!U\-N\-S\-O\-R\-T\-E\-D@{U\-N\-S\-O\-R\-T\-E\-D}}\item[{\em 
 \hypertarget{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6a4dea32cd64020138077648d29c34f58a}{U\-N\-S\-O\-R\-T\-E\-D}\label{class_x_d_l___sprite_batch_a0dba0557842cdf21917adc2ef44125e6a4dea32cd64020138077648d29c34f58a}
-}]\end{description}
+}]Smaller Z's drawn in the back, bigger Z drawn in front
+
+no sorting, drawn in same order as they are added \end{description}
 \end{Desc}
-
-
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_x_d_l___sprite_batch_a509e7c91d956bd35ce5a9b12d037a807}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{X\-D\-L\-\_\-\-Sprite\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Sprite\-Batch\-::\-X\-D\-L\-\_\-\-Sprite\-Batch (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_a509e7c91d956bd35ce5a9b12d037a807}
-\hypertarget{class_x_d_l___sprite_batch_a33219d922bae40ae5952f39b8e1b3065}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!$\sim$\-X\-D\-L\-\_\-\-Sprite\-Batch@{$\sim$\-X\-D\-L\-\_\-\-Sprite\-Batch}}
-\index{$\sim$\-X\-D\-L\-\_\-\-Sprite\-Batch@{$\sim$\-X\-D\-L\-\_\-\-Sprite\-Batch}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{$\sim$\-X\-D\-L\-\_\-\-Sprite\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Sprite\-Batch\-::$\sim$\-X\-D\-L\-\_\-\-Sprite\-Batch (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_a33219d922bae40ae5952f39b8e1b3065}
-
-
-\subsection{Member Function Documentation}
-\hypertarget{class_x_d_l___sprite_batch_af6db9acdec8c4b1f31275b24d99d50d4}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!Begin@{Begin}}
-\index{Begin@{Begin}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{Begin}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Sprite\-Batch\-::\-Begin (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_af6db9acdec8c4b1f31275b24d99d50d4}
-\hypertarget{class_x_d_l___sprite_batch_a63a34e3458a687841c8a9c3d1de876b6}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!Draw@{Draw}}
-\index{Draw@{Draw}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Sprite\-Batch\-::\-Draw (
-\begin{DoxyParamCaption}
-\item[{{\bf X\-D\-L\-\_\-\-Game\-Object} $\ast$}]{\-\_\-me}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_a63a34e3458a687841c8a9c3d1de876b6}
-\hypertarget{class_x_d_l___sprite_batch_a60d1f227cf1ef2270f58711b6d37a20f}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!End@{End}}
-\index{End@{End}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{End}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Sprite\-Batch\-::\-End (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_a60d1f227cf1ef2270f58711b6d37a20f}
-\hypertarget{class_x_d_l___sprite_batch_a48fa9280c8a1dc5c93a3732adacca526}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!Get\-Draw\-Mode@{Get\-Draw\-Mode}}
-\index{Get\-Draw\-Mode@{Get\-Draw\-Mode}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{Get\-Draw\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}int X\-D\-L\-\_\-\-Sprite\-Batch\-::\-Get\-Draw\-Mode (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_a48fa9280c8a1dc5c93a3732adacca526}
-\hypertarget{class_x_d_l___sprite_batch_a1a5318ca5a0a82603f96453793afa6d0}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!Get\-Instance@{Get\-Instance}}
-\index{Get\-Instance@{Get\-Instance}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{Get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Sprite\-Batch} $\ast$ X\-D\-L\-\_\-\-Sprite\-Batch\-::\-Get\-Instance (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_x_d_l___sprite_batch_a1a5318ca5a0a82603f96453793afa6d0}
-\hypertarget{class_x_d_l___sprite_batch_a39d0ad77cd98c6eed1d7188c0867f954}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!Init@{Init}}
-\index{Init@{Init}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Sprite\-Batch\-::\-Init (
-\begin{DoxyParamCaption}
-\item[{S\-D\-L\-\_\-\-Renderer $\ast$}]{\-\_\-renderer}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_a39d0ad77cd98c6eed1d7188c0867f954}
-\hypertarget{class_x_d_l___sprite_batch_a696b70cf462c9bad88f255f3f8a79506}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!Set\-Draw\-Mode@{Set\-Draw\-Mode}}
-\index{Set\-Draw\-Mode@{Set\-Draw\-Mode}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{Set\-Draw\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Sprite\-Batch\-::\-Set\-Draw\-Mode (
-\begin{DoxyParamCaption}
-\item[{{\bf D\-R\-A\-W\-M\-O\-D\-E\-S}}]{\-\_\-drawmode}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___sprite_batch_a696b70cf462c9bad88f255f3f8a79506}
-
-
-\subsection{Member Data Documentation}
-\hypertarget{class_x_d_l___sprite_batch_a37476782380898a316c9bb7a09aeee0d}{\index{X\-D\-L\-\_\-\-Sprite\-Batch@{X\-D\-L\-\_\-\-Sprite\-Batch}!\-\_\-draw\-Texture@{\-\_\-draw\-Texture}}
-\index{\-\_\-draw\-Texture@{\-\_\-draw\-Texture}!XDL_SpriteBatch@{X\-D\-L\-\_\-\-Sprite\-Batch}}
-\subsubsection[{\-\_\-draw\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Texture $\ast$ X\-D\-L\-\_\-\-Sprite\-Batch\-::\-\_\-draw\-Texture\hspace{0.3cm}{\ttfamily [static]}}}\label{class_x_d_l___sprite_batch_a37476782380898a316c9bb7a09aeee0d}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___sprite_batch_8h}{X\-D\-L\-\_\-\-Sprite\-Batch.\-h}\item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___sprite_batch_8cpp}{X\-D\-L\-\_\-\-Sprite\-Batch.\-cpp}\end{DoxyCompactItemize}
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Sprite\-Batch.\-h\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Sprite\-Batch.\-cpp\end{DoxyCompactItemize}

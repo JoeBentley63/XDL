@@ -1,0 +1,84 @@
+\hypertarget{class_breakout}{\section{Breakout Class Reference}
+\label{class_breakout}\index{Breakout@{Breakout}}
+}
+
+
+\hyperlink{class_breakout}{Breakout} Demo Scene.  
+
+
+
+
+{\ttfamily \#include $<$Breakout.\-h$>$}
+
+Inheritance diagram for Breakout\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_breakout}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_breakout_a1de3e33de09b958a21855ba83685edd9}{Breakout} (S\-D\-L\-\_\-\-Renderer $\ast$\-\_\-renderer)
+\item 
+void \hyperlink{class_breakout_a5cf62499794bf0613399e64da15b7cdc}{Update} ()
+\item 
+\hypertarget{class_breakout_a3899a6799cf64eb53e862aaab1b2b4a1}{void {\bfseries Draw} ()}\label{class_breakout_a3899a6799cf64eb53e862aaab1b2b4a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_breakout_a59dfd5c0fcf89b8dc1b85fb25d141e89}{\hyperlink{class_x_d_l___scene_manager}{X\-D\-L\-\_\-\-Scene\-Manager} $\ast$ {\bfseries \-\_\-manager}}\label{class_breakout_a59dfd5c0fcf89b8dc1b85fb25d141e89}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_breakout}{Breakout} Demo Scene. 
+
+A Demo Scene to show how easy it is to make the classic game breakout in X\-D\-L 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_breakout_a1de3e33de09b958a21855ba83685edd9}{\index{Breakout@{Breakout}!Breakout@{Breakout}}
+\index{Breakout@{Breakout}!Breakout@{Breakout}}
+\subsubsection[{Breakout}]{\setlength{\rightskip}{0pt plus 5cm}Breakout\-::\-Breakout (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Renderer $\ast$}]{\-\_\-renderer}
+\end{DoxyParamCaption}
+)}}\label{class_breakout_a1de3e33de09b958a21855ba83685edd9}
+Setup scene
+
+Create our ball
+
+Add it to scene where it will be auto updated/drawn/collision detection
+
+create our paddle
+
+Create all the blocks 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_breakout_a5cf62499794bf0613399e64da15b7cdc}{\index{Breakout@{Breakout}!Update@{Update}}
+\index{Update@{Update}!Breakout@{Breakout}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Breakout\-::\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_breakout_a5cf62499794bf0613399e64da15b7cdc}
+every scene requires an update and a draw minimum move paddle left/right depending on key down
+
+if ball hit paddle, change its velocity
+
+if ball hit paddle, then we move it down, and delete the block
+
+stop ball going off screen 
+
+Reimplemented from \hyperlink{class_x_d_l___scene_abd1ce8f1dbc90c4376c99ccd7fd9c024}{X\-D\-L\-\_\-\-Scene}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/Breakout.\-h\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/Breakout.\-cpp\end{DoxyCompactItemize}

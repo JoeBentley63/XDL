@@ -11,8 +11,8 @@ class XDL_Input
 {
 private:
 	XDL_Input(void);
-	XDL_Keyboard* _keyBoard;
-	XDL_Mouse* _mouse;
+	XDL_Keyboard* XDL_KEYBOARD;
+	XDL_Mouse* XDL_MOUSE;
 	static XDL_Input* _me;
 
 public:
@@ -25,7 +25,7 @@ public:
 	bool IsMouseButtonDown(int _button);/*!Check if a button is down*/
 	bool IsMouseButtonUp(int _button);/*!Check if a button is up*/
 	SDL_Point GetMousePositionScreen();/*!Get Mouse Position relative to screen*/
-	SDL_Point GetMousePositionWorld(XDL_Camera* _camera);/*!Get Mouse Position relative to World*/
+	SDL_Point GetMousePositionWorld(XDL_Camera* XDL_CAMERA);/*!Get Mouse Position relative to World*/
 	//possible gamepad functions?
 
 

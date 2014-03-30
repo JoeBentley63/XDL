@@ -2,16 +2,16 @@
 #include "XDL_Sprite.h"
 #include "XDL_SpriteBatch.h"
 
-//TODO, Make overloads for PNG
-/**constructor for a bmp file, where we are going to draw the entire image*/
-XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer)
+
+/**constructor for file, where we are going to draw the entire image*/
+XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _width,int _height,int _z,SDL_Renderer* _renderer,string _uniqueName) : XDL_GameObject(_uniqueName)
 {
 	this->_z = _z;
 	Init(_asset,_x,_y,_height,_width,_renderer);
 }
 
 /**constructor for use with tilesheets.*/
-XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect)
+XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y, int _width,int _height,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect,string _uniqueName) : XDL_GameObject(_uniqueName)
 {
 	Init(_asset,_x,_y,_height,_width,_renderer);
 	this->_sourceRect = _sourceRect;
@@ -20,8 +20,8 @@ XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,in
 	_currentFrame = 0;
 	
 }
-/**constructor for use with animation.*/
-XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect,int _numFrames)
+/**constructor for use with animation...which is no implemented yet*/
+XDL_Sprite::XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect,int _numFrames,string _uniqueName) : XDL_GameObject(_uniqueName)
 {
 	Init(_asset,_x,_y,_height,_width,_renderer);
 	this->_sourceRect = _sourceRect;
@@ -54,26 +54,6 @@ void XDL_Sprite::Init(char* _asset,float _x,float _y,int _height, int _width,SDL
 	_posX = _x;
 	_posY = _y;
 
-	_top.x = _bounds.x + (_bounds.w*.2);
-	_top.y = _bounds.y - _bounds.h*.2;
-	_top.w = _bounds.w *0.7;
-	_top.h = _bounds.w *0.3;
-
-	_bottom.x = _bounds.x + (_bounds.w*.2);
-	_bottom.y = _bounds.y + _bounds.h*0.9;
-	_bottom.w = _bounds.w *0.7;
-	_bottom.h = _bounds.w *0.3;
-
-	_left.x = _bounds.x - (_bounds.w*.1);
-	_left.y = _bounds.y + _bounds.h*0.2;
-	_left.w = _bounds.w *0.3;
-	_left.h = _bounds.h *0.6;
-
-	_right.x = _bounds.x + (_bounds.w*.9);
-	_right.y = _bounds.y + _bounds.h*0.2;
-	_right.w = _bounds.w *0.3;
-	_right.h = _bounds.h *0.6;
-
 	_sourceRect.x = 0;
 	_sourceRect.y = 0;
 	_sourceRect.w= _width;
@@ -81,6 +61,7 @@ void XDL_Sprite::Init(char* _asset,float _x,float _y,int _height, int _width,SDL
 	_drawRect = _sourceRect;
 	_currentFrame = 0;
 	_immovable = false;
+	XDL_GameObject::Init();
 }
 
 

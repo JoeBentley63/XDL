@@ -1,118 +1,71 @@
 \hypertarget{class_x_d_l___scene}{\section{X\-D\-L\-\_\-\-Scene Class Reference}
 \label{class_x_d_l___scene}\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}}
 }
-
-
-{\ttfamily \#include $<$X\-D\-L\-\_\-\-Scene.\-h$>$}
-
 Inheritance diagram for X\-D\-L\-\_\-\-Scene\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_x_d_l___scene}
+\includegraphics[height=1.166667cm]{class_x_d_l___scene}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_x_d_l___scene_abc2c1afb7ab21c4ca3f5f2146786a1ab}{X\-D\-L\-\_\-\-Scene} (void)
+\hypertarget{class_x_d_l___scene_aef26b7d953a74c407e029ac5b4003e96}{void {\bfseries Init} (S\-D\-L\-\_\-\-Renderer $\ast$\-\_\-renderer, int \-\_\-world\-Size\-X, int \-\_\-world\-Size\-Y)}\label{class_x_d_l___scene_aef26b7d953a74c407e029ac5b4003e96}
+
 \item 
-\hyperlink{class_x_d_l___scene_aa2bd0b3f778c179dc2638674efad4509}{$\sim$\-X\-D\-L\-\_\-\-Scene} (void)
-\item 
-void \hyperlink{class_x_d_l___scene_a14d2c87c4fc3914182de6ec8bf27cf67}{Init} (S\-D\-L\-\_\-\-Renderer $\ast$\hyperlink{class_x_d_l___scene_a923ee55d91647c14f2566f1aa70e3aed}{\-\_\-renderer})
-\item 
-virtual void \hyperlink{class_x_d_l___scene_a1a3d1b1f6a4f1f4c0834cc1fe29af814}{Draw} ()
+\hypertarget{class_x_d_l___scene_a1a3d1b1f6a4f1f4c0834cc1fe29af814}{virtual void {\bfseries Draw} ()}\label{class_x_d_l___scene_a1a3d1b1f6a4f1f4c0834cc1fe29af814}
+
 \item 
 virtual void \hyperlink{class_x_d_l___scene_abd1ce8f1dbc90c4376c99ccd7fd9c024}{Update} ()
-\end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$ \hyperlink{class_x_d_l___scene_a92843792b25864d0aec748ca60213e24}{\-\_\-sprite}
+\hypertarget{class_x_d_l___scene_aef613b01d6e162e8df21ca2e6a3850ba}{vector$<$ \hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$ $>$ {\bfseries Get\-All\-Game\-Objects\-In\-Scene} ()}\label{class_x_d_l___scene_aef613b01d6e162e8df21ca2e6a3850ba}
+
+\item 
+\hypertarget{class_x_d_l___scene_a5776979310dd25abec878d33998b9b00}{virtual bool {\bfseries Add\-Game\-Object\-To\-Scene} (\hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$\-\_\-gameobject)}\label{class_x_d_l___scene_a5776979310dd25abec878d33998b9b00}
+
+\item 
+\hypertarget{class_x_d_l___scene_aa8aea6a87c3dbd2faa52480907f90d62}{virtual bool {\bfseries Remove\-Game\-Object\-From\-Scene} (string \-\_\-id)}\label{class_x_d_l___scene_aa8aea6a87c3dbd2faa52480907f90d62}
+
+\item 
+\hypertarget{class_x_d_l___scene_ab040547e3b87e059c4efab4cde45031b}{virtual bool {\bfseries Remove\-Game\-Object\-From\-Scene} (\hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$\-\_\-gameobject)}\label{class_x_d_l___scene_ab040547e3b87e059c4efab4cde45031b}
+
+\item 
+\hypertarget{class_x_d_l___scene_a542233e544b861b4e41b7ab86a91e122}{virtual \hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$ {\bfseries Get\-Game\-Object\-From\-Scene\-Using\-I\-D} (string \-\_\-id)}\label{class_x_d_l___scene_a542233e544b861b4e41b7ab86a91e122}
+
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual bool \hyperlink{class_x_d_l___scene_ab8aa77c9d37e13b4e67f0e1989bcb641}{Add\-Game\-Object\-To\-Scene} (\hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$\-\_\-gameobject, string \-\_\-id)
-\item 
-virtual bool \hyperlink{class_x_d_l___scene_aa8aea6a87c3dbd2faa52480907f90d62}{Remove\-Game\-Object\-From\-Scene} (string \-\_\-id)
-\item 
-virtual \hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$ \hyperlink{class_x_d_l___scene_a542233e544b861b4e41b7ab86a91e122}{Get\-Game\-Object\-From\-Scene\-Using\-I\-D} (string \-\_\-id)
+\hypertarget{class_x_d_l___scene_a2c15ca640061043c77e6e2c2db4fd6ab}{void {\bfseries Repopulate\-Quad\-Tree} ()}\label{class_x_d_l___scene_a2c15ca640061043c77e6e2c2db4fd6ab}
+
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_x_d_l___keyboard}{X\-D\-L\-\_\-\-Keyboard} $\ast$ \hyperlink{class_x_d_l___scene_abc53fadb79149e2f41de807070093509}{\-\_\-keyboard}
+\hypertarget{class_x_d_l___scene_a06c4466438cf7260b1ffda8e7f900239}{\hyperlink{class_x_d_l___input}{X\-D\-L\-\_\-\-Input} $\ast$ {\bfseries X\-D\-L\-\_\-\-I\-N\-P\-U\-T}}\label{class_x_d_l___scene_a06c4466438cf7260b1ffda8e7f900239}
+
 \item 
-\hyperlink{class_x_d_l___sprite_batch}{X\-D\-L\-\_\-\-Sprite\-Batch} $\ast$ \hyperlink{class_x_d_l___scene_acd40bb9e62e836e6a10bfd75b53b74b1}{\-\_\-sprite\-Batch}
+\hypertarget{class_x_d_l___scene_a70673f995f806f2ae20cc2f535f30bab}{\hyperlink{class_x_d_l___sprite_batch}{X\-D\-L\-\_\-\-Sprite\-Batch} $\ast$ {\bfseries X\-D\-L\-\_\-\-S\-P\-R\-I\-T\-E\-B\-A\-T\-C\-H}}\label{class_x_d_l___scene_a70673f995f806f2ae20cc2f535f30bab}
+
 \item 
-\hyperlink{class_x_d_l___camera}{X\-D\-L\-\_\-\-Camera} $\ast$ \hyperlink{class_x_d_l___scene_a9f432061e3a0b2bcf9166abf9000b753}{\-\_\-camera}
+\hypertarget{class_x_d_l___scene_aea41b1e2980f0cd93e97f65fce346f53}{\hyperlink{class_x_d_l___camera}{X\-D\-L\-\_\-\-Camera} $\ast$ {\bfseries X\-D\-L\-\_\-\-C\-A\-M\-E\-R\-A}}\label{class_x_d_l___scene_aea41b1e2980f0cd93e97f65fce346f53}
+
 \item 
-\hyperlink{class_x_d_l___storage}{X\-D\-L\-\_\-\-Storage} $\ast$ \hyperlink{class_x_d_l___scene_add9dee84c2e4a1adc445fa9c81d79fe4}{\-\_\-persistant\-Storage}
+\hypertarget{class_x_d_l___scene_a3045df7fb476b322f1e06d1b81df0cc4}{\hyperlink{class_x_d_l___collision_manager}{X\-D\-L\-\_\-\-Collision\-Manager} $\ast$ {\bfseries X\-D\-L\-\_\-\-C\-O\-L\-L\-I\-S\-I\-O\-N\-\_\-\-M\-A\-N\-A\-G\-E\-R}}\label{class_x_d_l___scene_a3045df7fb476b322f1e06d1b81df0cc4}
+
 \item 
-S\-D\-L\-\_\-\-Renderer $\ast$ \hyperlink{class_x_d_l___scene_a923ee55d91647c14f2566f1aa70e3aed}{\-\_\-renderer}
+\hypertarget{class_x_d_l___scene_a923ee55d91647c14f2566f1aa70e3aed}{S\-D\-L\-\_\-\-Renderer $\ast$ {\bfseries \-\_\-renderer}}\label{class_x_d_l___scene_a923ee55d91647c14f2566f1aa70e3aed}
+
 \item 
-map$<$ string, \hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$ $>$ \hyperlink{class_x_d_l___scene_aad1feb840a1c2925324ccce29fa1d3a4}{\-\_\-game\-Objects\-In\-Scene}
+\hypertarget{class_x_d_l___scene_aad1feb840a1c2925324ccce29fa1d3a4}{map$<$ string, \hyperlink{class_x_d_l___game_object}{X\-D\-L\-\_\-\-Game\-Object} $\ast$ $>$ {\bfseries \-\_\-game\-Objects\-In\-Scene}}\label{class_x_d_l___scene_aad1feb840a1c2925324ccce29fa1d3a4}
+
+\item 
+\hypertarget{class_x_d_l___scene_a41e02caab41a03ecdf57d011c853f2c9}{\hyperlink{class_x_d_l___quad_tree}{X\-D\-L\-\_\-\-Quad\-Tree} $\ast$ {\bfseries X\-D\-L\-\_\-\-Q\-U\-A\-D\-T\-R\-E\-E}}\label{class_x_d_l___scene_a41e02caab41a03ecdf57d011c853f2c9}
+
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_x_d_l___scene_abc2c1afb7ab21c4ca3f5f2146786a1ab}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}}
-\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{X\-D\-L\-\_\-\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Scene\-::\-X\-D\-L\-\_\-\-Scene (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___scene_abc2c1afb7ab21c4ca3f5f2146786a1ab}
-\hypertarget{class_x_d_l___scene_aa2bd0b3f778c179dc2638674efad4509}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!$\sim$\-X\-D\-L\-\_\-\-Scene@{$\sim$\-X\-D\-L\-\_\-\-Scene}}
-\index{$\sim$\-X\-D\-L\-\_\-\-Scene@{$\sim$\-X\-D\-L\-\_\-\-Scene}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{$\sim$\-X\-D\-L\-\_\-\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Scene\-::$\sim$\-X\-D\-L\-\_\-\-Scene (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___scene_aa2bd0b3f778c179dc2638674efad4509}
-
-
 \subsection{Member Function Documentation}
-\hypertarget{class_x_d_l___scene_ab8aa77c9d37e13b4e67f0e1989bcb641}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!Add\-Game\-Object\-To\-Scene@{Add\-Game\-Object\-To\-Scene}}
-\index{Add\-Game\-Object\-To\-Scene@{Add\-Game\-Object\-To\-Scene}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{Add\-Game\-Object\-To\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool X\-D\-L\-\_\-\-Scene\-::\-Add\-Game\-Object\-To\-Scene (
-\begin{DoxyParamCaption}
-\item[{{\bf X\-D\-L\-\_\-\-Game\-Object} $\ast$}]{\-\_\-gameobject, }
-\item[{string}]{\-\_\-id}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_x_d_l___scene_ab8aa77c9d37e13b4e67f0e1989bcb641}
-\hypertarget{class_x_d_l___scene_a1a3d1b1f6a4f1f4c0834cc1fe29af814}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!Draw@{Draw}}
-\index{Draw@{Draw}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Scene\-::\-Draw (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_x_d_l___scene_a1a3d1b1f6a4f1f4c0834cc1fe29af814}
-
-
-Reimplemented in \hyperlink{class_level1_ae8e845511c6fcf574f4f94cd0f986751}{Level1}.
-
-\hypertarget{class_x_d_l___scene_a542233e544b861b4e41b7ab86a91e122}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!Get\-Game\-Object\-From\-Scene\-Using\-I\-D@{Get\-Game\-Object\-From\-Scene\-Using\-I\-D}}
-\index{Get\-Game\-Object\-From\-Scene\-Using\-I\-D@{Get\-Game\-Object\-From\-Scene\-Using\-I\-D}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{Get\-Game\-Object\-From\-Scene\-Using\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Game\-Object} $\ast$ X\-D\-L\-\_\-\-Scene\-::\-Get\-Game\-Object\-From\-Scene\-Using\-I\-D (
-\begin{DoxyParamCaption}
-\item[{string}]{\-\_\-id}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_x_d_l___scene_a542233e544b861b4e41b7ab86a91e122}
-\hypertarget{class_x_d_l___scene_a14d2c87c4fc3914182de6ec8bf27cf67}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!Init@{Init}}
-\index{Init@{Init}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Scene\-::\-Init (
-\begin{DoxyParamCaption}
-\item[{S\-D\-L\-\_\-\-Renderer $\ast$}]{\-\_\-renderer}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___scene_a14d2c87c4fc3914182de6ec8bf27cf67}
-\hypertarget{class_x_d_l___scene_aa8aea6a87c3dbd2faa52480907f90d62}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!Remove\-Game\-Object\-From\-Scene@{Remove\-Game\-Object\-From\-Scene}}
-\index{Remove\-Game\-Object\-From\-Scene@{Remove\-Game\-Object\-From\-Scene}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{Remove\-Game\-Object\-From\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}bool X\-D\-L\-\_\-\-Scene\-::\-Remove\-Game\-Object\-From\-Scene (
-\begin{DoxyParamCaption}
-\item[{string}]{\-\_\-id}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_x_d_l___scene_aa8aea6a87c3dbd2faa52480907f90d62}
 \hypertarget{class_x_d_l___scene_abd1ce8f1dbc90c4376c99ccd7fd9c024}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!Update@{Update}}
 \index{Update@{Update}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
 \subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Scene\-::\-Update (
@@ -120,37 +73,13 @@ Reimplemented in \hyperlink{class_level1_ae8e845511c6fcf574f4f94cd0f986751}{Leve
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_x_d_l___scene_abd1ce8f1dbc90c4376c99ccd7fd9c024}
+every scene requires an update and a draw minimum 
 
+Reimplemented in \hyperlink{class_tile_engine_scene_aabb6907efdbfb2bcfbc476f58f5dd9a8}{Tile\-Engine\-Scene}, \hyperlink{class_breakout_a5cf62499794bf0613399e64da15b7cdc}{Breakout}, \hyperlink{class_mouse_demo_a2c6ada1a783055794292daaf9863b7ec}{Mouse\-Demo}, \hyperlink{class_sorting_mode_demo_scene_a1f9386ddf2ce99b05c52f4abfe802a01}{Sorting\-Mode\-Demo\-Scene}, \hyperlink{class_x_d_l___test_scene_a499dd5fc238bce5d33a434c85263fd86}{X\-D\-L\-\_\-\-Test\-Scene}, and \hyperlink{class_quad_tree_demo_scene_a80d832cec597edf526082b9e1585edbb}{Quad\-Tree\-Demo\-Scene}.
 
-Reimplemented in \hyperlink{class_level1_a26cbf7e692665c1a1250162057583ee4}{Level1}.
-
-
-
-\subsection{Member Data Documentation}
-\hypertarget{class_x_d_l___scene_a9f432061e3a0b2bcf9166abf9000b753}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!\-\_\-camera@{\-\_\-camera}}
-\index{\-\_\-camera@{\-\_\-camera}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{\-\_\-camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Camera}$\ast$ X\-D\-L\-\_\-\-Scene\-::\-\_\-camera\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_d_l___scene_a9f432061e3a0b2bcf9166abf9000b753}
-\hypertarget{class_x_d_l___scene_aad1feb840a1c2925324ccce29fa1d3a4}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!\-\_\-game\-Objects\-In\-Scene@{\-\_\-game\-Objects\-In\-Scene}}
-\index{\-\_\-game\-Objects\-In\-Scene@{\-\_\-game\-Objects\-In\-Scene}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{\-\_\-game\-Objects\-In\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf X\-D\-L\-\_\-\-Game\-Object}$\ast$$>$ X\-D\-L\-\_\-\-Scene\-::\-\_\-game\-Objects\-In\-Scene\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_d_l___scene_aad1feb840a1c2925324ccce29fa1d3a4}
-\hypertarget{class_x_d_l___scene_abc53fadb79149e2f41de807070093509}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!\-\_\-keyboard@{\-\_\-keyboard}}
-\index{\-\_\-keyboard@{\-\_\-keyboard}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{\-\_\-keyboard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Keyboard}$\ast$ X\-D\-L\-\_\-\-Scene\-::\-\_\-keyboard\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_d_l___scene_abc53fadb79149e2f41de807070093509}
-\hypertarget{class_x_d_l___scene_add9dee84c2e4a1adc445fa9c81d79fe4}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!\-\_\-persistant\-Storage@{\-\_\-persistant\-Storage}}
-\index{\-\_\-persistant\-Storage@{\-\_\-persistant\-Storage}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{\-\_\-persistant\-Storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Storage}$\ast$ X\-D\-L\-\_\-\-Scene\-::\-\_\-persistant\-Storage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_d_l___scene_add9dee84c2e4a1adc445fa9c81d79fe4}
-\hypertarget{class_x_d_l___scene_a923ee55d91647c14f2566f1aa70e3aed}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!\-\_\-renderer@{\-\_\-renderer}}
-\index{\-\_\-renderer@{\-\_\-renderer}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{\-\_\-renderer}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Renderer$\ast$ X\-D\-L\-\_\-\-Scene\-::\-\_\-renderer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_d_l___scene_a923ee55d91647c14f2566f1aa70e3aed}
-\hypertarget{class_x_d_l___scene_a92843792b25864d0aec748ca60213e24}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!\-\_\-sprite@{\-\_\-sprite}}
-\index{\-\_\-sprite@{\-\_\-sprite}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{\-\_\-sprite}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Sprite}$\ast$ X\-D\-L\-\_\-\-Scene\-::\-\_\-sprite}}\label{class_x_d_l___scene_a92843792b25864d0aec748ca60213e24}
-\hypertarget{class_x_d_l___scene_acd40bb9e62e836e6a10bfd75b53b74b1}{\index{X\-D\-L\-\_\-\-Scene@{X\-D\-L\-\_\-\-Scene}!\-\_\-sprite\-Batch@{\-\_\-sprite\-Batch}}
-\index{\-\_\-sprite\-Batch@{\-\_\-sprite\-Batch}!XDL_Scene@{X\-D\-L\-\_\-\-Scene}}
-\subsubsection[{\-\_\-sprite\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Sprite\-Batch}$\ast$ X\-D\-L\-\_\-\-Scene\-::\-\_\-sprite\-Batch\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_d_l___scene_acd40bb9e62e836e6a10bfd75b53b74b1}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___scene_8h}{X\-D\-L\-\_\-\-Scene.\-h}\item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___scene_8cpp}{X\-D\-L\-\_\-\-Scene.\-cpp}\end{DoxyCompactItemize}
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Scene.\-h\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Scene.\-cpp\end{DoxyCompactItemize}

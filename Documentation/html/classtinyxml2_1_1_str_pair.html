@@ -31,9 +31,8 @@
   <td id="projectlogo"><img alt="Logo" src="XDL.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">XDL
-   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Framework for rapid game dev in C++</div>
+   <div id="projectbrief">4th Year Project, Joseph Bentley. XDL, Framework built ontop of SDL for rapid game developement.</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -96,7 +94,7 @@ $(document).ready(function(){initNavTree('classtinyxml2_1_1_str_pair.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,308 +112,60 @@ $(document).ready(function(){initNavTree('classtinyxml2_1_1_str_pair.html','');}
 <div class="title">tinyxml2::StrPair Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="tinyxml2_8h_source.html">tinyxml2.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a0301ef962e15dd94574431f1c61266c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5a4f1e01a55f8efe4ca72c32d454060237">NEEDS_ENTITY_PROCESSING</a> = 0x01, 
-<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5a8f2045d56e70745d718672c0da91d0e0">NEEDS_NEWLINE_NORMALIZATION</a> = 0x02, 
-<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5ab17a85f396c221811fe49263bf6f843f">COLLAPSE_WHITESPACE</a> = 0x04, 
-<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5aae519eb5a639858591763aa5fc6cc953">TEXT_ELEMENT</a> = NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION, 
+&#160;&#160;<b>NEEDS_ENTITY_PROCESSING</b> = 0x01, 
+<b>NEEDS_NEWLINE_NORMALIZATION</b> = 0x02, 
+<b>COLLAPSE_WHITESPACE</b> = 0x04, 
+<b>TEXT_ELEMENT</b> = NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION, 
 <br/>
-&#160;&#160;<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5a96be48cf899bfeea0aa227f984f1fa63">TEXT_ELEMENT_LEAVE_ENTITIES</a> = NEEDS_NEWLINE_NORMALIZATION, 
-<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5aaab1cbefaa977e6f772b4e2575417aeb">ATTRIBUTE_NAME</a> = 0, 
-<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5a6d72f9ce15f50e8bcd680edf66235dfd">ATTRIBUTE_VALUE</a> = NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION, 
-<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5a2decbd2513ac14f8befa987938326399">ATTRIBUTE_VALUE_LEAVE_ENTITIES</a> = NEEDS_NEWLINE_NORMALIZATION, 
+&#160;&#160;<b>TEXT_ELEMENT_LEAVE_ENTITIES</b> = NEEDS_NEWLINE_NORMALIZATION, 
+<b>ATTRIBUTE_NAME</b> = 0, 
+<b>ATTRIBUTE_VALUE</b> = NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION, 
+<b>ATTRIBUTE_VALUE_LEAVE_ENTITIES</b> = NEEDS_NEWLINE_NORMALIZATION, 
 <br/>
-&#160;&#160;<a class="el" href="classtinyxml2_1_1_str_pair.html#a0301ef962e15dd94574431f1c61266c5a067a6ec90c8beea1cf5992930d93bffa">COMMENT</a> = NEEDS_NEWLINE_NORMALIZATION
+&#160;&#160;<b>COMMENT</b> = NEEDS_NEWLINE_NORMALIZATION
 <br/>
  }</td></tr>
 <tr class="separator:a0301ef962e15dd94574431f1c61266c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a69153963f7052de9f767d3d8c1623a70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#a69153963f7052de9f767d3d8c1623a70">StrPair</a> ()</td></tr>
-<tr class="separator:a69153963f7052de9f767d3d8c1623a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60bed84d2503296e1c2a73fcef1431f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#a60bed84d2503296e1c2a73fcef1431f9">~StrPair</a> ()</td></tr>
-<tr class="separator:a60bed84d2503296e1c2a73fcef1431f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f05549373394266a1eecba26813c166"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#a4f05549373394266a1eecba26813c166">Set</a> (char *<a class="el" href="_x_d_l___main_8cpp.html#a2182b4f4175ea78bf91a9b7a78fa1c0a">start</a>, char *end, int flags)</td></tr>
+<tr class="memitem:a4f05549373394266a1eecba26813c166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f05549373394266a1eecba26813c166"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (char *start, char *end, int flags)</td></tr>
 <tr class="separator:a4f05549373394266a1eecba26813c166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87e3d11330f5e689ba1e7e54c023b57"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#ad87e3d11330f5e689ba1e7e54c023b57">GetStr</a> ()</td></tr>
+<tr class="memitem:ad87e3d11330f5e689ba1e7e54c023b57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad87e3d11330f5e689ba1e7e54c023b57"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStr</b> ()</td></tr>
 <tr class="separator:ad87e3d11330f5e689ba1e7e54c023b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa1043e73a18f05d5d2faec055725a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#affa1043e73a18f05d5d2faec055725a7">Empty</a> () const </td></tr>
+<tr class="memitem:affa1043e73a18f05d5d2faec055725a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affa1043e73a18f05d5d2faec055725a7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Empty</b> () const </td></tr>
 <tr class="separator:affa1043e73a18f05d5d2faec055725a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2baf6230e18333e02ab65d0897ee3941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#a2baf6230e18333e02ab65d0897ee3941">SetInternedStr</a> (const char *str)</td></tr>
+<tr class="memitem:a2baf6230e18333e02ab65d0897ee3941"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2baf6230e18333e02ab65d0897ee3941"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInternedStr</b> (const char *str)</td></tr>
 <tr class="separator:a2baf6230e18333e02ab65d0897ee3941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f82ec6b5bee35ee7466d8565e43b1de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#a1f82ec6b5bee35ee7466d8565e43b1de">SetStr</a> (const char *str, int flags=0)</td></tr>
+<tr class="memitem:a1f82ec6b5bee35ee7466d8565e43b1de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f82ec6b5bee35ee7466d8565e43b1de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStr</b> (const char *str, int flags=0)</td></tr>
 <tr class="separator:a1f82ec6b5bee35ee7466d8565e43b1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90521f188e9606a8fbafe5d86fb2246"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#ad90521f188e9606a8fbafe5d86fb2246">ParseText</a> (char *in, const char *endTag, int strFlags)</td></tr>
+<tr class="memitem:ad90521f188e9606a8fbafe5d86fb2246"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90521f188e9606a8fbafe5d86fb2246"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>ParseText</b> (char *in, const char *endTag, int strFlags)</td></tr>
 <tr class="separator:ad90521f188e9606a8fbafe5d86fb2246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d8998efceba41d87ec2300c70a6085"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyxml2_1_1_str_pair.html#aa6d8998efceba41d87ec2300c70a6085">ParseName</a> (char *in)</td></tr>
+<tr class="memitem:aa6d8998efceba41d87ec2300c70a6085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6d8998efceba41d87ec2300c70a6085"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>ParseName</b> (char *in)</td></tr>
 <tr class="separator:aa6d8998efceba41d87ec2300c70a6085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a0301ef962e15dd94574431f1c61266c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5a4f1e01a55f8efe4ca72c32d454060237"></a>NEEDS_ENTITY_PROCESSING</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5a8f2045d56e70745d718672c0da91d0e0"></a>NEEDS_NEWLINE_NORMALIZATION</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5ab17a85f396c221811fe49263bf6f843f"></a>COLLAPSE_WHITESPACE</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5aae519eb5a639858591763aa5fc6cc953"></a>TEXT_ELEMENT</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5a96be48cf899bfeea0aa227f984f1fa63"></a>TEXT_ELEMENT_LEAVE_ENTITIES</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5aaab1cbefaa977e6f772b4e2575417aeb"></a>ATTRIBUTE_NAME</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5a6d72f9ce15f50e8bcd680edf66235dfd"></a>ATTRIBUTE_VALUE</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5a2decbd2513ac14f8befa987938326399"></a>ATTRIBUTE_VALUE_LEAVE_ENTITIES</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0301ef962e15dd94574431f1c61266c5a067a6ec90c8beea1cf5992930d93bffa"></a>COMMENT</em>&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a69153963f7052de9f767d3d8c1623a70"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tinyxml2::StrPair::StrPair </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a60bed84d2503296e1c2a73fcef1431f9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tinyxml2::StrPair::~StrPair </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="affa1043e73a18f05d5d2faec055725a7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool tinyxml2::StrPair::Empty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad87e3d11330f5e689ba1e7e54c023b57"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char * tinyxml2::StrPair::GetStr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa6d8998efceba41d87ec2300c70a6085"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * tinyxml2::StrPair::ParseName </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad90521f188e9606a8fbafe5d86fb2246"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * tinyxml2::StrPair::ParseText </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>endTag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>strFlags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4f05549373394266a1eecba26813c166"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tinyxml2::StrPair::Set </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2baf6230e18333e02ab65d0897ee3941"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tinyxml2::StrPair::SetInternedStr </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1f82ec6b5bee35ee7466d8565e43b1de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tinyxml2::StrPair::SetStr </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Joes_SDL_Framework/<a class="el" href="tinyxml2_8h_source.html">tinyxml2.h</a></li>
-<li>Joes_SDL_Framework/<a class="el" href="tinyxml2_8cpp.html">tinyxml2.cpp</a></li>
+<li>Joes_SDL_Framework/tinyxml2.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacetinyxml2.html">tinyxml2</a></li><li class="navelem"><a class="el" href="classtinyxml2_1_1_str_pair.html">StrPair</a></li>
-    <li class="footer">Generated on Mon Feb 17 2014 15:50:11 for XDL by
+    <li class="navelem"><b>tinyxml2</b></li><li class="navelem"><a class="el" href="classtinyxml2_1_1_str_pair.html">StrPair</a></li>
+    <li class="footer">Generated on Sun Mar 30 2014 19:31:46 for XDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

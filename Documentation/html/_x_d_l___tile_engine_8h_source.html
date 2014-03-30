@@ -31,9 +31,8 @@
   <td id="projectlogo"><img alt="Logo" src="XDL.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">XDL
-   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Framework for rapid game dev in C++</div>
+   <div id="projectbrief">4th Year Project, Joseph Bentley. XDL, Framework built ontop of SDL for rapid game developement.</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -94,7 +91,7 @@ $(document).ready(function(){initNavTree('_x_d_l___tile_engine_8h_source.html','
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,59 +105,53 @@ $(document).ready(function(){initNavTree('_x_d_l___tile_engine_8h_source.html','
 <div class="title">XDL_TileEngine.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_x_d_l___tile_engine_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Joseph Bentley P10011026 : TMX Reader Assignment</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">****************************************************************/</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef _TILE_ENGINE_H</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _TILE_ENGINE_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_d_l___sprite_8h.html">XDL_Sprite.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tinyxml2_8h.html">tinyxml2.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_d_l___layer_8h.html">XDL_Layer.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_d_l___sprite_batch_8h.html">XDL_SpriteBatch.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>tinyxml2;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_x_d_l___tile_engine.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_x_d_l___tile_engine.html">XDL_TileEngine</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_x_d_l___tile_engine.html">XDL_TileEngine</a>(SDL_Renderer* _renderer,<span class="keywordtype">int</span> _tilesWidth,<span class="keywordtype">int</span> _tilesHeight);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ~<a class="code" href="class_x_d_l___tile_engine.html">XDL_TileEngine</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> Update();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> Draw(<a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>* _spriteBatch);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> LoadFromXML(<span class="keywordtype">char</span>* _pathToTMX);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> LoadFromTMXAndTSX(<span class="keywordtype">char</span>* _pathToTMX);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> GetTileWidth();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> GetTileHeight();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_x_d_l___layer.html">XDL_Layer</a>* GetLayer(<span class="keywordtype">int</span> layerNum);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span> :</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> LoadFromArray();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> _width = 5;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> _height = 5;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    vector&lt;XDL_Layer*&gt; _layers;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    SDL_Renderer* _renderer;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> _tilesWidth;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> _tilesHeight;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="tinyxml2_8h_html"><div class="ttname"><a href="tinyxml2_8h.html">tinyxml2.h</a></div></div>
-<div class="ttc" id="class_x_d_l___sprite_batch_html"><div class="ttname"><a href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a></div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:11</div></div>
-<div class="ttc" id="_x_d_l___sprite_batch_8h_html"><div class="ttname"><a href="_x_d_l___sprite_batch_8h.html">XDL_SpriteBatch.h</a></div></div>
-<div class="ttc" id="_x_d_l___sprite_8h_html"><div class="ttname"><a href="_x_d_l___sprite_8h.html">XDL_Sprite.h</a></div></div>
-<div class="ttc" id="class_x_d_l___layer_html"><div class="ttname"><a href="class_x_d_l___layer.html">XDL_Layer</a></div><div class="ttdef"><b>Definition:</b> XDL_Layer.h:14</div></div>
-<div class="ttc" id="_x_d_l___layer_8h_html"><div class="ttname"><a href="_x_d_l___layer_8h.html">XDL_Layer.h</a></div></div>
-<div class="ttc" id="class_x_d_l___tile_engine_html"><div class="ttname"><a href="class_x_d_l___tile_engine.html">XDL_TileEngine</a></div><div class="ttdef"><b>Definition:</b> XDL_TileEngine.h:16</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _TILE_ENGINE_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _TILE_ENGINE_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;XDL_Sprite.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;tinyxml2.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;XDL_Layer.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;XDL_SpriteBatch.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>tinyxml2;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_x_d_l___tile_engine.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_x_d_l___tile_engine.html">XDL_TileEngine</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_x_d_l___tile_engine.html">XDL_TileEngine</a>(SDL_Renderer* _renderer,<span class="keywordtype">int</span> _tilesWidth,<span class="keywordtype">int</span> _tilesHeight);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ~<a class="code" href="class_x_d_l___tile_engine.html">XDL_TileEngine</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> Update();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> Draw(<a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>* XDL_SPRITEBATCH);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> LoadFromXML(<span class="keywordtype">char</span>* _pathToTMX);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> LoadFromTMXAndTSX(<span class="keywordtype">char</span>* _pathToTMX);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> GetTileWidth();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> GetTileHeight();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_x_d_l___layer.html">XDL_Layer</a>* GetLayer(<span class="keywordtype">int</span> layerNum);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span> :</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> LoadFromArray();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> _width = 5;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> _height = 5;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    vector&lt;XDL_Layer*&gt; _layers;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    SDL_Renderer* _renderer;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> _tilesWidth;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> _tilesHeight;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_x_d_l___sprite_batch_html"><div class="ttname"><a href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a></div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:12</div></div>
+<div class="ttc" id="class_x_d_l___layer_html"><div class="ttname"><a href="class_x_d_l___layer.html">XDL_Layer</a></div><div class="ttdef"><b>Definition:</b> XDL_Layer.h:15</div></div>
+<div class="ttc" id="class_x_d_l___tile_engine_html"><div class="ttname"><a href="class_x_d_l___tile_engine.html">XDL_TileEngine</a></div><div class="ttdef"><b>Definition:</b> XDL_TileEngine.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b5a838bfc9090511c0db4eeee24fb9a7.html">Joes_SDL_Framework</a></li><li class="navelem"><a class="el" href="_x_d_l___tile_engine_8h.html">XDL_TileEngine.h</a></li>
-    <li class="footer">Generated on Mon Feb 17 2014 15:49:56 for XDL by
+    <li class="navelem"><a class="el" href="dir_b5a838bfc9090511c0db4eeee24fb9a7.html">Joes_SDL_Framework</a></li><li class="navelem"><b>XDL_TileEngine.h</b></li>
+    <li class="footer">Generated on Sun Mar 30 2014 19:31:44 for XDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

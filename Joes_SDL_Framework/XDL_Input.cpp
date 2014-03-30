@@ -5,15 +5,15 @@ XDL_Input* XDL_Input::_me;
 
 XDL_Input::XDL_Input(void)
 {
-	_keyBoard = XDL_Keyboard::GetInstance();
-	_mouse = XDL_Mouse::GetInstance();
+	XDL_KEYBOARD = XDL_Keyboard::GetInstance();//get an instance of the keyboard and mouse
+	XDL_MOUSE = XDL_Mouse::GetInstance();
 }
 
 
 XDL_Input::~XDL_Input(void)
 {
-	delete(_keyBoard);
-	delete(_mouse);
+	delete(XDL_KEYBOARD);
+	delete(XDL_MOUSE);
 }
 
 XDL_Input* XDL_Input::GetInstance()
@@ -25,28 +25,28 @@ XDL_Input* XDL_Input::GetInstance()
 	return _me;
 }
 
-bool XDL_Input::IsKeyDown(int _key)
+bool XDL_Input::IsKeyDown(int _key)//wrappers for their functionality. 
 {
-	return _keyBoard->IsKeyDown(_key);
+	return XDL_KEYBOARD->IsKeyDown(_key);
 }
 bool XDL_Input::IsKeyUp(int _key)
 {
-	return _keyBoard->IsKeyUp(_key);
+	return XDL_KEYBOARD->IsKeyUp(_key);
 }
 
 bool XDL_Input::IsMouseButtonDown(int _button)
 {
-	return _mouse->IsButtonDown(_button);
+	return XDL_MOUSE->IsButtonDown(_button);
 }
 bool XDL_Input::IsMouseButtonUp(int _button)
 {
-	return _mouse->IsButtonUp(_button);
+	return XDL_MOUSE->IsButtonUp(_button);
 }
 SDL_Point XDL_Input::GetMousePositionScreen()
 {
-	return _mouse->GetPositionScreen();
+	return XDL_MOUSE->GetPositionScreen();
 }
-SDL_Point XDL_Input::GetMousePositionWorld(XDL_Camera* _camera)
+SDL_Point XDL_Input::GetMousePositionWorld(XDL_Camera* XDL_CAMERA)
 {
-	return _mouse->GetPositionWorld(_camera);
+	return XDL_MOUSE->GetPositionWorld(XDL_CAMERA);
 }

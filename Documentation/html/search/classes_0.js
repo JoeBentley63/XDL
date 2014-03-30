@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basicmazeastar',['BasicMazeAStar',['../class_basic_maze_a_star.html',1,'']]]
+  ['breakout',['Breakout',['../class_breakout.html',1,'']]]
 ];

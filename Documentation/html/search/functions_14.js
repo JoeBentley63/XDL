@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['whitespacemode',['WhitespaceMode',['../classtinyxml2_1_1_x_m_l_document.html#a94b3ea2f77c9ac831723984df5a02d01',1,'tinyxml2::XMLDocument']]]
+  ['_7exdl_5fgameobject',['~XDL_GameObject',['../class_x_d_l___game_object.html#a27fd4e872e6e1bb063f5d1c8acf3119c',1,'XDL_GameObject']]]
 ];

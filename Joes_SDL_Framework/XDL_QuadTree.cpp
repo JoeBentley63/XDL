@@ -1,8 +1,8 @@
 #include "XDL_QuadTree.h"
 
-int XDL_QuadTree::_capacity;
+int XDL_QuadTree::_capacity;//capacity per node
 
-XDL_QuadTree::XDL_QuadTree(int _capacity,SDL_Rect* _worldBounds,SDL_Renderer* _renderer)
+XDL_QuadTree::XDL_QuadTree(int _capacity,SDL_Rect* _worldBounds,SDL_Renderer* _renderer)//constructor for root
 {
 	this->_gameObjects.clear();
 	this->_capacity = _capacity;
@@ -11,15 +11,15 @@ XDL_QuadTree::XDL_QuadTree(int _capacity,SDL_Rect* _worldBounds,SDL_Renderer* _r
 	_bounds = _worldBounds;
 	_level = 0;
 
-	_northWest = NULL;
+	_northWest = NULL;//all children are null
 	_southWest = NULL;
 	_southEast = NULL;
 	_northEast = NULL;
 
-	_numInserted = 0;
+	_numInserted = 0;//nothing inserted
 }
 
-XDL_QuadTree::XDL_QuadTree(XDL_QuadTree* _parent, int _num,SDL_Renderer* _renderer)
+XDL_QuadTree::XDL_QuadTree(XDL_QuadTree* _parent, int _num,SDL_Renderer* _renderer)//contructor for children.
 {
 	this->_gameObjects.clear();
 	this->_parent = _parent;
@@ -29,7 +29,7 @@ XDL_QuadTree::XDL_QuadTree(XDL_QuadTree* _parent, int _num,SDL_Renderer* _render
 	switch (_num)
 	{
 		 case 0: 
-			 _bounds->x = _parent->_bounds->x;
+			 _bounds->x = _parent->_bounds->x;//set bounds accordingly
 			 _bounds->y = _parent->_bounds->y;
 			 _bounds->w = _parent->_bounds->w/2;
 			 _bounds->h = _parent->_bounds->h/2;
@@ -81,14 +81,14 @@ void XDL_QuadTree::Update()
 }
 void XDL_QuadTree::Draw()
 {
-	if(DEBUG == 1)
+	if(DEBUG == 1 || XDL_Game::_drawQuadTreeDebug)//draw debug information
 	{
 		SDL_SetRenderTarget(_renderer, XDL_SpriteBatch::_drawTexture);
 		SDL_SetRenderDrawColor(_renderer,0,255,0,100);
 		
 		if(_gameObjects.size() > 0)
 		{
-			SDL_SetRenderDrawColor(_renderer,255,0,0,100);
+			SDL_SetRenderDrawColor(_renderer,255,0,0,100);//fill if its got an object in it
 			SDL_RenderFillRect(_renderer,_bounds);
 		}
 		
@@ -104,7 +104,7 @@ void XDL_QuadTree::Draw()
 	
 }
 
-bool XDL_QuadTree::RectOverlaps(SDL_Rect* _sprite,SDL_Rect* _otherSprite)
+bool XDL_QuadTree::RectOverlaps(SDL_Rect* _sprite,SDL_Rect* _otherSprite)//check if an object overlaps a bound
 {
 	int ThisLeft, OtherLeft;
     int ThisRight, OtherRight;
@@ -145,15 +145,15 @@ bool XDL_QuadTree::RectOverlaps(SDL_Rect* _sprite,SDL_Rect* _otherSprite)
 
     return true;
 }
-bool XDL_QuadTree::Insert(XDL_GameObject* _gameObject)
+bool XDL_QuadTree::Insert(XDL_GameObject* _gameObject)// insert function
 {
 	//DEBUG_MSG("\nTrying to insert at level : " << _level);
-	if(!RectOverlaps(_bounds,&_gameObject->_bounds))
+	if(!RectOverlaps(_bounds,&_gameObject->_bounds))//if it doesnt land in our bounds, then it doesnt belong here
 	{
 		//DEBUG_MSG("\nDoesnt belong here ");
 		return false;//doesnt belong here, return false;
 	}
-	if(_numInserted < _capacity  || _level >= 6)//if there is space
+	if(_numInserted < _capacity  || _level >= 6)//if there is space (after 6 levels, we stop, as any more and we start wasting time)
 	{
 		_gameObjects.insert(_gameObjects.begin(),_gameObject);//insert it here
 		//DEBUG_MSG("\nInserted at level : " << _level);
@@ -162,10 +162,10 @@ bool XDL_QuadTree::Insert(XDL_GameObject* _gameObject)
 	}
 	else
 	{
-		SubDivide();
+		SubDivide();// if we are full, subdivide
 		
 		//DEBUG_MSG("\nTry NW");
-		_northWest->Insert(_gameObject);
+		_northWest->Insert(_gameObject);//try inserting it in all children
 	
 		_southWest->Insert(_gameObject);
 		
@@ -178,7 +178,7 @@ bool XDL_QuadTree::Insert(XDL_GameObject* _gameObject)
 		return true;
 	}
 }
-void XDL_QuadTree::Clear()
+void XDL_QuadTree::Clear()//clear our tree
 {
 	
 	if(_northEast!=NULL)
@@ -197,10 +197,10 @@ void XDL_QuadTree::Clear()
 }
 bool XDL_QuadTree::SubDivide()
 {
-	if(_northEast == NULL)
+	if(_northEast == NULL)//if our children are unitialized
 	{
 		//DEBUG_MSG("\nSubdividing level : " << _level);
-		_northWest = new XDL_QuadTree(this,0,_renderer);
+		_northWest = new XDL_QuadTree(this,0,_renderer);//init them
 		_northWest ->_level = _level + 1;
 		_southWest = new XDL_QuadTree(this,1,_renderer);
 		_southWest ->_level = _level + 1;
@@ -209,23 +209,23 @@ bool XDL_QuadTree::SubDivide()
 		_northEast = new XDL_QuadTree(this,3,_renderer);
 		_northEast ->_level = _level + 1;
 
-		for(int i = 0; i < _gameObjects.size(); i ++)
+		for(int i = 0; i < _gameObjects.size(); i ++)//then push our data into the children(leaves)
 		{
 			_northWest->Insert(_gameObjects[i]);
-			_southWest->Insert(_gameObjects[0]);
-			_southEast->Insert(_gameObjects[0]);
-			_northEast->Insert(_gameObjects[0]);
+			_southWest->Insert(_gameObjects[i]);
+			_southEast->Insert(_gameObjects[i]);
+			_northEast->Insert(_gameObjects[i]);
 			
-			_gameObjects.clear();
 			
 		}
-
+		_gameObjects.clear();//and remove the data from the parents
 	}
 	return true;
 }
 
 vector<XDL_GameObject*> XDL_QuadTree::ReturnObjects(SDL_Rect _bounds,vector<XDL_GameObject*> _return)
 {
+	//return all objects in the bounds this object overlaps with.
 	if(RectOverlaps(this->_bounds,&_bounds))
 	{
 		for(int i = 0; i < _gameObjects.size(); i ++)

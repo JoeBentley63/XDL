@@ -31,9 +31,8 @@
   <td id="projectlogo"><img alt="Logo" src="XDL.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">XDL
-   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Framework for rapid game dev in C++</div>
+   <div id="projectbrief">4th Year Project, Joseph Bentley. XDL, Framework built ontop of SDL for rapid game developement.</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -94,7 +91,7 @@ $(document).ready(function(){initNavTree('_x_d_l___sprite_batch_8h_source.html',
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,64 +105,66 @@ $(document).ready(function(){initNavTree('_x_d_l___sprite_batch_8h_source.html',
 <div class="title">XDL_SpriteBatch.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_x_d_l___sprite_batch_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BATCH_DRAWER_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BATCH_DRAWER_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BATCH_DRAWER_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_d_l___game_object_8h.html">XDL_GameObject.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_d_l___camera_8h.html">XDL_Camera.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_d_l___game_8h.html">XDL_Game.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;XDL_GameObject.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;XDL_Camera.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;XDL_Game.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">   14</a></span>&#160;    <span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b">   16</a></span>&#160;        <a class="code" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b">FRONTTOBACK</a>,<span class="comment">//Larger Z means drawn at the back.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1">   17</a></span>&#160;        <a class="code" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1">BACKTOFRONT</a>,<span class="comment">//Smaller Z&#39;s drawn in the back, bigger Z drawn in front</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6a4dea32cd64020138077648d29c34f58a">   18</a></span>&#160;        UNSORTED<span class="comment">//no sorting, drawn in same order as they are added</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }DRAWMODES;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ~<a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>* GetInstance();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> Init(SDL_Renderer* _renderer);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> Begin();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> Draw(<a class="code" href="class_x_d_l___game_object.html">XDL_GameObject</a>* _me);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> End();</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a37476782380898a316c9bb7a09aeee0d">   28</a></span>&#160;    <span class="keyword">static</span> SDL_Texture* <a class="code" href="class_x_d_l___sprite_batch.html#a37476782380898a316c9bb7a09aeee0d">_drawTexture</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> SetDrawMode(<a class="code" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">DRAWMODES</a> _drawmode);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> GetDrawMode();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    SDL_Rect* _drawTextureBounds;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    SDL_Texture* _clearTexture;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    SDL_Renderer* _renderer;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    vector&lt;XDL_GameObject*&gt; _thingsToBeDrawn;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>* _me;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_x_d_l___camera.html">XDL_Camera</a>* _camera;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">DRAWMODES</a> _currentDrawMode;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_x_d_l___sprite_batch_html"><div class="ttname"><a href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a></div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:11</div></div>
-<div class="ttc" id="_x_d_l___game_object_8h_html"><div class="ttname"><a href="_x_d_l___game_object_8h.html">XDL_GameObject.h</a></div></div>
-<div class="ttc" id="class_x_d_l___sprite_batch_html_a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b"><div class="ttname"><a href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b">XDL_SpriteBatch::FRONTTOBACK</a></div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:16</div></div>
-<div class="ttc" id="class_x_d_l___sprite_batch_html_a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1"><div class="ttname"><a href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1">XDL_SpriteBatch::BACKTOFRONT</a></div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:17</div></div>
-<div class="ttc" id="class_x_d_l___sprite_batch_html_a37476782380898a316c9bb7a09aeee0d"><div class="ttname"><a href="class_x_d_l___sprite_batch.html#a37476782380898a316c9bb7a09aeee0d">XDL_SpriteBatch::_drawTexture</a></div><div class="ttdeci">static SDL_Texture * _drawTexture</div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:28</div></div>
-<div class="ttc" id="class_x_d_l___sprite_batch_html_a0dba0557842cdf21917adc2ef44125e6"><div class="ttname"><a href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">XDL_SpriteBatch::DRAWMODES</a></div><div class="ttdeci">DRAWMODES</div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:14</div></div>
-<div class="ttc" id="class_x_d_l___game_object_html"><div class="ttname"><a href="class_x_d_l___game_object.html">XDL_GameObject</a></div><div class="ttdoc">XDL_GameObject. </div><div class="ttdef"><b>Definition:</b> XDL_GameObject.h:13</div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span> </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">   15</a></span>&#160;    <span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        FRONTTOBACK,</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1">   18</a></span>&#160;        <a class="code" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1">BACKTOFRONT</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6a4dea32cd64020138077648d29c34f58a">   19</a></span>&#160;        UNSORTED</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }DRAWMODES;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ~<a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>* GetInstance();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> Init(SDL_Renderer* _renderer,<span class="keywordtype">int</span> _worldSizeX,<span class="keywordtype">int</span> _worldSizeY);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> Begin();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> Draw(<a class="code" href="class_x_d_l___game_object.html">XDL_GameObject</a>* _me);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> End();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> SDL_Texture* _drawTexture;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> SetDrawMode(DRAWMODES _drawmode);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> GetDrawMode();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> SetCamera(<a class="code" href="class_x_d_l___camera.html">XDL_Camera</a>* XDL_CAMERA);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_x_d_l___camera.html">XDL_Camera</a>* GetCamera();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    SDL_Rect _drawRect;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    SDL_Rect* _drawTextureBounds;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    SDL_Texture* _clearTexture;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    SDL_Renderer* _renderer;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    vector&lt;XDL_GameObject*&gt; _thingsToBeDrawn;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a>* _me;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_x_d_l___camera.html">XDL_Camera</a>* XDL_CAMERA;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    DRAWMODES _currentDrawMode;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> _worldX;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> _worldY;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_x_d_l___sprite_batch_html"><div class="ttname"><a href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a></div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:12</div></div>
+<div class="ttc" id="class_x_d_l___sprite_batch_html_a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1"><div class="ttname"><a href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1">XDL_SpriteBatch::BACKTOFRONT</a></div><div class="ttdef"><b>Definition:</b> XDL_SpriteBatch.h:18</div></div>
+<div class="ttc" id="class_x_d_l___game_object_html"><div class="ttname"><a href="class_x_d_l___game_object.html">XDL_GameObject</a></div><div class="ttdef"><b>Definition:</b> XDL_GameObject.h:16</div></div>
 <div class="ttc" id="class_x_d_l___camera_html"><div class="ttname"><a href="class_x_d_l___camera.html">XDL_Camera</a></div><div class="ttdoc">XDL_Camaera. [Singleton]. </div><div class="ttdef"><b>Definition:</b> XDL_Camera.h:11</div></div>
-<div class="ttc" id="_x_d_l___game_8h_html"><div class="ttname"><a href="_x_d_l___game_8h.html">XDL_Game.h</a></div></div>
-<div class="ttc" id="_x_d_l___camera_8h_html"><div class="ttname"><a href="_x_d_l___camera_8h.html">XDL_Camera.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b5a838bfc9090511c0db4eeee24fb9a7.html">Joes_SDL_Framework</a></li><li class="navelem"><a class="el" href="_x_d_l___sprite_batch_8h.html">XDL_SpriteBatch.h</a></li>
-    <li class="footer">Generated on Mon Feb 17 2014 15:49:56 for XDL by
+    <li class="navelem"><a class="el" href="dir_b5a838bfc9090511c0db4eeee24fb9a7.html">Joes_SDL_Framework</a></li><li class="navelem"><b>XDL_SpriteBatch.h</b></li>
+    <li class="footer">Generated on Sun Mar 30 2014 19:31:43 for XDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

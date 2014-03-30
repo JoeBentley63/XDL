@@ -7,7 +7,7 @@ SDL_Texture* XDL_SpriteBatch::_drawTexture;
 
 XDL_SpriteBatch::XDL_SpriteBatch(void)
 {
-	_camera = XDL_Camera::GetInstance();
+	XDL_CAMERA = XDL_Camera::GetInstance();
 }
 
 XDL_SpriteBatch* XDL_SpriteBatch::GetInstance()
@@ -41,7 +41,7 @@ XDL_SpriteBatch::~XDL_SpriteBatch(void)
 	delete(_clearTexture);
 	delete(_renderer);
 	delete(_me);
-	delete(_camera);
+	delete(XDL_CAMERA);
 }
 void XDL_SpriteBatch::Begin()//begin clears the screen and creates a new texture for us to draw to.
 {
@@ -93,10 +93,10 @@ void XDL_SpriteBatch::End()//End Draws all sprites that need to be drawn. TODO :
 			}
 		}
 		SDL_SetRenderTarget(_renderer, NULL);//then draw the texture to the screen. this texture can then be scaled, rotated etc
-		_drawRect.x = _drawTextureBounds->x + _camera->GetPosition()->x;// apply the camera transforms to the drawTexture
-		_drawRect.y = _drawTextureBounds->y + _camera->GetPosition()->y;//doing it this way ensure the actual DrawTexture is not effected, just draw differently
-		_drawRect.h = _drawTextureBounds->h * _camera->GetCurrentZoom();
-		_drawRect.w = _drawTextureBounds->w * _camera->GetCurrentZoom();
+		_drawRect.x = _drawTextureBounds->x + XDL_CAMERA->GetPosition()->x;// apply the camera transforms to the drawTexture
+		_drawRect.y = _drawTextureBounds->y + XDL_CAMERA->GetPosition()->y;//doing it this way ensure the actual DrawTexture is not effected, just draw differently
+		_drawRect.h = _drawTextureBounds->h * XDL_CAMERA->GetCurrentZoom();
+		_drawRect.w = _drawTextureBounds->w * XDL_CAMERA->GetCurrentZoom();
 		SDL_RenderCopy(_renderer,_drawTexture, NULL,&_drawRect);//then draw it.
 		SDL_RenderPresent(_renderer);
 	}
@@ -112,12 +112,12 @@ int XDL_SpriteBatch::GetDrawMode()
 	return _currentDrawMode;
 }
 
-void XDL_SpriteBatch::SetCamera(XDL_Camera* _camera)
+void XDL_SpriteBatch::SetCamera(XDL_Camera* XDL_CAMERA)
 {
-	this->_camera = _camera;
+	this->XDL_CAMERA = XDL_CAMERA;
 }
 
 XDL_Camera* XDL_SpriteBatch::GetCamera()
 {
-	return _camera;
+	return XDL_CAMERA;
 }

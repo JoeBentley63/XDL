@@ -30,7 +30,7 @@ public:
 	bool IsButtonDown(int _button);/*!Check if a button is down*/
 	bool IsButtonUp(int _button);/*!Check if a button is up*/
 	SDL_Point GetPositionScreen();
-	SDL_Point GetPositionWorld(XDL_Camera* _camera);
+	SDL_Point GetPositionWorld(XDL_Camera* XDL_CAMERA);
 };
 
 #endif

@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 454.545455
+%%BoundingBox: 0 0 500 41.666667
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 1.100000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 12.000000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
 /rows 2 def
-/cols 1 def
+/cols 6 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -174,7 +174,12 @@
 boxfont setfont
 1 boundaspect scale
 (XDL_Scene) cw
-(Level1) cw
+(Breakout) cw
+(MouseDemo) cw
+(QuadTreeDemoScene) cw
+(SortingModeDemoScene) cw
+(TileEngineScene) cw
+(XDL_TestScene) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -186,12 +191,29 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (XDL_Scene) 0.000000 1.000000 box
- (Level1) 0.000000 0.000000 box
+ (XDL_Scene) 2.500000 1.000000 box
+ (Breakout) 0.000000 0.000000 box
+ (MouseDemo) 1.000000 0.000000 box
+ (QuadTreeDemoScene) 2.000000 0.000000 box
+ (SortingModeDemoScene) 3.000000 0.000000 box
+ (TileEngineScene) 4.000000 0.000000 box
+ (XDL_TestScene) 5.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-1 0.000000 0.250000 out
+1 2.500000 0.250000 out
+solid
+0.000000 5.000000 1.000000 conn
 solid
 0 0.000000 0.750000 in
+solid
+0 1.000000 0.750000 in
+solid
+0 2.000000 0.750000 in
+solid
+0 3.000000 0.750000 in
+solid
+0 4.000000 0.750000 in
+solid
+0 5.000000 0.750000 in

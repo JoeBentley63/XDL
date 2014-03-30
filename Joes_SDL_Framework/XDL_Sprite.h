@@ -1,3 +1,10 @@
+//! XDL_Sprite
+/*!
+Extension of GameObject
+
+Provides extra functionality, such as a sprite visual element, and loading/drawing from tilesheets
+*/
+
 #ifndef _SPRITE_H
 #define _SPRITE_H
 
@@ -10,13 +17,13 @@ class XDL_Sprite : public XDL_GameObject
 public:
 
 #pragma region
-	XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer);
-	XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect);
-	XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect,int _numFrames);
+	XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,string _uniqueName);
+	XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect, string _uniqueName);
+	XDL_Sprite(char* _asset,float _x,float _y,int _height, int _width,int _z,SDL_Renderer* _renderer,SDL_Rect _sourceRect,int _numFrames,string _uniqueName);
 	
 #pragma endregion Constructors
 
-	~XDL_Sprite(void);
+	virtual ~XDL_Sprite(void);
 	void virtual Update();
 	void virtual Draw();
 	void virtual Animate();

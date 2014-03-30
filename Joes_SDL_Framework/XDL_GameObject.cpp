@@ -1,30 +1,55 @@
 #include "XDL_GameObject.h"
 
 
-XDL_GameObject::XDL_GameObject(void)
+XDL_GameObject::XDL_GameObject(string _name)
 {
-	_bounds.x = 1;
-	_bounds.y = 1;
-	_bounds.w = 1;
-	_bounds.h = 1;
+	this->_name = _name;
 	_collidable = false;
 }
-
-void XDL_GameObject::Update()
+string XDL_GameObject::GetName()
 {
-	_top.x = _bounds.x + (_bounds.w*.2);
-	_top.y = _bounds.y - _bounds.h*.2;
-	_bottom.x = _bounds.x + (_bounds.w*.2);
-	_bottom.y = _bounds.y + _bounds.h*0.9;
-	_left.x = _bounds.x - (_bounds.w*.1);
-	_left.y = _bounds.y + _bounds.h*0.2;
-	_right.x = _bounds.x + (_bounds.w*.9);
-	_right.y = _bounds.y + _bounds.h*0.2;
+	return _name;
+}
+void XDL_GameObject::Init()// setup bounds and the other collision boxes used to check if collision happened left,right,up or down etc
+{
+	_top.x = _bounds.x + 5;
+	_top.y = _bounds.y - 5;
+	_top.w = _bounds.w -10;
+	_top.h = 5;
 
-	_velocityX += _accelerationX;
+	_bottom.x = _bounds.x + 5;
+	_bottom.y = _bounds.y + _bounds.h;
+	_bottom.w = _bounds.w -10;
+	_bottom.h = 5;
+
+	_left.x = _bounds.x - 5;
+	_left.y = _bounds.y + 5;
+	_left.w = 5;
+	_left.h = _bounds.h -5;
+
+	_right.x = _bounds.x + _bounds.w;
+	_right.y = _bounds.y + 5;
+	_right.w = 5;
+	_right.h = _bounds.h -5;
+}
+void XDL_GameObject::Update()//keep our collision boxes up to date
+{
+	_top.x = _bounds.x + 5;
+	_top.y = _bounds.y - 5;
+
+	_bottom.x = _bounds.x + 5;
+	_bottom.y = _bounds.y + _bounds.h;
+
+	_left.x = _bounds.x - 5;
+	_left.y = _bounds.y + 5;
+
+	_right.x = _bounds.x + _bounds.w;
+	_right.y = _bounds.y + 5;
+
+	_velocityX += _accelerationX;//apply acceleration
 	_velocityY += _accelerationY;
 
-	_posX += _velocityX;
+	_posX += _velocityX;//apply velocity
 	_posY += _velocityY;
 }
 
@@ -33,7 +58,7 @@ XDL_GameObject::~XDL_GameObject(void)
 {
 }
 
-bool XDL_GameObject::CollidedWith(XDL_GameObject* _otherSprite)
+bool XDL_GameObject::CollidedWith(XDL_GameObject* _otherSprite)// check if 2 Objects have collided
 {
 	bool _colliding = false;
 	if(Overlaps(_bounds,_otherSprite->_bounds))
@@ -46,16 +71,7 @@ bool XDL_GameObject::CollidedWith(XDL_GameObject* _otherSprite)
 		if(Overlaps(_top,_otherSprite->_bounds))
 		{
 			_isTouchingTop = true;
-			if(_immovable == false)
-			{
-				_posY++;
-				SetVelocityY(0);
-			}
-			if(_otherSprite->_immovable == false)
-			{
-				_otherSprite->_posY--;
-				_otherSprite->SetVelocityY(0);
-			}
+			
 		}
 		else
 		{
@@ -64,16 +80,7 @@ bool XDL_GameObject::CollidedWith(XDL_GameObject* _otherSprite)
 		if(Overlaps(_bottom,_otherSprite->_bounds))
 		{
 			_isTouchingBottom = true;
-			if(_immovable == false)
-			{
-				_posY--;
-				SetVelocityY(0);
-			}
-			if(_otherSprite->_immovable == false)
-			{
-				_otherSprite->_posY++;
-				_otherSprite->SetVelocityY(0);
-			}
+			
 		}
 		else
 		{
@@ -82,16 +89,7 @@ bool XDL_GameObject::CollidedWith(XDL_GameObject* _otherSprite)
 		if(Overlaps(_left,_otherSprite->_bounds))
 		{
 			_isTouchingLeft = true;
-			if(_immovable == false)
-			{
-				_posX++;
-				SetVelocityX(0);
-			}
-			if(_otherSprite->_immovable == false)
-			{
-				_otherSprite->_posX--;
-				_otherSprite->SetVelocityX(0);
-			}
+			
 		}
 		else
 		{
@@ -100,16 +98,7 @@ bool XDL_GameObject::CollidedWith(XDL_GameObject* _otherSprite)
 		if(Overlaps(_right,_otherSprite->_bounds))
 		{
 			_isTouchingRight = true;
-			if(_immovable == false)
-			{
-				_posX--;
-				SetVelocityX(0);
-			}
-			if(_otherSprite->_immovable == false)
-			{
-				_otherSprite->_posX++;
-				_otherSprite->SetVelocityX(0);
-			}
+			
 		}
 		else
 		{
@@ -177,8 +166,6 @@ bool XDL_GameObject::IsTouchingTop()
 {
 	return _isTouchingTop;
 }
-
-//Get function for position, to avoid having to go _bounds.X and _bounds.Y. Position is more normal.
 
 //returns the distance from this sprite(top left corner) to another sprite
 int XDL_GameObject::DistanceFrom(XDL_GameObject* _otherSprite)

@@ -19,18 +19,20 @@ Inheritance diagram for X\-D\-L\-\_\-\-Tile\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_x_d_l___tile_ad4e32024eec22bada0f17b0e9ec70008}{X\-D\-L\-\_\-\-Tile} (char $\ast$\-\_\-asset, int \-\_\-x, int \-\_\-y, int \-\_\-height, int \-\_\-width, S\-D\-L\-\_\-\-Renderer $\ast$\hyperlink{class_x_d_l___sprite_aedcf07ef73df095eb6cd9843870cd002}{\-\_\-renderer}, S\-D\-L\-\_\-\-Rect \hyperlink{class_x_d_l___sprite_a98c75cc4f4abc07331ad8de391a19675}{\-\_\-source\-Rect}, int \hyperlink{class_x_d_l___tile_aeb90ee0ab5ad7a0d061fd0e56bbbcee6}{\-\_\-gid})
+\hypertarget{class_x_d_l___tile_a785bc26dfa323626361fb0ca16051f71}{{\bfseries X\-D\-L\-\_\-\-Tile} (char $\ast$\-\_\-asset, int \-\_\-x, int \-\_\-y, int \-\_\-height, int \-\_\-width, int \hyperlink{class_x_d_l___game_object_a62a08106992c783507c669f71a6dd6a6}{\-\_\-z}, S\-D\-L\-\_\-\-Renderer $\ast$\-\_\-renderer, S\-D\-L\-\_\-\-Rect \-\_\-source\-Rect, int \-\_\-gid, string \-\_\-unique\-Name)}\label{class_x_d_l___tile_a785bc26dfa323626361fb0ca16051f71}
+
 \item 
-virtual \hyperlink{class_x_d_l___tile_a15faa07f0ed8a8192ad7e83cb15878ef}{$\sim$\-X\-D\-L\-\_\-\-Tile} (void)
+\hypertarget{class_x_d_l___tile_ac520d114e26b99eea8762516a9e4fc0b}{void {\bfseries Set\-Parent} (\hyperlink{class_x_d_l___tile}{X\-D\-L\-\_\-\-Tile} $\ast$\-\_\-parent)}\label{class_x_d_l___tile_ac520d114e26b99eea8762516a9e4fc0b}
+
 \item 
-void \hyperlink{class_x_d_l___tile_ac520d114e26b99eea8762516a9e4fc0b}{Set\-Parent} (\hyperlink{class_x_d_l___tile}{X\-D\-L\-\_\-\-Tile} $\ast$\-\_\-parent)
-\item 
-\hyperlink{class_x_d_l___tile}{X\-D\-L\-\_\-\-Tile} $\ast$ \hyperlink{class_x_d_l___tile_a7000f395eee7999beffead93d979a83e}{Get\-Parent} ()
+\hypertarget{class_x_d_l___tile_a7000f395eee7999beffead93d979a83e}{\hyperlink{class_x_d_l___tile}{X\-D\-L\-\_\-\-Tile} $\ast$ {\bfseries Get\-Parent} ()}\label{class_x_d_l___tile_a7000f395eee7999beffead93d979a83e}
+
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{class_x_d_l___tile_aeb90ee0ab5ad7a0d061fd0e56bbbcee6}{\-\_\-gid}
+\hypertarget{class_x_d_l___tile_aeb90ee0ab5ad7a0d061fd0e56bbbcee6}{int {\bfseries \-\_\-gid}}\label{class_x_d_l___tile_aeb90ee0ab5ad7a0d061fd0e56bbbcee6}
+
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -40,54 +42,7 @@ int \hyperlink{class_x_d_l___tile_aeb90ee0ab5ad7a0d061fd0e56bbbcee6}{\-\_\-gid}
 
 Used in \hyperlink{class_x_d_l___tile_engine}{X\-D\-L\-\_\-\-Tile\-Engine}, inherits from sprite, and adds extra variables and functions to allow pathfinding etc. 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_x_d_l___tile_ad4e32024eec22bada0f17b0e9ec70008}{\index{X\-D\-L\-\_\-\-Tile@{X\-D\-L\-\_\-\-Tile}!X\-D\-L\-\_\-\-Tile@{X\-D\-L\-\_\-\-Tile}}
-\index{X\-D\-L\-\_\-\-Tile@{X\-D\-L\-\_\-\-Tile}!XDL_Tile@{X\-D\-L\-\_\-\-Tile}}
-\subsubsection[{X\-D\-L\-\_\-\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Tile\-::\-X\-D\-L\-\_\-\-Tile (
-\begin{DoxyParamCaption}
-\item[{char $\ast$}]{\-\_\-asset, }
-\item[{int}]{\-\_\-x, }
-\item[{int}]{\-\_\-y, }
-\item[{int}]{\-\_\-height, }
-\item[{int}]{\-\_\-width, }
-\item[{S\-D\-L\-\_\-\-Renderer $\ast$}]{\-\_\-renderer, }
-\item[{S\-D\-L\-\_\-\-Rect}]{\-\_\-source\-Rect, }
-\item[{int}]{\-\_\-gid}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___tile_ad4e32024eec22bada0f17b0e9ec70008}
-\hypertarget{class_x_d_l___tile_a15faa07f0ed8a8192ad7e83cb15878ef}{\index{X\-D\-L\-\_\-\-Tile@{X\-D\-L\-\_\-\-Tile}!$\sim$\-X\-D\-L\-\_\-\-Tile@{$\sim$\-X\-D\-L\-\_\-\-Tile}}
-\index{$\sim$\-X\-D\-L\-\_\-\-Tile@{$\sim$\-X\-D\-L\-\_\-\-Tile}!XDL_Tile@{X\-D\-L\-\_\-\-Tile}}
-\subsubsection[{$\sim$\-X\-D\-L\-\_\-\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Tile\-::$\sim$\-X\-D\-L\-\_\-\-Tile (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_x_d_l___tile_a15faa07f0ed8a8192ad7e83cb15878ef}
-
-
-\subsection{Member Function Documentation}
-\hypertarget{class_x_d_l___tile_a7000f395eee7999beffead93d979a83e}{\index{X\-D\-L\-\_\-\-Tile@{X\-D\-L\-\_\-\-Tile}!Get\-Parent@{Get\-Parent}}
-\index{Get\-Parent@{Get\-Parent}!XDL_Tile@{X\-D\-L\-\_\-\-Tile}}
-\subsubsection[{Get\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Tile} $\ast$ X\-D\-L\-\_\-\-Tile\-::\-Get\-Parent (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___tile_a7000f395eee7999beffead93d979a83e}
-\hypertarget{class_x_d_l___tile_ac520d114e26b99eea8762516a9e4fc0b}{\index{X\-D\-L\-\_\-\-Tile@{X\-D\-L\-\_\-\-Tile}!Set\-Parent@{Set\-Parent}}
-\index{Set\-Parent@{Set\-Parent}!XDL_Tile@{X\-D\-L\-\_\-\-Tile}}
-\subsubsection[{Set\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Tile\-::\-Set\-Parent (
-\begin{DoxyParamCaption}
-\item[{{\bf X\-D\-L\-\_\-\-Tile} $\ast$}]{\-\_\-parent}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___tile_ac520d114e26b99eea8762516a9e4fc0b}
-
-
-\subsection{Member Data Documentation}
-\hypertarget{class_x_d_l___tile_aeb90ee0ab5ad7a0d061fd0e56bbbcee6}{\index{X\-D\-L\-\_\-\-Tile@{X\-D\-L\-\_\-\-Tile}!\-\_\-gid@{\-\_\-gid}}
-\index{\-\_\-gid@{\-\_\-gid}!XDL_Tile@{X\-D\-L\-\_\-\-Tile}}
-\subsubsection[{\-\_\-gid}]{\setlength{\rightskip}{0pt plus 5cm}int X\-D\-L\-\_\-\-Tile\-::\-\_\-gid}}\label{class_x_d_l___tile_aeb90ee0ab5ad7a0d061fd0e56bbbcee6}
-
-
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___tile_8h}{X\-D\-L\-\_\-\-Tile.\-h}\item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___tile_8cpp}{X\-D\-L\-\_\-\-Tile.\-cpp}\end{DoxyCompactItemize}
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Tile.\-h\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Tile.\-cpp\end{DoxyCompactItemize}

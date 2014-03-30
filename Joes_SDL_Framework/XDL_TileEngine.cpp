@@ -1,6 +1,4 @@
-/***************************************************************
-Joseph Bentley P10011026 : TMX Reader Assignment
-****************************************************************/
+
 //XDL_TileEngine, that loads the xml, create the layers
 #include "XDL_TileEngine.h"
 #include "XDL_SpriteBatch.h"
@@ -10,9 +8,6 @@ XDL_TileEngine::XDL_TileEngine(SDL_Renderer* _renderer,int _tilesWidth,int _tile
 	this->_renderer = _renderer;
 	this->_tilesHeight = _tilesHeight;
 	this->_tilesWidth = _tilesWidth;
-	//LoadFromTMXAndTSX("desert.tmx");
-	//LoadFromXML("PokemanXML_Layers.tmx");
-	//LoadFromArray();
 }
 
 
@@ -185,10 +180,10 @@ void XDL_TileEngine::Update()//update all the layers
 	}
 }
 
-void XDL_TileEngine::Draw(XDL_SpriteBatch* _spriteBatch)//draw all the layers.
+void XDL_TileEngine::Draw(XDL_SpriteBatch* XDL_SPRITEBATCH)//draw all the layers.
 {
 	for(int i = 0; i < _layers.size(); i ++)
 	{
-		_layers[i]->Draw(_spriteBatch);
+		_layers[i]->Draw(XDL_SPRITEBATCH);
 	}
 }

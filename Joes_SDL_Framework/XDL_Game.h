@@ -27,6 +27,7 @@ public:
 	static int _b;/*!<background color : Blue (0 -255)*/
 	static SDL_Rect* _windowsBounds;/*!<SDL_Rect to represent the screenbounds*/
     SDL_Renderer* _renderer;/*!<Our Drawing surface*/
+	static bool _drawQuadTreeDebug;
 private : 
 	bool m_running;
 	SDL_Window* _window;

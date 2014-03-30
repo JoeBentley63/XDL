@@ -31,9 +31,8 @@
   <td id="projectlogo"><img alt="Logo" src="XDL.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">XDL
-   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Framework for rapid game dev in C++</div>
+   <div id="projectbrief">4th Year Project, Joseph Bentley. XDL, Framework built ontop of SDL for rapid game developement.</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -96,7 +94,7 @@ $(document).ready(function(){initNavTree('class_x_d_l___sprite_batch.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,18 +108,17 @@ $(document).ready(function(){initNavTree('class_x_d_l___sprite_batch.html','');}
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_x_d_l___sprite_batch-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">XDL_SpriteBatch Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_x_d_l___sprite_batch_8h_source.html">XDL_SpriteBatch.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0dba0557842cdf21917adc2ef44125e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">DRAWMODES</a> { <a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b">FRONTTOBACK</a>, 
+<tr class="memitem:a0dba0557842cdf21917adc2ef44125e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">DRAWMODES</a> { <b>FRONTTOBACK</b>, 
 <a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1">BACKTOFRONT</a>, 
 <a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6a4dea32cd64020138077648d29c34f58a">UNSORTED</a>
  }</td></tr>
@@ -129,31 +126,50 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a509e7c91d956bd35ce5a9b12d037a807"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a509e7c91d956bd35ce5a9b12d037a807">XDL_SpriteBatch</a> (void)</td></tr>
-<tr class="separator:a509e7c91d956bd35ce5a9b12d037a807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33219d922bae40ae5952f39b8e1b3065"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a33219d922bae40ae5952f39b8e1b3065">~XDL_SpriteBatch</a> (void)</td></tr>
-<tr class="separator:a33219d922bae40ae5952f39b8e1b3065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d0ad77cd98c6eed1d7188c0867f954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a39d0ad77cd98c6eed1d7188c0867f954">Init</a> (SDL_Renderer *_renderer)</td></tr>
-<tr class="separator:a39d0ad77cd98c6eed1d7188c0867f954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6db9acdec8c4b1f31275b24d99d50d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#af6db9acdec8c4b1f31275b24d99d50d4">Begin</a> ()</td></tr>
+<tr class="memitem:a0ee6240197106c7ad2061226da69ba47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ee6240197106c7ad2061226da69ba47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (SDL_Renderer *_renderer, int _worldSizeX, int _worldSizeY)</td></tr>
+<tr class="separator:a0ee6240197106c7ad2061226da69ba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6db9acdec8c4b1f31275b24d99d50d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6db9acdec8c4b1f31275b24d99d50d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Begin</b> ()</td></tr>
 <tr class="separator:af6db9acdec8c4b1f31275b24d99d50d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a34e3458a687841c8a9c3d1de876b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a63a34e3458a687841c8a9c3d1de876b6">Draw</a> (<a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a> *_me)</td></tr>
+<tr class="memitem:a63a34e3458a687841c8a9c3d1de876b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63a34e3458a687841c8a9c3d1de876b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (<a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a> *_me)</td></tr>
 <tr class="separator:a63a34e3458a687841c8a9c3d1de876b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d1f227cf1ef2270f58711b6d37a20f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a60d1f227cf1ef2270f58711b6d37a20f">End</a> ()</td></tr>
+<tr class="memitem:a60d1f227cf1ef2270f58711b6d37a20f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60d1f227cf1ef2270f58711b6d37a20f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>End</b> ()</td></tr>
 <tr class="separator:a60d1f227cf1ef2270f58711b6d37a20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696b70cf462c9bad88f255f3f8a79506"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a696b70cf462c9bad88f255f3f8a79506">SetDrawMode</a> (<a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">DRAWMODES</a> _drawmode)</td></tr>
+<tr class="memitem:a696b70cf462c9bad88f255f3f8a79506"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a696b70cf462c9bad88f255f3f8a79506"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawMode</b> (<a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">DRAWMODES</a> _drawmode)</td></tr>
 <tr class="separator:a696b70cf462c9bad88f255f3f8a79506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48fa9280c8a1dc5c93a3732adacca526"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a48fa9280c8a1dc5c93a3732adacca526">GetDrawMode</a> ()</td></tr>
+<tr class="memitem:a48fa9280c8a1dc5c93a3732adacca526"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48fa9280c8a1dc5c93a3732adacca526"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawMode</b> ()</td></tr>
 <tr class="separator:a48fa9280c8a1dc5c93a3732adacca526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9895e54f671c94c83613731c11fc2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff9895e54f671c94c83613731c11fc2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCamera</b> (<a class="el" href="class_x_d_l___camera.html">XDL_Camera</a> *XDL_CAMERA)</td></tr>
+<tr class="separator:aff9895e54f671c94c83613731c11fc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ddb6e2d599029bc2e6de79c8437210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32ddb6e2d599029bc2e6de79c8437210"></a>
+<a class="el" href="class_x_d_l___camera.html">XDL_Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCamera</b> ()</td></tr>
+<tr class="separator:a32ddb6e2d599029bc2e6de79c8437210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a5318ca5a0a82603f96453793afa6d0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a1a5318ca5a0a82603f96453793afa6d0">GetInstance</a> ()</td></tr>
+<tr class="memitem:a1a5318ca5a0a82603f96453793afa6d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a5318ca5a0a82603f96453793afa6d0"></a>
+static <a class="el" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
 <tr class="separator:a1a5318ca5a0a82603f96453793afa6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:afcee76b702fbc3794783ab86c73cf8d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcee76b702fbc3794783ab86c73cf8d0"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_drawRect</b></td></tr>
+<tr class="separator:afcee76b702fbc3794783ab86c73cf8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce0db8774bbedf72939f071ac02f100"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ce0db8774bbedf72939f071ac02f100"></a>
+SDL_Rect *&#160;</td><td class="memItemRight" valign="bottom"><b>_drawTextureBounds</b></td></tr>
+<tr class="separator:a8ce0db8774bbedf72939f071ac02f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a37476782380898a316c9bb7a09aeee0d"><td class="memItemLeft" align="right" valign="top">static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite_batch.html#a37476782380898a316c9bb7a09aeee0d">_drawTexture</a></td></tr>
+<tr class="memitem:a37476782380898a316c9bb7a09aeee0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37476782380898a316c9bb7a09aeee0d"></a>
+static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>_drawTexture</b></td></tr>
 <tr class="separator:a37476782380898a316c9bb7a09aeee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -167,190 +183,20 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a0dba0557842cdf21917adc2ef44125e6aeeb8ab8bdfb94d3413c3ded50d232d9b"></a>FRONTTOBACK</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1"></a>BACKTOFRONT</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a0dba0557842cdf21917adc2ef44125e6af0aff02dad6d665eb8a61c108e5ca1d1"></a>BACKTOFRONT</em>&#160;</td><td class="fielddoc">
+<p>Larger Z means drawn at the back. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0dba0557842cdf21917adc2ef44125e6a4dea32cd64020138077648d29c34f58a"></a>UNSORTED</em>&#160;</td><td class="fielddoc">
+<p>Smaller Z's drawn in the back, bigger Z drawn in front</p>
+<p>no sorting, drawn in same order as they are added </p>
 </td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a509e7c91d956bd35ce5a9b12d037a807"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XDL_SpriteBatch::XDL_SpriteBatch </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a33219d922bae40ae5952f39b8e1b3065"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XDL_SpriteBatch::~XDL_SpriteBatch </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af6db9acdec8c4b1f31275b24d99d50d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_SpriteBatch::Begin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a63a34e3458a687841c8a9c3d1de876b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_SpriteBatch::Draw </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a> *&#160;</td>
-          <td class="paramname"><em>_me</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a60d1f227cf1ef2270f58711b6d37a20f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_SpriteBatch::End </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a48fa9280c8a1dc5c93a3732adacca526"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_SpriteBatch::GetDrawMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1a5318ca5a0a82603f96453793afa6d0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a> * XDL_SpriteBatch::GetInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a39d0ad77cd98c6eed1d7188c0867f954"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_SpriteBatch::Init </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Renderer *&#160;</td>
-          <td class="paramname"><em>_renderer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a696b70cf462c9bad88f255f3f8a79506"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_SpriteBatch::SetDrawMode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_x_d_l___sprite_batch.html#a0dba0557842cdf21917adc2ef44125e6">DRAWMODES</a>&#160;</td>
-          <td class="paramname"><em>_drawmode</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a37476782380898a316c9bb7a09aeee0d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Texture * XDL_SpriteBatch::_drawTexture</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Joes_SDL_Framework/<a class="el" href="_x_d_l___sprite_batch_8h_source.html">XDL_SpriteBatch.h</a></li>
-<li>Joes_SDL_Framework/<a class="el" href="_x_d_l___sprite_batch_8cpp.html">XDL_SpriteBatch.cpp</a></li>
+<li>Joes_SDL_Framework/XDL_SpriteBatch.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -358,7 +204,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_x_d_l___sprite_batch.html">XDL_SpriteBatch</a></li>
-    <li class="footer">Generated on Mon Feb 17 2014 15:50:08 for XDL by
+    <li class="footer">Generated on Sun Mar 30 2014 19:31:46 for XDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

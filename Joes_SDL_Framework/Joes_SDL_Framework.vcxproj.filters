@@ -21,15 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IsoLayer.cpp">
-      <Filter>Source Files\XDL</Filter>
-    </ClCompile>
-    <ClCompile Include="IsometricTileEngine.cpp">
-      <Filter>Source Files\XDL</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files\XDL</Filter>
-    </ClCompile>
     <ClCompile Include="tinyxml2.cpp">
       <Filter>Source Files\XDL</Filter>
     </ClCompile>
@@ -60,9 +51,6 @@
     <ClCompile Include="XDL_Tile.cpp">
       <Filter>Source Files\XDL</Filter>
     </ClCompile>
-    <ClCompile Include="XDL_Storage.cpp">
-      <Filter>Source Files\XDL</Filter>
-    </ClCompile>
     <ClCompile Include="XDL_PathFinder.cpp">
       <Filter>Source Files\XDL</Filter>
     </ClCompile>
@@ -78,13 +66,7 @@
     <ClCompile Include="SortingModeDemoScene.cpp">
       <Filter>Source Files\XDL\Demos</Filter>
     </ClCompile>
-    <ClCompile Include="IsometricTileEngineScene.cpp">
-      <Filter>Source Files\XDL\Demos</Filter>
-    </ClCompile>
     <ClCompile Include="MouseDemo.cpp">
-      <Filter>Source Files\XDL\Demos</Filter>
-    </ClCompile>
-    <ClCompile Include="CollisionDetectionDemo.cpp">
       <Filter>Source Files\XDL\Demos</Filter>
     </ClCompile>
     <ClCompile Include="XDL_Game.cpp">
@@ -99,19 +81,28 @@
     <ClCompile Include="XDL_QuadTree.cpp">
       <Filter>Source Files\XDL</Filter>
     </ClCompile>
-    <ClCompile Include="Level1.cpp">
+    <ClCompile Include="DemoMoverSprite.cpp">
       <Filter>Source Files\XDL\Demos</Filter>
     </ClCompile>
-    <ClCompile Include="MoverSprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="XDL_Collision.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\XDL</Filter>
     </ClCompile>
     <ClCompile Include="XDL_CollisionManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\XDL</Filter>
     </ClCompile>
-    <ClCompile Include="DemoMoverSprite.cpp">
+    <ClCompile Include="Breakout.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="TileEngineScene.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTreeDemoScene.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSprite.cpp">
+      <Filter>Source Files\XDL\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="XDL_TestScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -120,33 +111,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="tinyxml2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PokemonTown.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Desert.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IsometricTileEngine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Swamp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IsoLayer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BasicMazeAStar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="VariableTerrain.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Level1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="XDL_GameObject.h">
@@ -179,9 +143,6 @@
     <ClInclude Include="XDL_Tile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="XDL_Storage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="XDL_PathFinder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -206,16 +167,7 @@
     <ClInclude Include="SortingModeDemoScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IsometricTileEngineScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MouseDemo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CollisionDetectionDemo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MoverSprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="XDL_Collision.h">
@@ -225,6 +177,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DemoMoverSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Breakout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileEngineScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTreeDemoScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XDL_TestScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

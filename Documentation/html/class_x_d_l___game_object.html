@@ -31,9 +31,8 @@
   <td id="projectlogo"><img alt="Logo" src="XDL.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">XDL
-   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Framework for rapid game dev in C++</div>
+   <div id="projectbrief">4th Year Project, Joseph Bentley. XDL, Framework built ontop of SDL for rapid game developement.</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -96,7 +94,7 @@ $(document).ready(function(){initNavTree('class_x_d_l___game_object.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,65 +107,163 @@ $(document).ready(function(){initNavTree('class_x_d_l___game_object.html','');})
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_x_d_l___game_object-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">XDL_GameObject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><a class="el" href="class_x_d_l___game_object.html" title="XDL_GameObject. ">XDL_GameObject</a>.  
- <a href="class_x_d_l___game_object.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="_x_d_l___game_object_8h_source.html">XDL_GameObject.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for XDL_GameObject:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_x_d_l___game_object.png" usemap="#XDL_GameObject_map" alt=""/>
   <map id="XDL_GameObject_map" name="XDL_GameObject_map">
-<area href="class_x_d_l___sprite.html" alt="XDL_Sprite" shape="rect" coords="61,56,174,80"/>
-<area href="class_player.html" alt="Player" shape="rect" coords="0,112,113,136"/>
-<area href="class_x_d_l___tile.html" title="XDL_Tile. " alt="XDL_Tile" shape="rect" coords="123,112,236,136"/>
+<area href="class_x_d_l___sprite.html" title="XDL_Sprite. " alt="XDL_Sprite" shape="rect" coords="124,56,238,80"/>
+<area href="class_demo_mover_sprite.html" title="Simple extention of sprite, that auto moves a sprite, and keeps it onscreen. " alt="DemoMoverSprite" shape="rect" coords="0,112,114,136"/>
+<area href="class_path_finding_sprite.html" title="PathFinding Sprite. " alt="PathFindingSprite" shape="rect" coords="124,112,238,136"/>
+<area href="class_x_d_l___tile.html" title="XDL_Tile. " alt="XDL_Tile" shape="rect" coords="248,112,362,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d853f19561fa684d312f07a8ac4e1f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a7d853f19561fa684d312f07a8ac4e1f2">XDL_GameObject</a> ()</td></tr>
-<tr class="separator:a7d853f19561fa684d312f07a8ac4e1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bf327721f071e6192c5e4691609a98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2bf327721f071e6192c5e4691609a98"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XDL_GameObject</b> (string _name)</td></tr>
+<tr class="separator:ac2bf327721f071e6192c5e4691609a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27fd4e872e6e1bb063f5d1c8acf3119c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a27fd4e872e6e1bb063f5d1c8acf3119c">~XDL_GameObject</a> (void)</td></tr>
 <tr class="separator:a27fd4e872e6e1bb063f5d1c8acf3119c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ac8b886032939259f143081a3b1fab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a23ac8b886032939259f143081a3b1fab">Update</a> ()=0</td></tr>
-<tr class="separator:a23ac8b886032939259f143081a3b1fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f42bdf8f833262da1b689f9454afd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f42bdf8f833262da1b689f9454afd7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="separator:a65f42bdf8f833262da1b689f9454afd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b5db1a0e150b66e33605d95e6705d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28b5db1a0e150b66e33605d95e6705d5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="separator:a28b5db1a0e150b66e33605d95e6705d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ab89c9622631cf13114a493b1b0a2d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a46ab89c9622631cf13114a493b1b0a2d">Draw</a> ()=0</td></tr>
 <tr class="separator:a46ab89c9622631cf13114a493b1b0a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab330c902ae14f980441c95821a4d2652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab330c902ae14f980441c95821a4d2652"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocity</b> (float _x, float _y)</td></tr>
+<tr class="separator:ab330c902ae14f980441c95821a4d2652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e666a4d38bbe23b32b12f79ea583455"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e666a4d38bbe23b32b12f79ea583455"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocityX</b> (float _x)</td></tr>
+<tr class="separator:a0e666a4d38bbe23b32b12f79ea583455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21374b9d1abd01efdd81dd3fc9b337ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21374b9d1abd01efdd81dd3fc9b337ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocityY</b> (float _y)</td></tr>
+<tr class="separator:a21374b9d1abd01efdd81dd3fc9b337ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add121ab40a76ee2189bc4546f4837262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add121ab40a76ee2189bc4546f4837262"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetVelocityX</b> ()</td></tr>
+<tr class="separator:add121ab40a76ee2189bc4546f4837262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2098323b599609cf87a8e6fe01d10d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb2098323b599609cf87a8e6fe01d10d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetVelocityY</b> ()</td></tr>
+<tr class="separator:afb2098323b599609cf87a8e6fe01d10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3853c83d9b579c29f214ee8f4e973f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe3853c83d9b579c29f214ee8f4e973f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAcceleration</b> (float _x, float _y)</td></tr>
+<tr class="separator:afe3853c83d9b579c29f214ee8f4e973f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976621b77d2cd4423bd49588c747a495"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a976621b77d2cd4423bd49588c747a495"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccelerationX</b> (float _x)</td></tr>
+<tr class="separator:a976621b77d2cd4423bd49588c747a495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eea42378b77c6759b2a9cac4be935f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eea42378b77c6759b2a9cac4be935f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccelerationY</b> (float _y)</td></tr>
+<tr class="separator:a4eea42378b77c6759b2a9cac4be935f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace837b938efee5fc0296cdb80b00a683"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace837b938efee5fc0296cdb80b00a683"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccelerationX</b> ()</td></tr>
+<tr class="separator:ace837b938efee5fc0296cdb80b00a683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb53693039eaf0f40f61f2679e0c0dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfb53693039eaf0f40f61f2679e0c0dd"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccelerationY</b> ()</td></tr>
+<tr class="separator:adfb53693039eaf0f40f61f2679e0c0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b8f98a6f5f353b573db1a812088541"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20b8f98a6f5f353b573db1a812088541"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoundsX</b> ()</td></tr>
+<tr class="separator:a20b8f98a6f5f353b573db1a812088541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65bdf30e324adc5a4fe03988b787094"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad65bdf30e324adc5a4fe03988b787094"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoundsY</b> ()</td></tr>
+<tr class="separator:ad65bdf30e324adc5a4fe03988b787094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663d0ad6f06b2341285bc9c63f9ee2dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663d0ad6f06b2341285bc9c63f9ee2dd"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CollidedWith</b> (<a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a> *_otherSprite)</td></tr>
+<tr class="separator:a663d0ad6f06b2341285bc9c63f9ee2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214f85c39378a9c77d6d5cd703718ee4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a214f85c39378a9c77d6d5cd703718ee4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Overlaps</b> (SDL_Rect _sprite, SDL_Rect _otherSprite)</td></tr>
+<tr class="separator:a214f85c39378a9c77d6d5cd703718ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56fc6434b9e9d5e14b245c1962c8d34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae56fc6434b9e9d5e14b245c1962c8d34"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingLeft</b> ()</td></tr>
+<tr class="separator:ae56fc6434b9e9d5e14b245c1962c8d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75a98fbfa551585b9a8937148bc49b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af75a98fbfa551585b9a8937148bc49b7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingRight</b> ()</td></tr>
+<tr class="separator:af75a98fbfa551585b9a8937148bc49b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af998b19c3969a60e7bd0ef92e15db2dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af998b19c3969a60e7bd0ef92e15db2dc"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingBottom</b> ()</td></tr>
+<tr class="separator:af998b19c3969a60e7bd0ef92e15db2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d15ebd7cac3965a1fe4767e2123f72e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d15ebd7cac3965a1fe4767e2123f72e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingTop</b> ()</td></tr>
+<tr class="separator:a9d15ebd7cac3965a1fe4767e2123f72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f12eb6e45a10bd0b184bf1dcc0625c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3f12eb6e45a10bd0b184bf1dcc0625c"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> ()</td></tr>
+<tr class="separator:ac3f12eb6e45a10bd0b184bf1dcc0625c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253f71b057ddf28ec397ec04ea60c590"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a253f71b057ddf28ec397ec04ea60c590"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>DistanceFrom</b> (<a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a> *_otherSprite)</td></tr>
+<tr class="separator:a253f71b057ddf28ec397ec04ea60c590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a62a08106992c783507c669f71a6dd6a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a62a08106992c783507c669f71a6dd6a6">_z</a></td></tr>
 <tr class="separator:a62a08106992c783507c669f71a6dd6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dfc50f0570ac313ce58b9addc011cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#af2dfc50f0570ac313ce58b9addc011cc">_posX</a></td></tr>
+<tr class="separator:af2dfc50f0570ac313ce58b9addc011cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb99e171b5474676d19e10231a4da235"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb99e171b5474676d19e10231a4da235"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_posY</b></td></tr>
+<tr class="separator:afb99e171b5474676d19e10231a4da235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0167b38391063475850b6d5d1f9403a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0167b38391063475850b6d5d1f9403a1"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_bounds</b></td></tr>
+<tr class="separator:a0167b38391063475850b6d5d1f9403a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3699c77c7c52cebced7142d851c16b51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3699c77c7c52cebced7142d851c16b51"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_immovable</b></td></tr>
+<tr class="separator:a3699c77c7c52cebced7142d851c16b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad080849e7106ad0ed5ea28a23f9b9306"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad080849e7106ad0ed5ea28a23f9b9306"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_accelerationX</b></td></tr>
+<tr class="separator:ad080849e7106ad0ed5ea28a23f9b9306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a06211d78300e6a3a49925ba5edf9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88a06211d78300e6a3a49925ba5edf9f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_accelerationY</b></td></tr>
+<tr class="separator:a88a06211d78300e6a3a49925ba5edf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7415cb816569f4ffd38686638a74a25d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7415cb816569f4ffd38686638a74a25d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_velocityX</b></td></tr>
+<tr class="separator:a7415cb816569f4ffd38686638a74a25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e2149742a9512113f11b05c2a83a35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e2149742a9512113f11b05c2a83a35"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_velocityY</b></td></tr>
+<tr class="separator:a23e2149742a9512113f11b05c2a83a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb32539dbacd6f05600ec5b40e700397"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb32539dbacd6f05600ec5b40e700397"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_collidable</b></td></tr>
+<tr class="separator:acb32539dbacd6f05600ec5b40e700397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a831c09ac74f88701a8b1ad1ee773243c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a831c09ac74f88701a8b1ad1ee773243c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingTop</b></td></tr>
+<tr class="separator:a831c09ac74f88701a8b1ad1ee773243c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf27e266355faef774c46960b25bec62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf27e266355faef774c46960b25bec62"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingLeft</b></td></tr>
+<tr class="separator:acf27e266355faef774c46960b25bec62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cceafdcbf60dee16895a40dc57ee87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1cceafdcbf60dee16895a40dc57ee87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingBottom</b></td></tr>
+<tr class="separator:ab1cceafdcbf60dee16895a40dc57ee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9e7620cc7c83e6e4a19b8293a35839"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c9e7620cc7c83e6e4a19b8293a35839"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingRight</b></td></tr>
+<tr class="separator:a4c9e7620cc7c83e6e4a19b8293a35839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8aa17dfc11e350aabd8bdd665288f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade8aa17dfc11e350aabd8bdd665288f9"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_top</b></td></tr>
+<tr class="separator:ade8aa17dfc11e350aabd8bdd665288f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1794642e4ea8631bcf288d007b0fcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d1794642e4ea8631bcf288d007b0fcc"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_bottom</b></td></tr>
+<tr class="separator:a0d1794642e4ea8631bcf288d007b0fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41cd1d7a6db0bd20b0ec5b4ea805b8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa41cd1d7a6db0bd20b0ec5b4ea805b8c"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_left</b></td></tr>
+<tr class="separator:aa41cd1d7a6db0bd20b0ec5b4ea805b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce22f2ffd56bface1f7f9371a0dcadf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ce22f2ffd56bface1f7f9371a0dcadf"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_right</b></td></tr>
+<tr class="separator:a9ce22f2ffd56bface1f7f9371a0dcadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9881ae32dadb2ddaea8a2836c5fe62a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9881ae32dadb2ddaea8a2836c5fe62a3"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
+<tr class="separator:a9881ae32dadb2ddaea8a2836c5fe62a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_x_d_l___game_object.html" title="XDL_GameObject. ">XDL_GameObject</a>. </p>
-<p>Pure Virtual (Abstract) Class that serves as the super for all GameObjects in the world. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_x_d_l___sprite.html">XDL_Sprite</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7d853f19561fa684d312f07a8ac4e1f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XDL_GameObject::XDL_GameObject </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a27fd4e872e6e1bb063f5d1c8acf3119c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -208,36 +304,24 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>virtual function so every object that is added to the scene will get auto-updated </p>
 
-<p>Implemented in <a class="el" href="class_x_d_l___sprite.html#a5b1c9b886c59f06cfbb2c428b3f58e86">XDL_Sprite</a>, and <a class="el" href="class_player.html#a00ae3ebe88af8f9cfabd819176516a73">Player</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a23ac8b886032939259f143081a3b1fab"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void XDL_GameObject::Update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_x_d_l___sprite.html#a1ecd6d713ce320cd1d49dceea854e0d2">XDL_Sprite</a>, and <a class="el" href="class_player.html#a05b60cac1922c5be5c1be16baffa4497">Player</a>.</p>
+<p>Implemented in <a class="el" href="class_x_d_l___sprite.html#a5b1c9b886c59f06cfbb2c428b3f58e86">XDL_Sprite</a>, <a class="el" href="class_path_finding_sprite.html#a1fdc88d9b985f6f7b7ce8de4eaa31a5a">PathFindingSprite</a>, and <a class="el" href="class_demo_mover_sprite.html#a4dae3800a23e9ed5f68cd83b05be8ab8">DemoMoverSprite</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af2dfc50f0570ac313ce58b9addc011cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int XDL_GameObject::_posX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set priority when Draws are being called </p>
+
+</div>
+</div>
 <a class="anchor" id="a62a08106992c783507c669f71a6dd6a6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +337,7 @@ Public Attributes</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Joes_SDL_Framework/<a class="el" href="_x_d_l___game_object_8h_source.html">XDL_GameObject.h</a></li>
-<li>Joes_SDL_Framework/<a class="el" href="_x_d_l___game_object_8cpp.html">XDL_GameObject.cpp</a></li>
+<li>Joes_SDL_Framework/XDL_GameObject.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -261,7 +345,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a></li>
-    <li class="footer">Generated on Mon Feb 17 2014 15:50:05 for XDL by
+    <li class="footer">Generated on Sun Mar 30 2014 19:31:45 for XDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

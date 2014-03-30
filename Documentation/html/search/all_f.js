@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['queryattribute',['QueryAttribute',['../classtinyxml2_1_1_x_m_l_element.html#aa471a199af9f137ef371f5db1ed1016b',1,'tinyxml2::XMLElement::QueryAttribute(const char *name, int *value) const '],['../classtinyxml2_1_1_x_m_l_element.html#a60d18656aa70adb257eab18913aa4330',1,'tinyxml2::XMLElement::QueryAttribute(const char *name, unsigned int *value) const '],['../classtinyxml2_1_1_x_m_l_element.html#a23fa8bac4250249c476c6bfdb6cb9b9c',1,'tinyxml2::XMLElement::QueryAttribute(const char *name, bool *value) const '],['../classtinyxml2_1_1_x_m_l_element.html#a64aadcbf27423410e2896baf240f63f9',1,'tinyxml2::XMLElement::QueryAttribute(const char *name, double *value) const '],['../classtinyxml2_1_1_x_m_l_element.html#afd553774be0e7760d73003058efa8df9',1,'tinyxml2::XMLElement::QueryAttribute(const char *name, float *value) const ']]],
+  ['quadtreedemoscene',['QuadTreeDemoScene',['../class_quad_tree_demo_scene.html',1,'']]],
+  ['queryattribute',['QueryAttribute',['../classtinyxml2_1_1_x_m_l_element.html#aa471a199af9f137ef371f5db1ed1016b',1,'tinyxml2::XMLElement']]],
   ['queryboolattribute',['QueryBoolAttribute',['../classtinyxml2_1_1_x_m_l_element.html#a2a58ee941c3cda23772c887a8f8b534e',1,'tinyxml2::XMLElement']]],
   ['querybooltext',['QueryBoolText',['../classtinyxml2_1_1_x_m_l_element.html#afeb060672fa934163fc573e692b7fe38',1,'tinyxml2::XMLElement']]],
   ['queryboolvalue',['QueryBoolValue',['../classtinyxml2_1_1_x_m_l_attribute.html#a9e9b94369f182df72aaac9acd04afead',1,'tinyxml2::XMLAttribute']]],

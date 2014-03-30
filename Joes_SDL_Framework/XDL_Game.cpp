@@ -2,24 +2,28 @@
 #include "XDL_Debug.h"
 #include "XDL_SceneManager.h"
 #include "SortingModeDemoScene.h"
-#include "CollisionDetectionDemo.h"
-#include "IsometricTileEngineScene.h"
+#include "TileEngineScene.h"
+#include "Breakout.h"
 #include "MouseDemo.h"
-#include "Level1.h"
+#include "QuadTreeDemoScene.h"
+#include "PathFindingSprite.h"
+#include "XDL_Keyboard.h"
+#include "XDL_TestScene.h"
 int XDL_Game::_r;
 int XDL_Game::_g;
 int XDL_Game::_b;
 int XDL_Game::SCREEN_WIDTH;
 int XDL_Game::SCREEN_HEIGHT;
-
+bool XDL_Game::_drawQuadTreeDebug;
 SDL_Rect* XDL_Game::_windowsBounds;
 XDL_SceneManager* _sceneManager;
-
+XDL_Keyboard* _keyboard;
 XDL_Game::XDL_Game(void)
 {
-	
+	_keyboard = XDL_Keyboard::GetInstance();
+	_drawQuadTreeDebug = false;
 }
-//initialization logic goes here
+//setup SDL
 bool XDL_Game :: Init()
 {
 	_r = 0;
@@ -43,8 +47,8 @@ bool XDL_Game :: Init()
 	_windowsBounds->x = 0;
 	_windowsBounds->y = 0;
 	_sceneManager = XDL_SceneManager::GetInstance();
-	_sceneManager->ChangeScene(new Level1(_renderer),"level1");
-	
+	_sceneManager->ChangeScene(new XDL_TestScene(_renderer),"HelloWorld");
+
 	return true; 
 }
 
@@ -58,6 +62,39 @@ XDL_Game::~XDL_Game(void)
 void XDL_Game::Update()
 {
 	_sceneManager->Update();
+	//scene manager, to jump between scenes [for demo only, allows for easy presenting]
+
+	if(_keyboard->IsKeyDown(XDL_Input::ONE))
+	{
+		_sceneManager->ChangeScene(new SortingModeDemoScene(_renderer),"Sorting Demo");
+	}
+	else if(_keyboard->IsKeyDown(XDL_Input::TWO))
+	{
+		_sceneManager->ChangeScene(new TileEngineScene(_renderer),"Tile Engine Demo");
+	}
+	else if(_keyboard->IsKeyDown(XDL_Input::THREE))
+	{
+		_sceneManager->ChangeScene(new QuadTreeDemoScene(_renderer),"QUAD-TREE Demo");
+	}
+	else if(_keyboard->IsKeyDown(XDL_Input::FOUR))
+	{
+		_sceneManager->ChangeScene(new MouseDemo(_renderer),"Mouse Demo");
+	}
+	else if(_keyboard->IsKeyDown(XDL_Input::FIVE))
+	{
+		_sceneManager->ChangeScene(new Breakout(_renderer),"BreakOut");
+	}
+	
+
+	if(_keyboard->IsKeyDown(XDL_Input::ZERO))
+	{
+		_drawQuadTreeDebug = true;
+	}
+	else if(_keyboard->IsKeyDown(XDL_Input::NINE))
+	{
+		_drawQuadTreeDebug = false;
+	}
+
 }
 //draw logic should do here
 void XDL_Game::Render()

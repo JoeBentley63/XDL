@@ -27,6 +27,7 @@ XDL_SceneManager* XDL_SceneManager::GetInstance()//singleton
 
 void XDL_SceneManager::Update()
 {
+
 	_scene->Update();
 }
 void XDL_SceneManager::Draw()

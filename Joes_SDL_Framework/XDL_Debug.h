@@ -8,7 +8,7 @@ Wraps Cout, so you dont have to use COUT in your code, you can use DEBUG_MSG. tu
 #undef DEBUG
 #endif
 
-#define DEBUG 1
+#define DEBUG 0
 
 #if defined DEBUG 
     #if (DEBUG == 1)

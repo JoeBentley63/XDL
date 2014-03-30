@@ -11,11 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CollisionDetectionDemo.cpp" />
+    <ClCompile Include="Breakout.cpp" />
     <ClCompile Include="DemoMoverSprite.cpp" />
-    <ClCompile Include="IsometricTileEngineScene.cpp" />
+    <ClCompile Include="TileEngineScene.cpp" />
     <ClCompile Include="MouseDemo.cpp" />
-    <ClCompile Include="MoverSprite.cpp" />
     <ClCompile Include="SortingModeDemoScene.cpp" />
     <ClCompile Include="XDL_Collision.cpp" />
     <ClCompile Include="XDL_CollisionManager.cpp" />
@@ -26,30 +25,26 @@
     <ClCompile Include="XDL_Camera.cpp" />
     <ClCompile Include="XDL_ContentManager.cpp" />
     <ClCompile Include="XDL_Game.cpp" />
-    <ClCompile Include="IsoLayer.cpp" />
-    <ClCompile Include="IsometricTileEngine.cpp" />
     <ClCompile Include="XDL_Keyboard.cpp" />
     <ClCompile Include="XDL_Layer.cpp" />
-    <ClCompile Include="Level1.cpp" />
+    <ClCompile Include="QuadTreeDemoScene.cpp" />
     <ClCompile Include="XDL_Main.cpp" />
     <ClCompile Include="XDL_PathFinder.cpp" />
-    <ClCompile Include="XDL_Storage.cpp" />
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PathFindingSprite.cpp" />
     <ClCompile Include="XDL_Scene.cpp" />
     <ClCompile Include="XDL_SceneManager.cpp" />
     <ClCompile Include="XDL_Sprite.cpp" />
+    <ClCompile Include="XDL_TestScene.cpp" />
     <ClCompile Include="XDL_Tile.cpp" />
     <ClCompile Include="XDL_TileEngine.cpp" />
     <ClCompile Include="tinyxml2.cpp" />
     <ClCompile Include="XDL_GameObject.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BasicMazeAStar.h" />
-    <ClInclude Include="CollisionDetectionDemo.h" />
+    <ClInclude Include="Breakout.h" />
     <ClInclude Include="DemoMoverSprite.h" />
-    <ClInclude Include="IsometricTileEngineScene.h" />
+    <ClInclude Include="TileEngineScene.h" />
     <ClInclude Include="MouseDemo.h" />
-    <ClInclude Include="MoverSprite.h" />
     <ClInclude Include="SortingModeDemoScene.h" />
     <ClInclude Include="XDL_Collision.h" />
     <ClInclude Include="XDL_CollisionManager.h" />
@@ -60,26 +55,20 @@
     <ClInclude Include="XDL_Camera.h" />
     <ClInclude Include="XDL_ContentManager.h" />
     <ClInclude Include="XDL_Debug.h" />
-    <ClInclude Include="Desert.h" />
     <ClInclude Include="XDL_Game.h" />
-    <ClInclude Include="IsoLayer.h" />
-    <ClInclude Include="IsometricTileEngine.h" />
     <ClInclude Include="XDL_Keyboard.h" />
     <ClInclude Include="XDL_Layer.h" />
-    <ClInclude Include="Level1.h" />
+    <ClInclude Include="QuadTreeDemoScene.h" />
     <ClInclude Include="MyMain.h" />
     <ClInclude Include="XDL_PathFinder.h" />
-    <ClInclude Include="XDL_Storage.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PokemonTown.h" />
+    <ClInclude Include="PathFindingSprite.h" />
     <ClInclude Include="XDL_Scene.h" />
     <ClInclude Include="XDL_SceneManager.h" />
     <ClInclude Include="XDL_Sprite.h" />
-    <ClInclude Include="Swamp.h" />
+    <ClInclude Include="XDL_TestScene.h" />
     <ClInclude Include="XDL_Tile.h" />
     <ClInclude Include="XDL_TileEngine.h" />
     <ClInclude Include="tinyxml2.h" />
-    <ClInclude Include="VariableTerrain.h" />
     <ClInclude Include="XDL_GameObject.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

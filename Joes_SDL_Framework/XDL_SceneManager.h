@@ -1,3 +1,9 @@
+//! XDL_Scene manager {Singleton]
+/*!
+Loads and Unloads scenes.
+Also updates and draws scenes that are active.
+*/
+
 #ifndef _SCENE_MANAGER_H
 #define _SCENE_MANAGER_H
 

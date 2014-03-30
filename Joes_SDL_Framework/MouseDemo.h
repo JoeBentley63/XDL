@@ -1,3 +1,8 @@
+//! Input Demo	
+/*!
+Simple demo scene that shows how keyboard input and mouse input works.
+2 sprites drawn, 1 in world coords of the mouse, the other in screen coords.
+*/
 #ifndef _MOUSE_DEMO_H
 #define _MOUSE_DEMO_H
 

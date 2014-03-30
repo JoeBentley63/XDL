@@ -31,9 +31,8 @@
   <td id="projectlogo"><img alt="Logo" src="XDL.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">XDL
-   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Framework for rapid game dev in C++</div>
+   <div id="projectbrief">4th Year Project, Joseph Bentley. XDL, Framework built ontop of SDL for rapid game developement.</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -96,7 +94,7 @@ $(document).ready(function(){initNavTree('class_x_d_l___sprite.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,7 +106,6 @@ $(document).ready(function(){initNavTree('class_x_d_l___sprite.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_x_d_l___sprite-members.html">List of all members</a>  </div>
@@ -117,6 +114,9 @@ $(document).ready(function(){initNavTree('class_x_d_l___sprite.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_x_d_l___sprite.html" title="XDL_Sprite. ">XDL_Sprite</a>.  
+ <a href="class_x_d_l___sprite.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_x_d_l___sprite_8h_source.html">XDL_Sprite.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for XDL_Sprite:</div>
@@ -124,136 +124,198 @@ Inheritance diagram for XDL_Sprite:</div>
  <div class="center">
   <img src="class_x_d_l___sprite.png" usemap="#XDL_Sprite_map" alt=""/>
   <map id="XDL_Sprite_map" name="XDL_Sprite_map">
-<area href="class_x_d_l___game_object.html" title="XDL_GameObject. " alt="XDL_GameObject" shape="rect" coords="61,0,174,24"/>
-<area href="class_player.html" alt="Player" shape="rect" coords="0,112,113,136"/>
-<area href="class_x_d_l___tile.html" title="XDL_Tile. " alt="XDL_Tile" shape="rect" coords="123,112,236,136"/>
+<area href="class_x_d_l___game_object.html" alt="XDL_GameObject" shape="rect" coords="124,0,238,24"/>
+<area href="class_demo_mover_sprite.html" title="Simple extention of sprite, that auto moves a sprite, and keeps it onscreen. " alt="DemoMoverSprite" shape="rect" coords="0,112,114,136"/>
+<area href="class_path_finding_sprite.html" title="PathFinding Sprite. " alt="PathFindingSprite" shape="rect" coords="124,112,238,136"/>
+<area href="class_x_d_l___tile.html" title="XDL_Tile. " alt="XDL_Tile" shape="rect" coords="248,112,362,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08dc933c20ca8108d845707f9e398d10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a08dc933c20ca8108d845707f9e398d10">XDL_Sprite</a> (char *_asset, float _x, float _y, int _height, int _width, SDL_Renderer *<a class="el" href="class_x_d_l___sprite.html#aedcf07ef73df095eb6cd9843870cd002">_renderer</a>)</td></tr>
-<tr class="separator:a08dc933c20ca8108d845707f9e398d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab60f32a7fe998097e6d02aa7c847b749"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ab60f32a7fe998097e6d02aa7c847b749">XDL_Sprite</a> (char *_asset, float _x, float _y, int _height, int _width, SDL_Renderer *<a class="el" href="class_x_d_l___sprite.html#aedcf07ef73df095eb6cd9843870cd002">_renderer</a>, SDL_Rect <a class="el" href="class_x_d_l___sprite.html#a98c75cc4f4abc07331ad8de391a19675">_sourceRect</a>)</td></tr>
-<tr class="separator:ab60f32a7fe998097e6d02aa7c847b749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb51264da3395288eaaedf3959380b6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#abb51264da3395288eaaedf3959380b6d">XDL_Sprite</a> (char *_asset, float _x, float _y, int _height, int _width, SDL_Renderer *<a class="el" href="class_x_d_l___sprite.html#aedcf07ef73df095eb6cd9843870cd002">_renderer</a>, SDL_Rect <a class="el" href="class_x_d_l___sprite.html#a98c75cc4f4abc07331ad8de391a19675">_sourceRect</a>, int <a class="el" href="class_x_d_l___sprite.html#a64b44e17128d166f81a5ad0a3f1f0130">_numFrames</a>)</td></tr>
-<tr class="separator:abb51264da3395288eaaedf3959380b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d947763ed4e7f0456c4b71b7469878d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a2d947763ed4e7f0456c4b71b7469878d">~XDL_Sprite</a> (void)</td></tr>
-<tr class="separator:a2d947763ed4e7f0456c4b71b7469878d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecd6d713ce320cd1d49dceea854e0d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a1ecd6d713ce320cd1d49dceea854e0d2">Update</a> ()</td></tr>
+<tr class="memitem:a17aa0483052cf03519f4885966ee8e1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a17aa0483052cf03519f4885966ee8e1b">XDL_Sprite</a> (char *_asset, float _x, float _y, int _height, int _width, int <a class="el" href="class_x_d_l___game_object.html#a62a08106992c783507c669f71a6dd6a6">_z</a>, SDL_Renderer *_renderer, string _uniqueName)</td></tr>
+<tr class="separator:a17aa0483052cf03519f4885966ee8e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be30c1e18f81665dbf8833faaa29925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a1be30c1e18f81665dbf8833faaa29925">XDL_Sprite</a> (char *_asset, float _x, float _y, int _height, int _width, int <a class="el" href="class_x_d_l___game_object.html#a62a08106992c783507c669f71a6dd6a6">_z</a>, SDL_Renderer *_renderer, SDL_Rect _sourceRect, string _uniqueName)</td></tr>
+<tr class="separator:a1be30c1e18f81665dbf8833faaa29925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb0cd8b6f2b18c3f5927082fc057b8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#accb0cd8b6f2b18c3f5927082fc057b8d">XDL_Sprite</a> (char *_asset, float _x, float _y, int _height, int _width, int <a class="el" href="class_x_d_l___game_object.html#a62a08106992c783507c669f71a6dd6a6">_z</a>, SDL_Renderer *_renderer, SDL_Rect _sourceRect, int _numFrames, string _uniqueName)</td></tr>
+<tr class="separator:accb0cd8b6f2b18c3f5927082fc057b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecd6d713ce320cd1d49dceea854e0d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ecd6d713ce320cd1d49dceea854e0d2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
 <tr class="separator:a1ecd6d713ce320cd1d49dceea854e0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b1c9b886c59f06cfbb2c428b3f58e86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a5b1c9b886c59f06cfbb2c428b3f58e86">Draw</a> ()</td></tr>
 <tr class="separator:a5b1c9b886c59f06cfbb2c428b3f58e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af594d7e5987b56ea146e640b9ced33b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#af594d7e5987b56ea146e640b9ced33b2">Animate</a> ()</td></tr>
+<tr class="memitem:af594d7e5987b56ea146e640b9ced33b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af594d7e5987b56ea146e640b9ced33b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Animate</b> ()</td></tr>
 <tr class="separator:af594d7e5987b56ea146e640b9ced33b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb08b31975b535f79552d9072c733a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#afdb08b31975b535f79552d9072c733a2">DistanceFrom</a> (<a class="el" href="class_x_d_l___sprite.html">XDL_Sprite</a> *_otherSprite)</td></tr>
-<tr class="separator:afdb08b31975b535f79552d9072c733a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e71ad05873cf708fbf145059ef2887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a86e71ad05873cf708fbf145059ef2887">SetVelocity</a> (float _x, float _y)</td></tr>
-<tr class="separator:a86e71ad05873cf708fbf145059ef2887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d1fae8e92ac494f1a6ec01e29c8c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a85d1fae8e92ac494f1a6ec01e29c8c3f">SetVelocityX</a> (float _x)</td></tr>
-<tr class="separator:a85d1fae8e92ac494f1a6ec01e29c8c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a18ddd214edc5dc4467788ab4521278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a1a18ddd214edc5dc4467788ab4521278">SetVelocityY</a> (float _y)</td></tr>
-<tr class="separator:a1a18ddd214edc5dc4467788ab4521278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6611b121ce2b1c1ce0528d2654b8d892"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a6611b121ce2b1c1ce0528d2654b8d892">GetVelocityX</a> ()</td></tr>
-<tr class="separator:a6611b121ce2b1c1ce0528d2654b8d892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea28ba1c38e25c5dea64242077baecc8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#aea28ba1c38e25c5dea64242077baecc8">GetVelocityY</a> ()</td></tr>
-<tr class="separator:aea28ba1c38e25c5dea64242077baecc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76446bfda310004fb0e82aa4bc381b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ae76446bfda310004fb0e82aa4bc381b2">SetAcceleration</a> (float _x, float _y)</td></tr>
-<tr class="separator:ae76446bfda310004fb0e82aa4bc381b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accdd48de72031a7d341e3b54ba872eab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#accdd48de72031a7d341e3b54ba872eab">SetAccelerationX</a> (float _x)</td></tr>
-<tr class="separator:accdd48de72031a7d341e3b54ba872eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4450a47156875166b1c7bbdb8925cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ab4450a47156875166b1c7bbdb8925cad">SetAccelerationY</a> (float _y)</td></tr>
-<tr class="separator:ab4450a47156875166b1c7bbdb8925cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c1df412244bf6297fe1eb954f50f01e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a4c1df412244bf6297fe1eb954f50f01e">GetAccelerationX</a> ()</td></tr>
-<tr class="separator:a4c1df412244bf6297fe1eb954f50f01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8ae0bcfa1a8035bfbae8fada4c2832"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a9e8ae0bcfa1a8035bfbae8fada4c2832">GetAccelerationY</a> ()</td></tr>
-<tr class="separator:a9e8ae0bcfa1a8035bfbae8fada4c2832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6da8034879ffa9e7aca7c626e5aa8502"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a6da8034879ffa9e7aca7c626e5aa8502">GetBoundsX</a> ()</td></tr>
-<tr class="separator:a6da8034879ffa9e7aca7c626e5aa8502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb8f03176ff81df621d761d6d31d722"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a3fb8f03176ff81df621d761d6d31d722">GetBoundsY</a> ()</td></tr>
-<tr class="separator:a3fb8f03176ff81df621d761d6d31d722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace2f0a749d46d100d7790441e364a748"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ace2f0a749d46d100d7790441e364a748">IsTouchingLeft</a> ()</td></tr>
-<tr class="separator:ace2f0a749d46d100d7790441e364a748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af49247e1e7c9de16c011b30ccbabffca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#af49247e1e7c9de16c011b30ccbabffca">IsTouchingRight</a> ()</td></tr>
-<tr class="separator:af49247e1e7c9de16c011b30ccbabffca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbba239d01bca58ed6e01577f32d16c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#abbba239d01bca58ed6e01577f32d16c6">IsTouchingBottom</a> ()</td></tr>
-<tr class="separator:abbba239d01bca58ed6e01577f32d16c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2415ef43a0ac95141ac983f2360e432"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#aa2415ef43a0ac95141ac983f2360e432">IsTouchingTop</a> ()</td></tr>
-<tr class="separator:aa2415ef43a0ac95141ac983f2360e432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a10902cbbfc8e06c90a3eaabdee960"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ac8a10902cbbfc8e06c90a3eaabdee960">CollidedWith</a> (<a class="el" href="class_x_d_l___sprite.html">XDL_Sprite</a> *_otherSprite)</td></tr>
-<tr class="separator:ac8a10902cbbfc8e06c90a3eaabdee960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_x_d_l___game_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_x_d_l___game_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a></td></tr>
-<tr class="memitem:a7d853f19561fa684d312f07a8ac4e1f2 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a7d853f19561fa684d312f07a8ac4e1f2">XDL_GameObject</a> ()</td></tr>
-<tr class="separator:a7d853f19561fa684d312f07a8ac4e1f2 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bf327721f071e6192c5e4691609a98 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2bf327721f071e6192c5e4691609a98"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XDL_GameObject</b> (string _name)</td></tr>
+<tr class="separator:ac2bf327721f071e6192c5e4691609a98 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27fd4e872e6e1bb063f5d1c8acf3119c inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a27fd4e872e6e1bb063f5d1c8acf3119c">~XDL_GameObject</a> (void)</td></tr>
 <tr class="separator:a27fd4e872e6e1bb063f5d1c8acf3119c inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ac7671bf39741642f55368690a562fff8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ac7671bf39741642f55368690a562fff8">_posX</a></td></tr>
-<tr class="separator:ac7671bf39741642f55368690a562fff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e69aab364da9c9e16ae398838679065"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a2e69aab364da9c9e16ae398838679065">_posY</a></td></tr>
-<tr class="separator:a2e69aab364da9c9e16ae398838679065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb0c96cddb007d3045232b4c7492918"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a0eb0c96cddb007d3045232b4c7492918">_immovable</a></td></tr>
-<tr class="separator:a0eb0c96cddb007d3045232b4c7492918"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_class_x_d_l___game_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_x_d_l___game_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a></td></tr>
-<tr class="memitem:a62a08106992c783507c669f71a6dd6a6 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a62a08106992c783507c669f71a6dd6a6">_z</a></td></tr>
-<tr class="separator:a62a08106992c783507c669f71a6dd6a6 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f42bdf8f833262da1b689f9454afd7 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f42bdf8f833262da1b689f9454afd7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="separator:a65f42bdf8f833262da1b689f9454afd7 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab330c902ae14f980441c95821a4d2652 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab330c902ae14f980441c95821a4d2652"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocity</b> (float _x, float _y)</td></tr>
+<tr class="separator:ab330c902ae14f980441c95821a4d2652 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e666a4d38bbe23b32b12f79ea583455 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e666a4d38bbe23b32b12f79ea583455"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocityX</b> (float _x)</td></tr>
+<tr class="separator:a0e666a4d38bbe23b32b12f79ea583455 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21374b9d1abd01efdd81dd3fc9b337ee inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21374b9d1abd01efdd81dd3fc9b337ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocityY</b> (float _y)</td></tr>
+<tr class="separator:a21374b9d1abd01efdd81dd3fc9b337ee inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add121ab40a76ee2189bc4546f4837262 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add121ab40a76ee2189bc4546f4837262"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetVelocityX</b> ()</td></tr>
+<tr class="separator:add121ab40a76ee2189bc4546f4837262 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2098323b599609cf87a8e6fe01d10d inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb2098323b599609cf87a8e6fe01d10d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetVelocityY</b> ()</td></tr>
+<tr class="separator:afb2098323b599609cf87a8e6fe01d10d inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3853c83d9b579c29f214ee8f4e973f inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe3853c83d9b579c29f214ee8f4e973f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAcceleration</b> (float _x, float _y)</td></tr>
+<tr class="separator:afe3853c83d9b579c29f214ee8f4e973f inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976621b77d2cd4423bd49588c747a495 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a976621b77d2cd4423bd49588c747a495"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccelerationX</b> (float _x)</td></tr>
+<tr class="separator:a976621b77d2cd4423bd49588c747a495 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eea42378b77c6759b2a9cac4be935f1 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eea42378b77c6759b2a9cac4be935f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccelerationY</b> (float _y)</td></tr>
+<tr class="separator:a4eea42378b77c6759b2a9cac4be935f1 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace837b938efee5fc0296cdb80b00a683 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace837b938efee5fc0296cdb80b00a683"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccelerationX</b> ()</td></tr>
+<tr class="separator:ace837b938efee5fc0296cdb80b00a683 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb53693039eaf0f40f61f2679e0c0dd inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfb53693039eaf0f40f61f2679e0c0dd"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccelerationY</b> ()</td></tr>
+<tr class="separator:adfb53693039eaf0f40f61f2679e0c0dd inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b8f98a6f5f353b573db1a812088541 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20b8f98a6f5f353b573db1a812088541"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoundsX</b> ()</td></tr>
+<tr class="separator:a20b8f98a6f5f353b573db1a812088541 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65bdf30e324adc5a4fe03988b787094 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad65bdf30e324adc5a4fe03988b787094"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoundsY</b> ()</td></tr>
+<tr class="separator:ad65bdf30e324adc5a4fe03988b787094 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663d0ad6f06b2341285bc9c63f9ee2dd inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663d0ad6f06b2341285bc9c63f9ee2dd"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CollidedWith</b> (<a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a> *_otherSprite)</td></tr>
+<tr class="separator:a663d0ad6f06b2341285bc9c63f9ee2dd inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214f85c39378a9c77d6d5cd703718ee4 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a214f85c39378a9c77d6d5cd703718ee4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Overlaps</b> (SDL_Rect _sprite, SDL_Rect _otherSprite)</td></tr>
+<tr class="separator:a214f85c39378a9c77d6d5cd703718ee4 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56fc6434b9e9d5e14b245c1962c8d34 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae56fc6434b9e9d5e14b245c1962c8d34"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingLeft</b> ()</td></tr>
+<tr class="separator:ae56fc6434b9e9d5e14b245c1962c8d34 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75a98fbfa551585b9a8937148bc49b7 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af75a98fbfa551585b9a8937148bc49b7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingRight</b> ()</td></tr>
+<tr class="separator:af75a98fbfa551585b9a8937148bc49b7 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af998b19c3969a60e7bd0ef92e15db2dc inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af998b19c3969a60e7bd0ef92e15db2dc"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingBottom</b> ()</td></tr>
+<tr class="separator:af998b19c3969a60e7bd0ef92e15db2dc inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d15ebd7cac3965a1fe4767e2123f72e inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d15ebd7cac3965a1fe4767e2123f72e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTouchingTop</b> ()</td></tr>
+<tr class="separator:a9d15ebd7cac3965a1fe4767e2123f72e inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f12eb6e45a10bd0b184bf1dcc0625c inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3f12eb6e45a10bd0b184bf1dcc0625c"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> ()</td></tr>
+<tr class="separator:ac3f12eb6e45a10bd0b184bf1dcc0625c inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253f71b057ddf28ec397ec04ea60c590 inherit pub_methods_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a253f71b057ddf28ec397ec04ea60c590"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>DistanceFrom</b> (<a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a> *_otherSprite)</td></tr>
+<tr class="separator:a253f71b057ddf28ec397ec04ea60c590 inherit pub_methods_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a30ef3609e3bb1a36dea1d6bf3d5628f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a30ef3609e3bb1a36dea1d6bf3d5628f4">Init</a> (char *_asset, float _x, float _y, int _height, int _width, SDL_Renderer *<a class="el" href="class_x_d_l___sprite.html#aedcf07ef73df095eb6cd9843870cd002">_renderer</a>)</td></tr>
+<tr class="memitem:a30ef3609e3bb1a36dea1d6bf3d5628f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30ef3609e3bb1a36dea1d6bf3d5628f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (char *_asset, float _x, float _y, int _height, int _width, SDL_Renderer *_renderer)</td></tr>
 <tr class="separator:a30ef3609e3bb1a36dea1d6bf3d5628f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4190bbf746275d20dd872e019858c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a1a4190bbf746275d20dd872e019858c6">Overlaps</a> (SDL_Rect <a class="el" href="_level1_8cpp.html#a42cdb9591a5fc8edad0b224f0e77a1ec">_sprite</a>, SDL_Rect _otherSprite)</td></tr>
-<tr class="separator:a1a4190bbf746275d20dd872e019858c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad7f8b1f515a3a42ad88ebe6aa29aeedd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ad7f8b1f515a3a42ad88ebe6aa29aeedd">_isTouchingTop</a></td></tr>
-<tr class="separator:ad7f8b1f515a3a42ad88ebe6aa29aeedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cf89515bc7cfba9f65c1f650efaf464"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a1cf89515bc7cfba9f65c1f650efaf464">_isTouchingLeft</a></td></tr>
-<tr class="separator:a1cf89515bc7cfba9f65c1f650efaf464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1952187a8c7d3805f0823e898936872"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ae1952187a8c7d3805f0823e898936872">_isTouchingBottom</a></td></tr>
-<tr class="separator:ae1952187a8c7d3805f0823e898936872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f077e406b3a0d2ab2f2c12ee73d7be8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a4f077e406b3a0d2ab2f2c12ee73d7be8">_isTouchingRight</a></td></tr>
-<tr class="separator:a4f077e406b3a0d2ab2f2c12ee73d7be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc4eb2f877c07dfd80701ee58575884"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#adbc4eb2f877c07dfd80701ee58575884">_top</a></td></tr>
-<tr class="separator:adbc4eb2f877c07dfd80701ee58575884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60f66817b4ac0d24e5623272216527c8"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a60f66817b4ac0d24e5623272216527c8">_bottom</a></td></tr>
-<tr class="separator:a60f66817b4ac0d24e5623272216527c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8fda5bca5ea2e7245ee0f6ef6184f07"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ab8fda5bca5ea2e7245ee0f6ef6184f07">_left</a></td></tr>
-<tr class="separator:ab8fda5bca5ea2e7245ee0f6ef6184f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d302603937aed34cb021183bfd1c375"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a2d302603937aed34cb021183bfd1c375">_right</a></td></tr>
-<tr class="separator:a2d302603937aed34cb021183bfd1c375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedcf07ef73df095eb6cd9843870cd002"><td class="memItemLeft" align="right" valign="top">SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#aedcf07ef73df095eb6cd9843870cd002">_renderer</a></td></tr>
+<tr class="memitem:aedcf07ef73df095eb6cd9843870cd002"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedcf07ef73df095eb6cd9843870cd002"></a>
+SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><b>_renderer</b></td></tr>
 <tr class="separator:aedcf07ef73df095eb6cd9843870cd002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b903a2d134b47d7afd8e6ec72ccff64"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a8b903a2d134b47d7afd8e6ec72ccff64">_accelerationX</a></td></tr>
-<tr class="separator:a8b903a2d134b47d7afd8e6ec72ccff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada33278639ac05dbae0642f029163805"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ada33278639ac05dbae0642f029163805">_accelerationY</a></td></tr>
-<tr class="separator:ada33278639ac05dbae0642f029163805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9c243d3f08c3ca76a9eee292e5b93d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a0a9c243d3f08c3ca76a9eee292e5b93d">_velocityX</a></td></tr>
-<tr class="separator:a0a9c243d3f08c3ca76a9eee292e5b93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44accc22025bb3fd43ec6db2513417f0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a44accc22025bb3fd43ec6db2513417f0">_velocityY</a></td></tr>
-<tr class="separator:a44accc22025bb3fd43ec6db2513417f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b44e17128d166f81a5ad0a3f1f0130"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a64b44e17128d166f81a5ad0a3f1f0130">_numFrames</a></td></tr>
+<tr class="memitem:a64b44e17128d166f81a5ad0a3f1f0130"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64b44e17128d166f81a5ad0a3f1f0130"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_numFrames</b></td></tr>
 <tr class="separator:a64b44e17128d166f81a5ad0a3f1f0130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a400af77ad887dec8bdb210e04299259a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a400af77ad887dec8bdb210e04299259a">_currentFrame</a></td></tr>
+<tr class="memitem:a400af77ad887dec8bdb210e04299259a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a400af77ad887dec8bdb210e04299259a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_currentFrame</b></td></tr>
 <tr class="separator:a400af77ad887dec8bdb210e04299259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98c75cc4f4abc07331ad8de391a19675"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a98c75cc4f4abc07331ad8de391a19675">_sourceRect</a></td></tr>
+<tr class="memitem:a98c75cc4f4abc07331ad8de391a19675"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98c75cc4f4abc07331ad8de391a19675"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_sourceRect</b></td></tr>
 <tr class="separator:a98c75cc4f4abc07331ad8de391a19675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad83f66f89a449230516e37534a228af7"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#ad83f66f89a449230516e37534a228af7">_drawRect</a></td></tr>
+<tr class="memitem:ad83f66f89a449230516e37534a228af7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad83f66f89a449230516e37534a228af7"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_drawRect</b></td></tr>
 <tr class="separator:ad83f66f89a449230516e37534a228af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dab4417ad28c6d3615c4716dcf3ea07"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a5dab4417ad28c6d3615c4716dcf3ea07">_bounds</a></td></tr>
-<tr class="separator:a5dab4417ad28c6d3615c4716dcf3ea07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e385099b36a25f00322acd2b353751e"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a8e385099b36a25f00322acd2b353751e">_texture</a></td></tr>
+<tr class="memitem:a8e385099b36a25f00322acd2b353751e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e385099b36a25f00322acd2b353751e"></a>
+SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>_texture</b></td></tr>
 <tr class="separator:a8e385099b36a25f00322acd2b353751e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e50211a0f424c3a77753a206232f9ef"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a8e50211a0f424c3a77753a206232f9ef">_assetName</a></td></tr>
+<tr class="memitem:a8e50211a0f424c3a77753a206232f9ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e50211a0f424c3a77753a206232f9ef"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_assetName</b></td></tr>
 <tr class="separator:a8e50211a0f424c3a77753a206232f9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39231e3b79b80ebb38cc9c9d5e1b4323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_x_d_l___content_manager.html">XDL_ContentManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___sprite.html#a39231e3b79b80ebb38cc9c9d5e1b4323">_content</a></td></tr>
+<tr class="memitem:a39231e3b79b80ebb38cc9c9d5e1b4323"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39231e3b79b80ebb38cc9c9d5e1b4323"></a>
+<a class="el" href="class_x_d_l___content_manager.html">XDL_ContentManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_content</b></td></tr>
 <tr class="separator:a39231e3b79b80ebb38cc9c9d5e1b4323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_x_d_l___game_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_x_d_l___game_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a></td></tr>
+<tr class="memitem:a831c09ac74f88701a8b1ad1ee773243c inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a831c09ac74f88701a8b1ad1ee773243c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingTop</b></td></tr>
+<tr class="separator:a831c09ac74f88701a8b1ad1ee773243c inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf27e266355faef774c46960b25bec62 inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf27e266355faef774c46960b25bec62"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingLeft</b></td></tr>
+<tr class="separator:acf27e266355faef774c46960b25bec62 inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cceafdcbf60dee16895a40dc57ee87 inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1cceafdcbf60dee16895a40dc57ee87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingBottom</b></td></tr>
+<tr class="separator:ab1cceafdcbf60dee16895a40dc57ee87 inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9e7620cc7c83e6e4a19b8293a35839 inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c9e7620cc7c83e6e4a19b8293a35839"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isTouchingRight</b></td></tr>
+<tr class="separator:a4c9e7620cc7c83e6e4a19b8293a35839 inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8aa17dfc11e350aabd8bdd665288f9 inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade8aa17dfc11e350aabd8bdd665288f9"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_top</b></td></tr>
+<tr class="separator:ade8aa17dfc11e350aabd8bdd665288f9 inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1794642e4ea8631bcf288d007b0fcc inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d1794642e4ea8631bcf288d007b0fcc"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_bottom</b></td></tr>
+<tr class="separator:a0d1794642e4ea8631bcf288d007b0fcc inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41cd1d7a6db0bd20b0ec5b4ea805b8c inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa41cd1d7a6db0bd20b0ec5b4ea805b8c"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_left</b></td></tr>
+<tr class="separator:aa41cd1d7a6db0bd20b0ec5b4ea805b8c inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce22f2ffd56bface1f7f9371a0dcadf inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ce22f2ffd56bface1f7f9371a0dcadf"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_right</b></td></tr>
+<tr class="separator:a9ce22f2ffd56bface1f7f9371a0dcadf inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9881ae32dadb2ddaea8a2836c5fe62a3 inherit pro_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9881ae32dadb2ddaea8a2836c5fe62a3"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
+<tr class="separator:a9881ae32dadb2ddaea8a2836c5fe62a3 inherit pro_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_x_d_l___game_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_x_d_l___game_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_x_d_l___game_object.html">XDL_GameObject</a></td></tr>
+<tr class="memitem:a62a08106992c783507c669f71a6dd6a6 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#a62a08106992c783507c669f71a6dd6a6">_z</a></td></tr>
+<tr class="separator:a62a08106992c783507c669f71a6dd6a6 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dfc50f0570ac313ce58b9addc011cc inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_d_l___game_object.html#af2dfc50f0570ac313ce58b9addc011cc">_posX</a></td></tr>
+<tr class="separator:af2dfc50f0570ac313ce58b9addc011cc inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb99e171b5474676d19e10231a4da235 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb99e171b5474676d19e10231a4da235"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_posY</b></td></tr>
+<tr class="separator:afb99e171b5474676d19e10231a4da235 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0167b38391063475850b6d5d1f9403a1 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0167b38391063475850b6d5d1f9403a1"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>_bounds</b></td></tr>
+<tr class="separator:a0167b38391063475850b6d5d1f9403a1 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3699c77c7c52cebced7142d851c16b51 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3699c77c7c52cebced7142d851c16b51"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_immovable</b></td></tr>
+<tr class="separator:a3699c77c7c52cebced7142d851c16b51 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad080849e7106ad0ed5ea28a23f9b9306 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad080849e7106ad0ed5ea28a23f9b9306"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_accelerationX</b></td></tr>
+<tr class="separator:ad080849e7106ad0ed5ea28a23f9b9306 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a06211d78300e6a3a49925ba5edf9f inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88a06211d78300e6a3a49925ba5edf9f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_accelerationY</b></td></tr>
+<tr class="separator:a88a06211d78300e6a3a49925ba5edf9f inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7415cb816569f4ffd38686638a74a25d inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7415cb816569f4ffd38686638a74a25d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_velocityX</b></td></tr>
+<tr class="separator:a7415cb816569f4ffd38686638a74a25d inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e2149742a9512113f11b05c2a83a35 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e2149742a9512113f11b05c2a83a35"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_velocityY</b></td></tr>
+<tr class="separator:a23e2149742a9512113f11b05c2a83a35 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb32539dbacd6f05600ec5b40e700397 inherit pub_attribs_class_x_d_l___game_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb32539dbacd6f05600ec5b40e700397"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_collidable</b></td></tr>
+<tr class="separator:acb32539dbacd6f05600ec5b40e700397 inherit pub_attribs_class_x_d_l___game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a08dc933c20ca8108d845707f9e398d10"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_x_d_l___sprite.html" title="XDL_Sprite. ">XDL_Sprite</a>. </p>
+<p>Extension of GameObject</p>
+<p>Provides extra functionality, such as a sprite visual element, and loading/drawing from tilesheets </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a17aa0483052cf03519f4885966ee8e1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -279,19 +341,31 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>_height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_width</em>, </td>
+          <td class="paramname"><em>_z</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">SDL_Renderer *&#160;</td>
-          <td class="paramname"><em>_renderer</em>&#160;</td>
+          <td class="paramname"><em>_renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>_uniqueName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -300,11 +374,11 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>constructor for a bmp file, where we are going to draw the entire image </p>
+<p>constructor for file, where we are going to draw the entire image </p>
 
 </div>
 </div>
-<a class="anchor" id="ab60f32a7fe998097e6d02aa7c847b749"></a>
+<a class="anchor" id="a1be30c1e18f81665dbf8833faaa29925"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -330,13 +404,19 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>_height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_width</em>, </td>
+          <td class="paramname"><em>_z</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -348,7 +428,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">SDL_Rect&#160;</td>
-          <td class="paramname"><em>_sourceRect</em>&#160;</td>
+          <td class="paramname"><em>_sourceRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>_uniqueName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -361,7 +447,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb51264da3395288eaaedf3959380b6d"></a>
+<a class="anchor" id="accb0cd8b6f2b18c3f5927082fc057b8d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -394,6 +480,12 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_z</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -411,7 +503,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_numFrames</em>&#160;</td>
+          <td class="paramname"><em>_numFrames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>_uniqueName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -420,82 +518,11 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>constructor for use with animation. </p>
-
-</div>
-</div>
-<a class="anchor" id="a2d947763ed4e7f0456c4b71b7469878d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XDL_Sprite::~XDL_Sprite </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>constructor for use with animation...which is no implemented yet </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af594d7e5987b56ea146e640b9ced33b2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::Animate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac8a10902cbbfc8e06c90a3eaabdee960"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::CollidedWith </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_x_d_l___sprite.html">XDL_Sprite</a> *&#160;</td>
-          <td class="paramname"><em>_otherSprite</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afdb08b31975b535f79552d9072c733a2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_Sprite::DistanceFrom </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_x_d_l___sprite.html">XDL_Sprite</a> *&#160;</td>
-          <td class="paramname"><em>_otherSprite</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a5b1c9b886c59f06cfbb2c428b3f58e86"></a>
 <div class="memitem">
 <div class="memproto">
@@ -520,855 +547,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_x_d_l___game_object.html#a46ab89c9622631cf13114a493b1b0a2d">XDL_GameObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_player.html#a00ae3ebe88af8f9cfabd819176516a73">Player</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4c1df412244bf6297fe1eb954f50f01e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::GetAccelerationX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9e8ae0bcfa1a8035bfbae8fada4c2832"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::GetAccelerationY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6da8034879ffa9e7aca7c626e5aa8502"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_Sprite::GetBoundsX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3fb8f03176ff81df621d761d6d31d722"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_Sprite::GetBoundsY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6611b121ce2b1c1ce0528d2654b8d892"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::GetVelocityX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aea28ba1c38e25c5dea64242077baecc8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::GetVelocityY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a30ef3609e3bb1a36dea1d6bf3d5628f4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::Init </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>_asset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SDL_Renderer *&#160;</td>
-          <td class="paramname"><em>_renderer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abbba239d01bca58ed6e01577f32d16c6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::IsTouchingBottom </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ace2f0a749d46d100d7790441e364a748"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::IsTouchingLeft </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af49247e1e7c9de16c011b30ccbabffca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::IsTouchingRight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa2415ef43a0ac95141ac983f2360e432"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::IsTouchingTop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1a4190bbf746275d20dd872e019858c6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::Overlaps </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Rect&#160;</td>
-          <td class="paramname"><em>_sprite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SDL_Rect&#160;</td>
-          <td class="paramname"><em>_otherSprite</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae76446bfda310004fb0e82aa4bc381b2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::SetAcceleration </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="accdd48de72031a7d341e3b54ba872eab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::SetAccelerationX </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab4450a47156875166b1c7bbdb8925cad"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::SetAccelerationY </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_y</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a86e71ad05873cf708fbf145059ef2887"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::SetVelocity </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a85d1fae8e92ac494f1a6ec01e29c8c3f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::SetVelocityX </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1a18ddd214edc5dc4467788ab4521278"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::SetVelocityY </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_y</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1ecd6d713ce320cd1d49dceea854e0d2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void XDL_Sprite::Update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_x_d_l___game_object.html#a23ac8b886032939259f143081a3b1fab">XDL_GameObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_player.html#a05b60cac1922c5be5c1be16baffa4497">Player</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a8b903a2d134b47d7afd8e6ec72ccff64"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::_accelerationX</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ada33278639ac05dbae0642f029163805"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::_accelerationY</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e50211a0f424c3a77753a206232f9ef"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* XDL_Sprite::_assetName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a60f66817b4ac0d24e5623272216527c8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect XDL_Sprite::_bottom</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5dab4417ad28c6d3615c4716dcf3ea07"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect XDL_Sprite::_bounds</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a39231e3b79b80ebb38cc9c9d5e1b4323"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_x_d_l___content_manager.html">XDL_ContentManager</a>* XDL_Sprite::_content</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a400af77ad887dec8bdb210e04299259a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_Sprite::_currentFrame</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad83f66f89a449230516e37534a228af7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect XDL_Sprite::_drawRect</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0eb0c96cddb007d3045232b4c7492918"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::_immovable</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae1952187a8c7d3805f0823e898936872"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::_isTouchingBottom</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1cf89515bc7cfba9f65c1f650efaf464"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::_isTouchingLeft</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4f077e406b3a0d2ab2f2c12ee73d7be8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::_isTouchingRight</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad7f8b1f515a3a42ad88ebe6aa29aeedd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool XDL_Sprite::_isTouchingTop</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab8fda5bca5ea2e7245ee0f6ef6184f07"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect XDL_Sprite::_left</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a64b44e17128d166f81a5ad0a3f1f0130"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_Sprite::_numFrames</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac7671bf39741642f55368690a562fff8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_Sprite::_posX</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2e69aab364da9c9e16ae398838679065"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int XDL_Sprite::_posY</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aedcf07ef73df095eb6cd9843870cd002"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Renderer* XDL_Sprite::_renderer</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2d302603937aed34cb021183bfd1c375"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect XDL_Sprite::_right</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a98c75cc4f4abc07331ad8de391a19675"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect XDL_Sprite::_sourceRect</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e385099b36a25f00322acd2b353751e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Texture* XDL_Sprite::_texture</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="adbc4eb2f877c07dfd80701ee58575884"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect XDL_Sprite::_top</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0a9c243d3f08c3ca76a9eee292e5b93d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::_velocityX</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a44accc22025bb3fd43ec6db2513417f0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float XDL_Sprite::_velocityY</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Reimplemented in <a class="el" href="class_path_finding_sprite.html#a1fdc88d9b985f6f7b7ce8de4eaa31a5a">PathFindingSprite</a>, and <a class="el" href="class_demo_mover_sprite.html#a4dae3800a23e9ed5f68cd83b05be8ab8">DemoMoverSprite</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Joes_SDL_Framework/<a class="el" href="_x_d_l___sprite_8h_source.html">XDL_Sprite.h</a></li>
-<li>Joes_SDL_Framework/<a class="el" href="_x_d_l___sprite_8cpp.html">XDL_Sprite.cpp</a></li>
+<li>Joes_SDL_Framework/XDL_Sprite.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1376,7 +561,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_x_d_l___sprite.html">XDL_Sprite</a></li>
-    <li class="footer">Generated on Mon Feb 17 2014 15:50:08 for XDL by
+    <li class="footer">Generated on Sun Mar 30 2014 19:31:46 for XDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

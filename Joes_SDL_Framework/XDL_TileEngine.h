@@ -1,6 +1,7 @@
-/***************************************************************
-Joseph Bentley P10011026 : TMX Reader Assignment
-****************************************************************/
+//! XDL_Tile Engine
+/*!
+Simple tile engine example, showing how you can read tiles from XML and draw them to the screen.
+*/
 #ifndef _TILE_ENGINE_H
 #define _TILE_ENGINE_H
 
@@ -19,7 +20,7 @@ public:
 	XDL_TileEngine(SDL_Renderer* _renderer,int _tilesWidth,int _tilesHeight);
 	~XDL_TileEngine(void);
 	void Update();
-	void Draw(XDL_SpriteBatch* _spriteBatch);
+	void Draw(XDL_SpriteBatch* XDL_SPRITEBATCH);
 	bool LoadFromXML(char* _pathToTMX);
 	bool LoadFromTMXAndTSX(char* _pathToTMX);
 	int GetTileWidth();

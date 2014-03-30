@@ -31,9 +31,8 @@
   <td id="projectlogo"><img alt="Logo" src="XDL.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">XDL
-   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Framework for rapid game dev in C++</div>
+   <div id="projectbrief">4th Year Project, Joseph Bentley. XDL, Framework built ontop of SDL for rapid game developement.</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -94,7 +91,7 @@ $(document).ready(function(){initNavTree('_x_d_l___game_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,17 +105,17 @@ $(document).ready(function(){initNavTree('_x_d_l___game_8h_source.html','');});
 <div class="title">XDL_Game.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_x_d_l___game_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef GAME_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GAME_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_d_l___debug_8h.html">XDL_Debug.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;XDL_Debug.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SDL.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_x_d_l___game.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_x_d_l___game.html">XDL_Game</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_x_d_l___game.html#a7dbac78db43464ec6abf72cc0b83798c">XDL_Game</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_x_d_l___game.html#ae74cceb6cbe74cdaefcc0c69ad0e88f2">~XDL_Game</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_x_d_l___game.html">XDL_Game</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    ~<a class="code" href="class_x_d_l___game.html">XDL_Game</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_x_d_l___game.html#ab866479bed0d2d4ab2d8c40b8d2b1206">Init</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_x_d_l___game.html#afca16922cbee9332ac6b8fabf8078c4d">Update</a>();</div>
@@ -131,27 +128,25 @@ $(document).ready(function(){initNavTree('_x_d_l___game_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_x_d_l___game.html#a2d89ed8221d33e4a4351c93d4190464c">   27</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_x_d_l___game.html#a2d89ed8221d33e4a4351c93d4190464c">_b</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_x_d_l___game.html#aba18e8d33ee6e87494ebb958f2beee67">   28</a></span>&#160;    <span class="keyword">static</span> SDL_Rect* <a class="code" href="class_x_d_l___game.html#aba18e8d33ee6e87494ebb958f2beee67">_windowsBounds</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_x_d_l___game.html#a64e272606ee7d43ab1669794c098c2c4">   29</a></span>&#160;    SDL_Renderer* <a class="code" href="class_x_d_l___game.html#a64e272606ee7d43ab1669794c098c2c4">_renderer</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span> : </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> m_running;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    SDL_Window* _window;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_x_d_l___game_html_ae74cceb6cbe74cdaefcc0c69ad0e88f2"><div class="ttname"><a href="class_x_d_l___game.html#ae74cceb6cbe74cdaefcc0c69ad0e88f2">XDL_Game::~XDL_Game</a></div><div class="ttdeci">~XDL_Game(void)</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:47</div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> _drawQuadTreeDebug;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span> : </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> m_running;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    SDL_Window* _window;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="class_x_d_l___game_html_aba18e8d33ee6e87494ebb958f2beee67"><div class="ttname"><a href="class_x_d_l___game.html#aba18e8d33ee6e87494ebb958f2beee67">XDL_Game::_windowsBounds</a></div><div class="ttdeci">static SDL_Rect * _windowsBounds</div><div class="ttdef"><b>Definition:</b> XDL_Game.h:28</div></div>
-<div class="ttc" id="class_x_d_l___game_html_afca16922cbee9332ac6b8fabf8078c4d"><div class="ttname"><a href="class_x_d_l___game.html#afca16922cbee9332ac6b8fabf8078c4d">XDL_Game::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:51</div></div>
+<div class="ttc" id="class_x_d_l___game_html_afca16922cbee9332ac6b8fabf8078c4d"><div class="ttname"><a href="class_x_d_l___game.html#afca16922cbee9332ac6b8fabf8078c4d">XDL_Game::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:62</div></div>
 <div class="ttc" id="class_x_d_l___game_html_a0d18c646bd050e6e5bf93efd1b00a8a8"><div class="ttname"><a href="class_x_d_l___game.html#a0d18c646bd050e6e5bf93efd1b00a8a8">XDL_Game::_g</a></div><div class="ttdeci">static int _g</div><div class="ttdef"><b>Definition:</b> XDL_Game.h:26</div></div>
-<div class="ttc" id="class_x_d_l___game_html_a7dbac78db43464ec6abf72cc0b83798c"><div class="ttname"><a href="class_x_d_l___game.html#a7dbac78db43464ec6abf72cc0b83798c">XDL_Game::XDL_Game</a></div><div class="ttdeci">XDL_Game(void)</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:15</div></div>
 <div class="ttc" id="class_x_d_l___game_html_a0c6b24dee1668f4a1079d389efda2ccf"><div class="ttname"><a href="class_x_d_l___game.html#a0c6b24dee1668f4a1079d389efda2ccf">XDL_Game::_r</a></div><div class="ttdeci">static int _r</div><div class="ttdef"><b>Definition:</b> XDL_Game.h:25</div></div>
-<div class="ttc" id="_x_d_l___debug_8h_html"><div class="ttname"><a href="_x_d_l___debug_8h.html">XDL_Debug.h</a></div></div>
 <div class="ttc" id="class_x_d_l___game_html_a2168cd95816117ff5f905692439aeb72"><div class="ttname"><a href="class_x_d_l___game.html#a2168cd95816117ff5f905692439aeb72">XDL_Game::SCREEN_WIDTH</a></div><div class="ttdeci">static int SCREEN_WIDTH</div><div class="ttdef"><b>Definition:</b> XDL_Game.h:23</div></div>
 <div class="ttc" id="class_x_d_l___game_html_a9fde7fa33a7816a1e3f17313ebca9001"><div class="ttname"><a href="class_x_d_l___game.html#a9fde7fa33a7816a1e3f17313ebca9001">XDL_Game::SCREEN_HEIGHT</a></div><div class="ttdeci">static int SCREEN_HEIGHT</div><div class="ttdef"><b>Definition:</b> XDL_Game.h:24</div></div>
 <div class="ttc" id="class_x_d_l___game_html_a2d89ed8221d33e4a4351c93d4190464c"><div class="ttname"><a href="class_x_d_l___game.html#a2d89ed8221d33e4a4351c93d4190464c">XDL_Game::_b</a></div><div class="ttdeci">static int _b</div><div class="ttdef"><b>Definition:</b> XDL_Game.h:27</div></div>
-<div class="ttc" id="class_x_d_l___game_html_ab866479bed0d2d4ab2d8c40b8d2b1206"><div class="ttname"><a href="class_x_d_l___game.html#ab866479bed0d2d4ab2d8c40b8d2b1206">XDL_Game::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:20</div></div>
-<div class="ttc" id="class_x_d_l___game_html_a03405ef0205b25414b86d833cb4cd562"><div class="ttname"><a href="class_x_d_l___game.html#a03405ef0205b25414b86d833cb4cd562">XDL_Game::CleanUp</a></div><div class="ttdeci">void CleanUp()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:61</div></div>
-<div class="ttc" id="class_x_d_l___game_html_a8259b7f7bc74722f423e0392cebef188"><div class="ttname"><a href="class_x_d_l___game.html#a8259b7f7bc74722f423e0392cebef188">XDL_Game::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:56</div></div>
+<div class="ttc" id="class_x_d_l___game_html_ab866479bed0d2d4ab2d8c40b8d2b1206"><div class="ttname"><a href="class_x_d_l___game.html#ab866479bed0d2d4ab2d8c40b8d2b1206">XDL_Game::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:27</div></div>
+<div class="ttc" id="class_x_d_l___game_html_a03405ef0205b25414b86d833cb4cd562"><div class="ttname"><a href="class_x_d_l___game.html#a03405ef0205b25414b86d833cb4cd562">XDL_Game::CleanUp</a></div><div class="ttdeci">void CleanUp()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:105</div></div>
+<div class="ttc" id="class_x_d_l___game_html_a8259b7f7bc74722f423e0392cebef188"><div class="ttname"><a href="class_x_d_l___game.html#a8259b7f7bc74722f423e0392cebef188">XDL_Game::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> XDL_Game.cpp:100</div></div>
 <div class="ttc" id="class_x_d_l___game_html"><div class="ttname"><a href="class_x_d_l___game.html">XDL_Game</a></div><div class="ttdoc">XDL_Game. </div><div class="ttdef"><b>Definition:</b> XDL_Game.h:12</div></div>
 <div class="ttc" id="class_x_d_l___game_html_a64e272606ee7d43ab1669794c098c2c4"><div class="ttname"><a href="class_x_d_l___game.html#a64e272606ee7d43ab1669794c098c2c4">XDL_Game::_renderer</a></div><div class="ttdeci">SDL_Renderer * _renderer</div><div class="ttdef"><b>Definition:</b> XDL_Game.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -159,8 +154,8 @@ $(document).ready(function(){initNavTree('_x_d_l___game_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b5a838bfc9090511c0db4eeee24fb9a7.html">Joes_SDL_Framework</a></li><li class="navelem"><a class="el" href="_x_d_l___game_8h.html">XDL_Game.h</a></li>
-    <li class="footer">Generated on Mon Feb 17 2014 15:49:56 for XDL by
+    <li class="navelem"><a class="el" href="dir_b5a838bfc9090511c0db4eeee24fb9a7.html">Joes_SDL_Framework</a></li><li class="navelem"><b>XDL_Game.h</b></li>
+    <li class="footer">Generated on Sun Mar 30 2014 19:31:43 for XDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

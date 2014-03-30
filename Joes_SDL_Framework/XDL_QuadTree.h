@@ -1,3 +1,9 @@
+//! XDL_QuadTree
+/*!
+Quadtree used to cull collision detection in game. can also be used to cull draw calls 
+by passing in the screenbounds and drawing all objects returned
+*/
+
 #ifndef _XDL_QUAD_TREE
 #define _XDL_QUAD_TREE
 #include "XDL_GameObject.h"
@@ -6,7 +12,7 @@
 #include <vector>
 #include <SDL.h>
 using namespace std;
-class XDL_QuadTree : public XDL_GameObject
+class XDL_QuadTree
 {
 public:
 	static int _capacity;

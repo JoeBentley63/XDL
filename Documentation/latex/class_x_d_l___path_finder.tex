@@ -1,32 +1,32 @@
 \hypertarget{class_x_d_l___path_finder}{\section{X\-D\-L\-\_\-\-Path\-Finder Class Reference}
 \label{class_x_d_l___path_finder}\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}}
 }
-
-
-{\ttfamily \#include $<$X\-D\-L\-\_\-\-Path\-Finder.\-h$>$}
-
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_x_d_l___path_finder_a6d718c1198ba8c90e635c28aa5b7e3a1}{$\sim$\-X\-D\-L\-\_\-\-Path\-Finder} (void)
+\hypertarget{class_x_d_l___path_finder_aae1ebca620ad8c1875b176419b49a8ff}{void {\bfseries Set\-Path\-Finder\-Focus} (\hyperlink{class_x_d_l___layer}{X\-D\-L\-\_\-\-Layer} $\ast$\-\_\-layer, int \-\_\-tile\-Width, int \-\_\-tile\-Height, int \-\_\-num\-Tiles\-Wide)}\label{class_x_d_l___path_finder_aae1ebca620ad8c1875b176419b49a8ff}
+
 \item 
-void \hyperlink{class_x_d_l___path_finder_aae1ebca620ad8c1875b176419b49a8ff}{Set\-Path\-Finder\-Focus} (\hyperlink{class_x_d_l___layer}{X\-D\-L\-\_\-\-Layer} $\ast$\-\_\-layer, int \-\_\-tile\-Width, int \-\_\-tile\-Height, int \-\_\-num\-Tiles\-Wide)
+\hypertarget{class_x_d_l___path_finder_ae89492cd495ebda75e3823fc568b3318}{void {\bfseries Set\-Weight} (int \-\_\-gid, float \-\_\-weight)}\label{class_x_d_l___path_finder_ae89492cd495ebda75e3823fc568b3318}
+
 \item 
-void \hyperlink{class_x_d_l___path_finder_ae89492cd495ebda75e3823fc568b3318}{Set\-Weight} (int \-\_\-gid, float \-\_\-weight)
+\hypertarget{class_x_d_l___path_finder_ac303afb330b8f9f539cd2efe53fbf091}{float {\bfseries Get\-Weight} (int \-\_\-gid)}\label{class_x_d_l___path_finder_ac303afb330b8f9f539cd2efe53fbf091}
+
 \item 
-float \hyperlink{class_x_d_l___path_finder_ac303afb330b8f9f539cd2efe53fbf091}{Get\-Weight} (int \-\_\-gid)
-\item 
-void \hyperlink{class_x_d_l___path_finder_a240f6aa9544b77d7c9b21e2e84087656}{Try\-Get\-Path} (int \-\_\-start\-X, int \-\_\-start\-Y, int \-\_\-end\-X, int \-\_\-end\-Y, \hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$\hyperlink{class_x_d_l___path_finder_ae21d6af420119875362d125ebf5c73b6}{\-\_\-sprite})
+\hypertarget{class_x_d_l___path_finder_a240f6aa9544b77d7c9b21e2e84087656}{void {\bfseries Try\-Get\-Path} (int \-\_\-start\-X, int \-\_\-start\-Y, int \-\_\-end\-X, int \-\_\-end\-Y, \hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$\-\_\-sprite)}\label{class_x_d_l___path_finder_a240f6aa9544b77d7c9b21e2e84087656}
+
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{class_x_d_l___path_finder}{X\-D\-L\-\_\-\-Path\-Finder} $\ast$ \hyperlink{class_x_d_l___path_finder_a4a258141f72bd99535dd5ab64272a66f}{Get\-Instance} ()
+\hypertarget{class_x_d_l___path_finder_a4a258141f72bd99535dd5ab64272a66f}{static \hyperlink{class_x_d_l___path_finder}{X\-D\-L\-\_\-\-Path\-Finder} $\ast$ {\bfseries Get\-Instance} ()}\label{class_x_d_l___path_finder_a4a258141f72bd99535dd5ab64272a66f}
+
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$ \hyperlink{class_x_d_l___path_finder_ae21d6af420119875362d125ebf5c73b6}{\-\_\-sprite}
+\hypertarget{class_x_d_l___path_finder_ae21d6af420119875362d125ebf5c73b6}{\hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$ {\bfseries \-\_\-sprite}}\label{class_x_d_l___path_finder_ae21d6af420119875362d125ebf5c73b6}
+
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -37,75 +37,16 @@ static const int \hyperlink{class_x_d_l___path_finder_a1d174e5bc28dc523833b199f7
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_x_d_l___path_finder_a6d718c1198ba8c90e635c28aa5b7e3a1}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!$\sim$\-X\-D\-L\-\_\-\-Path\-Finder@{$\sim$\-X\-D\-L\-\_\-\-Path\-Finder}}
-\index{$\sim$\-X\-D\-L\-\_\-\-Path\-Finder@{$\sim$\-X\-D\-L\-\_\-\-Path\-Finder}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
-\subsubsection[{$\sim$\-X\-D\-L\-\_\-\-Path\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}X\-D\-L\-\_\-\-Path\-Finder\-::$\sim$\-X\-D\-L\-\_\-\-Path\-Finder (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___path_finder_a6d718c1198ba8c90e635c28aa5b7e3a1}
-
-
-\subsection{Member Function Documentation}
-\hypertarget{class_x_d_l___path_finder_a4a258141f72bd99535dd5ab64272a66f}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!Get\-Instance@{Get\-Instance}}
-\index{Get\-Instance@{Get\-Instance}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
-\subsubsection[{Get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Path\-Finder} $\ast$ X\-D\-L\-\_\-\-Path\-Finder\-::\-Get\-Instance (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_x_d_l___path_finder_a4a258141f72bd99535dd5ab64272a66f}
-\hypertarget{class_x_d_l___path_finder_ac303afb330b8f9f539cd2efe53fbf091}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!Get\-Weight@{Get\-Weight}}
-\index{Get\-Weight@{Get\-Weight}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
-\subsubsection[{Get\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}float X\-D\-L\-\_\-\-Path\-Finder\-::\-Get\-Weight (
-\begin{DoxyParamCaption}
-\item[{int}]{\-\_\-gid}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___path_finder_ac303afb330b8f9f539cd2efe53fbf091}
-\hypertarget{class_x_d_l___path_finder_aae1ebca620ad8c1875b176419b49a8ff}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!Set\-Path\-Finder\-Focus@{Set\-Path\-Finder\-Focus}}
-\index{Set\-Path\-Finder\-Focus@{Set\-Path\-Finder\-Focus}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
-\subsubsection[{Set\-Path\-Finder\-Focus}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Path\-Finder\-::\-Set\-Path\-Finder\-Focus (
-\begin{DoxyParamCaption}
-\item[{{\bf X\-D\-L\-\_\-\-Layer} $\ast$}]{\-\_\-layer, }
-\item[{int}]{\-\_\-tile\-Width, }
-\item[{int}]{\-\_\-tile\-Height, }
-\item[{int}]{\-\_\-num\-Tiles\-Wide}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___path_finder_aae1ebca620ad8c1875b176419b49a8ff}
-\hypertarget{class_x_d_l___path_finder_ae89492cd495ebda75e3823fc568b3318}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!Set\-Weight@{Set\-Weight}}
-\index{Set\-Weight@{Set\-Weight}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
-\subsubsection[{Set\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Path\-Finder\-::\-Set\-Weight (
-\begin{DoxyParamCaption}
-\item[{int}]{\-\_\-gid, }
-\item[{float}]{\-\_\-weight}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___path_finder_ae89492cd495ebda75e3823fc568b3318}
-\hypertarget{class_x_d_l___path_finder_a240f6aa9544b77d7c9b21e2e84087656}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!Try\-Get\-Path@{Try\-Get\-Path}}
-\index{Try\-Get\-Path@{Try\-Get\-Path}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
-\subsubsection[{Try\-Get\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void X\-D\-L\-\_\-\-Path\-Finder\-::\-Try\-Get\-Path (
-\begin{DoxyParamCaption}
-\item[{int}]{\-\_\-start\-X, }
-\item[{int}]{\-\_\-start\-Y, }
-\item[{int}]{\-\_\-end\-X, }
-\item[{int}]{\-\_\-end\-Y, }
-\item[{{\bf X\-D\-L\-\_\-\-Sprite} $\ast$}]{\-\_\-sprite}
-\end{DoxyParamCaption}
-)}}\label{class_x_d_l___path_finder_a240f6aa9544b77d7c9b21e2e84087656}
-
-
 \subsection{Member Data Documentation}
 \hypertarget{class_x_d_l___path_finder_a1d174e5bc28dc523833b199f79fbfc8f}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!\-\_\-\-N\-O\-T\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E@{\-\_\-\-N\-O\-T\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E}}
 \index{\-\_\-\-N\-O\-T\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E@{\-\_\-\-N\-O\-T\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
 \subsubsection[{\-\_\-\-N\-O\-T\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int X\-D\-L\-\_\-\-Path\-Finder\-::\-\_\-\-N\-O\-T\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E = 99\hspace{0.3cm}{\ttfamily [static]}}}\label{class_x_d_l___path_finder_a1d174e5bc28dc523833b199f79fbfc8f}
-Const for non-\/walkable tile \hypertarget{class_x_d_l___path_finder_ae21d6af420119875362d125ebf5c73b6}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!\-\_\-sprite@{\-\_\-sprite}}
-\index{\-\_\-sprite@{\-\_\-sprite}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
-\subsubsection[{\-\_\-sprite}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Sprite}$\ast$ X\-D\-L\-\_\-\-Path\-Finder\-::\-\_\-sprite}}\label{class_x_d_l___path_finder_ae21d6af420119875362d125ebf5c73b6}
-\hypertarget{class_x_d_l___path_finder_a5b9e836a10153d89aeb75c70954937c9}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E@{\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E}}
+Const for non-\/walkable tile \hypertarget{class_x_d_l___path_finder_a5b9e836a10153d89aeb75c70954937c9}{\index{X\-D\-L\-\_\-\-Path\-Finder@{X\-D\-L\-\_\-\-Path\-Finder}!\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E@{\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E}}
 \index{\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E@{\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E}!XDL_PathFinder@{X\-D\-L\-\_\-\-Path\-Finder}}
 \subsubsection[{\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int X\-D\-L\-\_\-\-Path\-Finder\-::\-\_\-\-W\-A\-L\-K\-A\-B\-L\-E = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{class_x_d_l___path_finder_a5b9e836a10153d89aeb75c70954937c9}
 Const for walkable tile 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___path_finder_8h}{X\-D\-L\-\_\-\-Path\-Finder.\-h}\item 
-Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/\hyperlink{_x_d_l___path_finder_8cpp}{X\-D\-L\-\_\-\-Path\-Finder.\-cpp}\end{DoxyCompactItemize}
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Path\-Finder.\-h\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Path\-Finder.\-cpp\end{DoxyCompactItemize}

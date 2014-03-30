@@ -31,7 +31,7 @@ float XDL_Camera::GetCurrentZoom()
 {
 	return _zoom;
 }
-void XDL_Camera::SetPosition(int _x,int _y)
+void XDL_Camera::SetPosition(int _x,int _y)//set the current position of the camera
 {
 	_pos->x = _x;
 	_pos->y = _y;

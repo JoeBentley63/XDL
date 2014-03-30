@@ -1,0 +1,77 @@
+\hypertarget{class_x_d_l___mouse}{\section{X\-D\-L\-\_\-\-Mouse Class Reference}
+\label{class_x_d_l___mouse}\index{X\-D\-L\-\_\-\-Mouse@{X\-D\-L\-\_\-\-Mouse}}
+}
+
+
+\hyperlink{class_x_d_l___mouse}{X\-D\-L\-\_\-\-Mouse}. \mbox{[}Singleton\mbox{]}.  
+
+
+
+
+{\ttfamily \#include $<$X\-D\-L\-\_\-\-Mouse.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_x_d_l___mouse_ad07734a5e9bb2c0b32b991f9643c860e}{Is\-Button\-Down} (int \-\_\-button)
+\item 
+bool \hyperlink{class_x_d_l___mouse_af63c498b0d2b215842a7e333e87416e3}{Is\-Button\-Up} (int \-\_\-button)
+\item 
+S\-D\-L\-\_\-\-Point \hyperlink{class_x_d_l___mouse_a654ae153971ba2010b25a4fa430d1b16}{Get\-Position\-Screen} ()
+\item 
+\hypertarget{class_x_d_l___mouse_a9e68aafbf47ac4c3a52f09e83f65aa69}{S\-D\-L\-\_\-\-Point {\bfseries Get\-Position\-World} (\hyperlink{class_x_d_l___camera}{X\-D\-L\-\_\-\-Camera} $\ast$X\-D\-L\-\_\-\-C\-A\-M\-E\-R\-A)}\label{class_x_d_l___mouse_a9e68aafbf47ac4c3a52f09e83f65aa69}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_x_d_l___mouse}{X\-D\-L\-\_\-\-Mouse} $\ast$ \hyperlink{class_x_d_l___mouse_a2074beb3e04a67b2a271f5c15f663a6d}{Get\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_x_d_l___mouse}{X\-D\-L\-\_\-\-Mouse}. \mbox{[}Singleton\mbox{]}. 
+
+Wrapper class of S\-D\-L's Mouse functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_x_d_l___mouse_a2074beb3e04a67b2a271f5c15f663a6d}{\index{X\-D\-L\-\_\-\-Mouse@{X\-D\-L\-\_\-\-Mouse}!Get\-Instance@{Get\-Instance}}
+\index{Get\-Instance@{Get\-Instance}!XDL_Mouse@{X\-D\-L\-\_\-\-Mouse}}
+\subsubsection[{Get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-D\-L\-\_\-\-Mouse} $\ast$ X\-D\-L\-\_\-\-Mouse\-::\-Get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_x_d_l___mouse_a2074beb3e04a67b2a271f5c15f663a6d}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_x_d_l___mouse}{X\-D\-L\-\_\-\-Mouse} Returns the shared instance of our Keyboard. Creates a new Keyboard if its not already created. 
+\end{DoxyReturn}
+\hypertarget{class_x_d_l___mouse_a654ae153971ba2010b25a4fa430d1b16}{\index{X\-D\-L\-\_\-\-Mouse@{X\-D\-L\-\_\-\-Mouse}!Get\-Position\-Screen@{Get\-Position\-Screen}}
+\index{Get\-Position\-Screen@{Get\-Position\-Screen}!XDL_Mouse@{X\-D\-L\-\_\-\-Mouse}}
+\subsubsection[{Get\-Position\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Point X\-D\-L\-\_\-\-Mouse\-::\-Get\-Position\-Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___mouse_a654ae153971ba2010b25a4fa430d1b16}
+Check if a button is up \hypertarget{class_x_d_l___mouse_ad07734a5e9bb2c0b32b991f9643c860e}{\index{X\-D\-L\-\_\-\-Mouse@{X\-D\-L\-\_\-\-Mouse}!Is\-Button\-Down@{Is\-Button\-Down}}
+\index{Is\-Button\-Down@{Is\-Button\-Down}!XDL_Mouse@{X\-D\-L\-\_\-\-Mouse}}
+\subsubsection[{Is\-Button\-Down}]{\setlength{\rightskip}{0pt plus 5cm}bool X\-D\-L\-\_\-\-Mouse\-::\-Is\-Button\-Down (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-button}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___mouse_ad07734a5e9bb2c0b32b991f9643c860e}
+\begin{DoxyReturn}{Returns}
+bool , true if button is down, false if its not. 
+\end{DoxyReturn}
+\hypertarget{class_x_d_l___mouse_af63c498b0d2b215842a7e333e87416e3}{\index{X\-D\-L\-\_\-\-Mouse@{X\-D\-L\-\_\-\-Mouse}!Is\-Button\-Up@{Is\-Button\-Up}}
+\index{Is\-Button\-Up@{Is\-Button\-Up}!XDL_Mouse@{X\-D\-L\-\_\-\-Mouse}}
+\subsubsection[{Is\-Button\-Up}]{\setlength{\rightskip}{0pt plus 5cm}bool X\-D\-L\-\_\-\-Mouse\-::\-Is\-Button\-Up (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-button}
+\end{DoxyParamCaption}
+)}}\label{class_x_d_l___mouse_af63c498b0d2b215842a7e333e87416e3}
+Check if a button is down 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Mouse.\-h\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/X\-D\-L\-\_\-\-Mouse.\-cpp\end{DoxyCompactItemize}

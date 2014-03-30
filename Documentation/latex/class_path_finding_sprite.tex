@@ -1,0 +1,79 @@
+\hypertarget{class_path_finding_sprite}{\section{Path\-Finding\-Sprite Class Reference}
+\label{class_path_finding_sprite}\index{Path\-Finding\-Sprite@{Path\-Finding\-Sprite}}
+}
+
+
+Path\-Finding Sprite.  
+
+
+
+
+{\ttfamily \#include $<$Path\-Finding\-Sprite.\-h$>$}
+
+Inheritance diagram for Path\-Finding\-Sprite\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_path_finding_sprite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_path_finding_sprite_a8c2b54d8ba8941cdd6895791138fabae}{{\bfseries Path\-Finding\-Sprite} (char $\ast$\-\_\-asset, float \-\_\-x, float \-\_\-y, int \-\_\-height, int \-\_\-width, int \hyperlink{class_x_d_l___game_object_a62a08106992c783507c669f71a6dd6a6}{\-\_\-z}, S\-D\-L\-\_\-\-Renderer $\ast$\-\_\-renderer, \hyperlink{class_x_d_l___path_finder}{X\-D\-L\-\_\-\-Path\-Finder} $\ast$\-\_\-path\-Finder, \hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$\-\_\-target, string \-\_\-unique\-Name)}\label{class_path_finding_sprite_a8c2b54d8ba8941cdd6895791138fabae}
+
+\item 
+\hypertarget{class_path_finding_sprite_a95c7d23d13c54bc51ae38424490d4ee8}{void {\bfseries Stop\-Following\-Path} ()}\label{class_path_finding_sprite_a95c7d23d13c54bc51ae38424490d4ee8}
+
+\item 
+\hypertarget{class_path_finding_sprite_a0a17743cc552020d4a66364622f52fa9}{void {\bfseries Follow\-Path} (vector$<$ S\-D\-L\-\_\-\-Point $\ast$ $>$ $\ast$\-\_\-path)}\label{class_path_finding_sprite_a0a17743cc552020d4a66364622f52fa9}
+
+\item 
+\hypertarget{class_path_finding_sprite_ac0cbe99d021ca34cd212433923e08c55}{int {\bfseries Distance\-From} (int \-\_\-start\-X, int \-\_\-start\-Y, int \-\_\-end\-X, int \-\_\-end\-Y)}\label{class_path_finding_sprite_ac0cbe99d021ca34cd212433923e08c55}
+
+\item 
+\hypertarget{class_path_finding_sprite_aca2646354d5f4cce321beb2535074ab1}{void {\bfseries Update} ()}\label{class_path_finding_sprite_aca2646354d5f4cce321beb2535074ab1}
+
+\item 
+void \hyperlink{class_path_finding_sprite_a1fdc88d9b985f6f7b7ce8de4eaa31a5a}{Draw} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_path_finding_sprite_a8b3908f51ffe18650ba2c529c38a3ed8}{bool {\bfseries \-\_\-follow\-Path}}\label{class_path_finding_sprite_a8b3908f51ffe18650ba2c529c38a3ed8}
+
+\item 
+\hypertarget{class_path_finding_sprite_a362c590ccafec132466cec86d0b0f788}{\hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite} $\ast$ {\bfseries \-\_\-target}}\label{class_path_finding_sprite_a362c590ccafec132466cec86d0b0f788}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_path_finding_sprite_acf6246329cffe0bed3bee503bdd4b0b8}{static bool {\bfseries \-\_\-locked}}\label{class_path_finding_sprite_acf6246329cffe0bed3bee503bdd4b0b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Path\-Finding Sprite. 
+
+Extension of \hyperlink{class_x_d_l___sprite}{X\-D\-L\-\_\-\-Sprite}, which add simple behaviour to search for and follow paths. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_path_finding_sprite_a1fdc88d9b985f6f7b7ce8de4eaa31a5a}{\index{Path\-Finding\-Sprite@{Path\-Finding\-Sprite}!Draw@{Draw}}
+\index{Draw@{Draw}!PathFindingSprite@{Path\-Finding\-Sprite}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Path\-Finding\-Sprite\-::\-Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_path_finding_sprite_a1fdc88d9b985f6f7b7ce8de4eaa31a5a}
+virtual function so every object that is added to the scene will get auto-\/updated 
+
+Reimplemented from \hyperlink{class_x_d_l___sprite_a5b1c9b886c59f06cfbb2c428b3f58e86}{X\-D\-L\-\_\-\-Sprite}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/Path\-Finding\-Sprite.\-h\item 
+Joes\-\_\-\-S\-D\-L\-\_\-\-Framework/Path\-Finding\-Sprite.\-cpp\end{DoxyCompactItemize}

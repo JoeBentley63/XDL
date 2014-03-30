@@ -1,5 +1,5 @@
 #include "XDL_PathFinder.h"
-#include "Player.h"
+#include "PathFindingSprite.h"
 XDL_PathFinder* XDL_PathFinder::_me;
 
 XDL_PathFinder::XDL_PathFinder(void)
@@ -64,15 +64,18 @@ void XDL_PathFinder::FindPathLoop()
 		//cout<<"FindPath"<<endl;
 		if(findTile(_startX,_startY) == NULL)//check if the start node is clear/walkable
 		{
-			((Player*)_sprite)->StopFollowingPath();//tell the npc to stop
+			((PathFindingSprite*)_sprite)->StopFollowingPath();//tell the npc to stop
 			_free = true;//let everyone know that the pathfinder is free
+			
 		}
 
 		if(findTile(_endX,_endY)== NULL)//check if the end is walkable/clear
 		{
-			((Player*)_sprite)->StopFollowingPath();
+			((PathFindingSprite*)_sprite)->StopFollowingPath();
 			_free = true;
+			
 		}
+	
 		_openList = new vector<XDL_Tile*>();//wipe all the vectors
 		_closedList = new vector<XDL_Tile*>();
 		_finalPath = new vector<SDL_Point*>();
@@ -83,8 +86,8 @@ void XDL_PathFinder::FindPathLoop()
 		_endPoint.y = _endY;
 	 
 		ProcessNode(findTile(_startPoint.x,_startPoint.y));//start recursion loop
-
-		((Player*)_sprite)->FollowPath(_finalPath);//when the recursion ends, we tell the sprite to follow our new path
+		//cout<<"Found Path : " << _finalPath->size() << endl;
+		((PathFindingSprite*)_sprite)->FollowPath(_finalPath);//when the recursion ends, we tell the sprite to follow our new path
 		_free = true;//let everyone know that the pathfinder is free
 	}
 }
@@ -94,7 +97,7 @@ void XDL_PathFinder::ProcessNode(XDL_Tile* _tile)
 	_numNodes ++;
 	//cout<<"ProcessNode"<<endl;
 	_closedList->insert(_closedList->begin(),_tile);//add to the closed list
-	if(Contains(*_openList,_tile))//check if its in the openList(i should be, but just in case)
+	if(Contains(*_openList,_tile))//check if its in the openList(it should be, but just in case)
 	{
 		vector<XDL_Tile*>::iterator position = std::find(_openList->begin(), _openList->end(),_tile);
 		if (position != _openList->end()) // == vector.end() means the element was not found
@@ -149,7 +152,8 @@ void XDL_PathFinder::ProcessNode(XDL_Tile* _tile)
 	}
 	else
 	{
-		if(DistanceFrom(_next->GetBoundsX(),_next->GetBoundsY(),_endPoint.x,_endPoint.y) < _tileWidth/2)
+		int i = DistanceFrom(_next->_posX,_next->_posY,_endPoint.x,_endPoint.y) ;
+		if(i < _tileWidth)
 		{
 			ReversePath(_next);//if we are at the destination, reverse the path
 		}

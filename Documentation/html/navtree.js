@@ -1,14 +1,6 @@
 var NAVTREE =
 [
   [ "XDL", "index.html", [
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
-      ] ]
-    ] ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -18,28 +10,20 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+      [ "File List", "files.html", "files" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_basic_maze_a_star_8h.html",
-"class_x_d_l___sprite.html#ac8a10902cbbfc8e06c90a3eaabdee960",
-"classtinyxml2_1_1_x_m_l_handle.html#a31a0d5d060292bec5df2b2efe2eca228",
-"tinyxml2_8h_source.html"
+".html",
+"class_x_d_l___sprite_batch.html#a32ddb6e2d599029bc2e6de79c8437210",
+"classtinyxml2_1_1_x_m_l_node.html#a125423acf3170b130634638c5afc0639"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

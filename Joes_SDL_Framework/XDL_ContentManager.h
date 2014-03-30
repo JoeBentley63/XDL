@@ -11,8 +11,9 @@ Currently supports all types of Image files.
 #include <stdlib.h>
 #include <iostream>
 #include <map>
-using namespace std;
 #include <SDL_image.h>
+
+using namespace std;
 class XDL_ContentManager
 {
 public:

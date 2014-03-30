@@ -14,9 +14,9 @@ class XDL_SpriteBatch
 public:
 	typedef enum
 	{
-		FRONTTOBACK,//Larger Z means drawn at the back.
-		BACKTOFRONT,//Smaller Z's drawn in the back, bigger Z drawn in front
-		UNSORTED//no sorting, drawn in same order as they are added
+		FRONTTOBACK,/*!Larger Z means drawn at the back.*/
+		BACKTOFRONT,/*!Smaller Z's drawn in the back, bigger Z drawn in front*/
+		UNSORTED/*!no sorting, drawn in same order as they are added*/
 	}DRAWMODES;
 
 	XDL_SpriteBatch(void);
@@ -29,7 +29,7 @@ public:
 	static SDL_Texture* _drawTexture;
 	void SetDrawMode(DRAWMODES _drawmode);
 	int GetDrawMode();
-	void SetCamera(XDL_Camera* _camera);
+	void SetCamera(XDL_Camera* XDL_CAMERA);
 	XDL_Camera* GetCamera();
 
 	SDL_Rect _drawRect;
@@ -40,7 +40,7 @@ private:
 	SDL_Renderer* _renderer;
 	vector<XDL_GameObject*> _thingsToBeDrawn;
 	static XDL_SpriteBatch* _me;
-	XDL_Camera* _camera;
+	XDL_Camera* XDL_CAMERA;
 	DRAWMODES _currentDrawMode;
 	int _worldX;
 	int _worldY;

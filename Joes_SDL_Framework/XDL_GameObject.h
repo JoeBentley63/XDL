@@ -10,11 +10,15 @@ Pure Virtual (Abstract) Class that serves as the super for all GameObjects in th
 
 #include <SDL.h>
 #include "XDL_Debug.h"
+#include <string.h>
+
+using namespace std;
 class XDL_GameObject 
 {
 public:
-	XDL_GameObject();/*!Don't you go trying to call this, thats a big NO!*/
+	XDL_GameObject(string _name);/*!Don't you go trying to call this, thats a big NO!*/
 	~XDL_GameObject(void);
+	void virtual Init();
 	void virtual Update();/*!virtual function so every object that is added to the scene will get auto-updated*/
 	void virtual Draw() = 0; /*!virtual function so every object that is added to the scene will get auto-drawn*/
 	int _z;/*!set priority when Draws are being called*/
@@ -32,16 +36,17 @@ public:
 	void SetAccelerationY(float _y);
 	float GetAccelerationX();
 	float GetAccelerationY();
-	int XDL_GameObject::GetBoundsX();
-	int XDL_GameObject::GetBoundsY();
-	bool CollidedWith(XDL_GameObject* _otherSprite);
-	bool Overlaps(SDL_Rect _sprite,SDL_Rect _otherSprite);
+	int GetBoundsX();
+	int GetBoundsY();
+	bool virtual CollidedWith(XDL_GameObject* _otherSprite);
+	bool virtual Overlaps(SDL_Rect _sprite,SDL_Rect _otherSprite);
 	#pragma region 
-	bool IsTouchingLeft();
-	bool IsTouchingRight();
-	bool IsTouchingBottom();
-	bool IsTouchingTop();
-	int DistanceFrom(XDL_GameObject* _otherSprite);
+	bool virtual IsTouchingLeft();
+	bool virtual IsTouchingRight();
+	bool virtual IsTouchingBottom();
+	bool virtual IsTouchingTop();
+	string GetName();
+	int virtual DistanceFrom(XDL_GameObject* _otherSprite);
 
 #pragma endregion IsTouching Functions
 	float _accelerationX;
@@ -58,6 +63,7 @@ protected:
 	SDL_Rect _bottom;
 	SDL_Rect _left;
 	SDL_Rect _right;
+	string _name;
 	
 };
 

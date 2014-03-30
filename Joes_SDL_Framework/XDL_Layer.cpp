@@ -1,7 +1,4 @@
-
-
-//XDL_Layer class. A layer could be described as a stupider tile engine, or a mini-tile engine, as it doesnt have all the logic a normal on has.
-//not that I'm going to question the intelligence of a layer...
+//XDL_Layer class. A layer could be described as a less complex tile engine, or a mini-tile engine, as it doesnt have all the logic a normal on has.
 
 #include "XDL_Layer.h"
 #include "XDL_SpriteBatch.h"
@@ -13,6 +10,7 @@ XDL_Layer::XDL_Layer(XMLElement* _layer,int _tilesNumWidth,int _tilesNumHeight,i
 	 int _att = atoi(_mapTiles->Attribute("gid"));//get the first gid
 	 this->_tilesNumWidth = _tilesNumWidth;
 	 this->_tilesNumHeight = _tilesNumHeight;
+	 int _num = 0;
 	 for(int i = 0; i < _tilesNumHeight; i ++)
 	 {
 		for(int j = 0; j < _tilesNumWidth; j ++)
@@ -35,9 +33,12 @@ XDL_Layer::XDL_Layer(XMLElement* _layer,int _tilesNumWidth,int _tilesNumHeight,i
 				_tileSheetWidth += ((_margin*2) + (_numTilesInTilemapRow - 1) * _spacing);
 				
 				SDL_Rect _source =  {xPos,yPos,_tilesWidth,_tilesHeight};
-				XDL_Tile* _tempTile = new XDL_Tile(_nameOfSpriteSheet,j * _tilesWidth,i * _tilesHeight,_tilesHeight,_tilesWidth,1,_renderer,_source,_att);
+				ostringstream ss;
+				ss<<_num;
+				XDL_Tile* _tempTile = new XDL_Tile(_nameOfSpriteSheet,j * _tilesWidth,i * _tilesHeight,_tilesHeight,_tilesWidth,1,_renderer,_source,_att,"Tile" + ss.str());
 				_tempTile->_immovable = true;
 				_tiles.insert(_tiles.begin(),_tempTile);
+				_num++;
 			}
 			_mapTiles = _mapTiles->NextSiblingElement();
 			if(_mapTiles!=NULL)
@@ -74,10 +75,10 @@ void XDL_Layer::Update()//update just calls all the tiles Updates, incase of int
 	}
 }
 
-void XDL_Layer::Draw(XDL_SpriteBatch* _spriteBatch)//draw our tiles.
+void XDL_Layer::Draw(XDL_SpriteBatch* XDL_SPRITEBATCH)//draw our tiles.
 {
 	for(int i = 0; i < _tiles.size(); i ++)
 	{
-		_spriteBatch->Draw(_tiles[i]);
+		XDL_SPRITEBATCH->Draw(_tiles[i]);
 	}
 }
